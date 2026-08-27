@@ -40,6 +40,12 @@
 | academic-pipeline | 2026-08-26 |
 | agent-transcript | 2026-08-26 |
 | plugin-creator | 2026-08-26 |
+| webapp-testing | 2026-08-27 |
+| multi-stage-dockerfile | 2026-08-27 |
+| consult-claude | 2026-08-27 |
+| agent-relay | 2026-08-27 |
+| openclaw-pr-maintainer | 2026-08-27 |
+| plugin-eval | 2026-08-27 |
 
 ## 재등장 규칙
 
