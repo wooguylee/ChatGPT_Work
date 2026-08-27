@@ -51,3 +51,10 @@ thinkingmachines/Inkling; zai-org/GLM-5.2; baidu/Unlimited-OCR; google/gemma-4-3
 - tencent/WeMM-Embedding-9B 및 WeMM-Embedding 계열의 단순 크기·양자화·포맷 변형본
 - ibm-granite/granite-speech-5.0-470m-turboctc 및 Granite Speech 5.0 TurboCTC 직접 변형본(라이선스만 다른 NC 배포 포함)
 - fastino/gliner2.5-multi-v1 및 GLiNER2.5 계열의 small/base/multi 단순 크기·포맷·양자화 변형본
+
+### 2026-08-27
+- Qwen/Qwen3.8-Flash-Next 및 직접 양자화·GGUF/FP8/NVFP4·포맷·경미한 파생본. 기존 Qwen3.8-27B와 달리 QSA·Gated Residual·N-gram Embedding 기반 Qwen4-preview architecture로 별도 계열 판정
+- zai-org/GLM-5.3-Flash 및 직접 양자화·포맷·경미한 파생본. 기존 GLM-5.2와 달리 새 base model·native multimodal·hybrid sparse/linear attention·mHC를 도입해 별도 계열 판정
+- BreezeBlue/Breeze-TTS-2 및 직접 checkpoint·adapter·양자화·포맷·경미한 파생본
+- thomsonreuters/Thomson-1.0-Small 및 Thomson-1.0-Small의 직접 양자화·포맷·경미한 파생본(Qwen3.6-35B-A3B/Snowdon1.1-Small lineage)
+- open-gigaai/GigaBrain-0.7-3.5B-Base 및 GigaBrain-0.7 동일 base checkpoint의 단순 embodiment fine-tune·양자화·포맷 파생본
