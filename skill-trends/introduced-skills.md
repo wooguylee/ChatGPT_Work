@@ -46,6 +46,12 @@
 | agent-relay | 2026-08-27 |
 | openclaw-pr-maintainer | 2026-08-27 |
 | plugin-eval | 2026-08-27 |
+| agent-browser | 2026-08-28 |
+| google-agents-cli-adk-code | 2026-08-28 |
+| copilot-sdk | 2026-08-28 |
+| define | 2026-08-28 |
+| python-testing-patterns | 2026-08-28 |
+| babysit-pr | 2026-08-28 |
 
 ## 재등장 규칙
 
