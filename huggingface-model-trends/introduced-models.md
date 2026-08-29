@@ -63,3 +63,6 @@ thinkingmachines/Inkling; zai-org/GLM-5.2; baidu/Unlimited-OCR; google/gemma-4-3
 - kyutai/pocket-tts 및 직접 양자화·ONNX/MLX/WASM/C++/C# 포팅·포맷·경미한 파생본
 - PerceptronAI/Isaac-0.5 계열(공식 base/action checkpoints 포함) 및 단순 양자화·포맷·직접 파생본
 - briaai/FIBO 계열(FIBO base·Fibo-1.5 포함) 및 DMD/DMD-R few-step·단순 양자화·포맷·경미한 미세조정 파생본
+
+### 2026-08-29
+- tencent/Hy4-preview 및 Hy4 계열의 FP8·양자화·GGUF/포맷·경미한 파생본. 기존 Hy3와 달리 Gated DSA + IndexCache, iHC residual pathway, 1M context, 256 routed experts와 native MTP를 결합한 차세대 architecture로 별도 계열 판정
