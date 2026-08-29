@@ -52,6 +52,12 @@
 | define | 2026-08-28 |
 | python-testing-patterns | 2026-08-28 |
 | babysit-pr | 2026-08-28 |
+| gh-issue-sync | 2026-08-29 |
+| playwright-cli | 2026-08-29 |
+| vercel-react-best-practices | 2026-08-29 |
+| ui-ux-pro-max | 2026-08-29 |
+| agent-teams | 2026-08-29 |
+| gh-fix-ci | 2026-08-29 |
 
 ## 재등장 규칙
 
