@@ -58,6 +58,12 @@
 | ui-ux-pro-max | 2026-08-29 |
 | agent-teams | 2026-08-29 |
 | gh-fix-ci | 2026-08-29 |
+| reddit-automation | 2026-08-30 |
+| find-skills | 2026-08-30 |
+| manage-skills | 2026-08-30 |
+| api-gateway | 2026-08-30 |
+| openclaw-changelog-update | 2026-08-30 |
+| agents-sdk | 2026-08-30 |
 
 ## 재등장 규칙
 
