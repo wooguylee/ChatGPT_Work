@@ -66,3 +66,7 @@ thinkingmachines/Inkling; zai-org/GLM-5.2; baidu/Unlimited-OCR; google/gemma-4-3
 
 ### 2026-08-29
 - tencent/Hy4-preview 및 Hy4 계열의 FP8·양자화·GGUF/포맷·경미한 파생본. 기존 Hy3와 달리 Gated DSA + IndexCache, iHC residual pathway, 1M context, 256 routed experts와 native MTP를 결합한 차세대 architecture로 별도 계열 판정
+
+### 2026-08-30
+- pipecat-ai/phonellm-alpha-1 및 PhoneLLM Alpha 1의 단순 양자화·GGUF/FP8/포맷·크기·경미한 파생본. Nemotron 3 Nano 기반 아키텍처는 유지하지만 full-parameter SFT로 전화·실시간 음성 Agent의 저지연 비추론 tool/function calling을 핵심 목적으로 특화해 별도 계열로 판정
+- FermionResearch/Phonon-1 및 Phonon-1-Big 등 동일 Phonon-1 계열의 단순 크기·양자화·MLX/ONNX/포맷 파생본. Qwen3-ASR-0.6B 계보지만 작성자 설명상 2.4-bit/weight 조건을 학습 단계부터 적용한 low-bit on-device ASR로 학습 방법과 운용 목적 변화가 커 별도 계열로 판정
