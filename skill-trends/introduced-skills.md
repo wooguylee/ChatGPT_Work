@@ -64,6 +64,12 @@
 | api-gateway | 2026-08-30 |
 | openclaw-changelog-update | 2026-08-30 |
 | agents-sdk | 2026-08-30 |
+| frontend-design | 2026-08-31 |
+| improve-codebase-architecture | 2026-08-31 |
+| blast-radius | 2026-08-31 |
+| delegate-to-claude-code | 2026-08-31 |
+| gateguard | 2026-08-31 |
+| propose-security-hardening | 2026-08-31 |
 
 ## 재등장 규칙
 
