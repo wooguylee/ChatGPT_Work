@@ -70,3 +70,7 @@ thinkingmachines/Inkling; zai-org/GLM-5.2; baidu/Unlimited-OCR; google/gemma-4-3
 ### 2026-08-30
 - pipecat-ai/phonellm-alpha-1 및 PhoneLLM Alpha 1의 단순 양자화·GGUF/FP8/포맷·크기·경미한 파생본. Nemotron 3 Nano 기반 아키텍처는 유지하지만 full-parameter SFT로 전화·실시간 음성 Agent의 저지연 비추론 tool/function calling을 핵심 목적으로 특화해 별도 계열로 판정
 - FermionResearch/Phonon-1 및 Phonon-1-Big 등 동일 Phonon-1 계열의 단순 크기·양자화·MLX/ONNX/포맷 파생본. Qwen3-ASR-0.6B 계보지만 작성자 설명상 2.4-bit/weight 조건을 학습 단계부터 적용한 low-bit on-device ASR로 학습 방법과 운용 목적 변화가 커 별도 계열로 판정
+
+### 2026-08-31
+- samuel-vitorino/sopro-v2-turbo 및 Sopro V2 계열의 단순 크기·ONNX/INT8/양자화·브라우저 포팅·포맷·경미한 파생본. Sopro V1 대비 tokenizer·AR backbone·acoustic generation·vocoder를 크게 재설계하고 500M teacher에서 120M student distillation + reflow 2-step acoustic solver를 도입한 차세대 계열로 판정
+- Muse-Ltd/Muse-Robotics-1 및 동일 checkpoint의 단순 크기·양자화·포맷·경미한 embodiment fine-tune 파생본. 약 120M 규모의 fully-trainable VLA로 vision/language/fusion/action을 end-to-end 공동학습하며, 8 latent plan tokens의 3회 반복 deliberation과 rectified-flow action chunk generation을 결합한 별도 계열로 판정
