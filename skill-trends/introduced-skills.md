@@ -70,6 +70,12 @@
 | delegate-to-claude-code | 2026-08-31 |
 | gateguard | 2026-08-31 |
 | propose-security-hardening | 2026-08-31 |
+| archify | 2026-09-01 |
+| neon-postgres | 2026-09-01 |
+| programmatic-codex | 2026-09-01 |
+| agents-md | 2026-09-01 |
+| openclaw-testing | 2026-09-01 |
+| openai-platform-api-key | 2026-09-01 |
 
 ## 재등장 규칙
 
