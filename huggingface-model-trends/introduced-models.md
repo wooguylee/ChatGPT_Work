@@ -74,3 +74,8 @@ thinkingmachines/Inkling; zai-org/GLM-5.2; baidu/Unlimited-OCR; google/gemma-4-3
 ### 2026-08-31
 - samuel-vitorino/sopro-v2-turbo 및 Sopro V2 계열의 단순 크기·ONNX/INT8/양자화·브라우저 포팅·포맷·경미한 파생본. Sopro V1 대비 tokenizer·AR backbone·acoustic generation·vocoder를 크게 재설계하고 500M teacher에서 120M student distillation + reflow 2-step acoustic solver를 도입한 차세대 계열로 판정
 - Muse-Ltd/Muse-Robotics-1 및 동일 checkpoint의 단순 크기·양자화·포맷·경미한 embodiment fine-tune 파생본. 약 120M 규모의 fully-trainable VLA로 vision/language/fusion/action을 end-to-end 공동학습하며, 8 latent plan tokens의 3회 반복 deliberation과 rectified-flow action chunk generation을 결합한 별도 계열로 판정
+
+### 2026-09-01
+- deepseek-ai/DeepSeek-V4-Flash-Vision-Exp 및 동일 체크포인트의 단순 양자화·GGUF/FP8·포맷·경미한 fine-tune 파생본. 기존 DeepSeek-V4 계열이 누적 목록에 있으나 공식 모델 카드가 DeepSeek-V4 최초의 experimental multimodal model로 명시하며 visual modules(vision encoder/aligner)와 continued training을 도입해 modality와 multimodal Agent 입력 구조가 크게 바뀌었으므로 별도 멀티모달 분기로 판정
+- google/timesfm-3.0-pytorch 및 TimesFM 3.0 동일 체크포인트의 단순 양자화·포맷·직접 fine-tune 파생본. Stacked Mixing Transformer + Variate Attention + CPM Iterative RevIN 구조와 native multivariate·covariate forecasting을 도입한 TimesFM 3.0 계열
+- darkps/ice-012-audio 및 ICE-012 Audio 동일 체크포인트의 단순 양자화·포맷·경미한 파생본. Qwen3 기반 causal backbone에 8-codebook audio-token embedding/output heads와 Higgs Audio V2 tokenizer를 결합한 streaming multilingual TTS·voice-cloning 계열
