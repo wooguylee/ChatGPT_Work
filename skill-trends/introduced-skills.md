@@ -76,6 +76,12 @@
 | agents-md | 2026-09-01 |
 | openclaw-testing | 2026-09-01 |
 | openai-platform-api-key | 2026-09-01 |
+| design-mobile-apps | 2026-09-07 |
+| google-agents-cli-workflow | 2026-09-07 |
+| skill-creator | 2026-09-07 |
+| ai-agents | 2026-09-07 |
+| documentation-lookup | 2026-09-07 |
+| code-review | 2026-09-07 |
 
 ## 재등장 규칙
 
