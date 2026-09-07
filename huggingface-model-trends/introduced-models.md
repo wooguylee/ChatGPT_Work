@@ -79,3 +79,10 @@ thinkingmachines/Inkling; zai-org/GLM-5.2; baidu/Unlimited-OCR; google/gemma-4-3
 - deepseek-ai/DeepSeek-V4-Flash-Vision-Exp 및 동일 체크포인트의 단순 양자화·GGUF/FP8·포맷·경미한 fine-tune 파생본. 기존 DeepSeek-V4 계열이 누적 목록에 있으나 공식 모델 카드가 DeepSeek-V4 최초의 experimental multimodal model로 명시하며 visual modules(vision encoder/aligner)와 continued training을 도입해 modality와 multimodal Agent 입력 구조가 크게 바뀌었으므로 별도 멀티모달 분기로 판정
 - google/timesfm-3.0-pytorch 및 TimesFM 3.0 동일 체크포인트의 단순 양자화·포맷·직접 fine-tune 파생본. Stacked Mixing Transformer + Variate Attention + CPM Iterative RevIN 구조와 native multivariate·covariate forecasting을 도입한 TimesFM 3.0 계열
 - darkps/ice-012-audio 및 ICE-012 Audio 동일 체크포인트의 단순 양자화·포맷·경미한 파생본. Qwen3 기반 causal backbone에 8-codebook audio-token embedding/output heads와 Higgs Audio V2 tokenizer를 결합한 streaming multilingual TTS·voice-cloning 계열
+
+### 2026-09-07
+- XHToken/Spark-X2.5-4B 및 Spark-X2.5 계열(1.7B 포함)의 단순 크기·GGUF/MLX/양자화·포맷·경미한 fine-tune 파생본. hybrid full-attention + sliding-window attention, native 1M context, MOPD 기반 post-training을 결합한 compact coding·agent 계열
+- IFM/K2-Horizon-MoVA-36B-A4B 및 K2-Horizon 계열(0.9B·7B·36B-A4B·375B-A23B 등)의 단순 크기·GGUF/양자화·포맷·경미한 파생본. MoE + Mixture-of-Values attention과 native 512K context를 핵심으로 하는 reasoning·agent 계열
+- Qwen/Qwen-Drive-1.0-4B 및 Qwen-Drive-1.0 계열의 단순 양자화·포맷·경미한 driving fine-tune 파생본. Qwen3.5 VLM backbone은 유지하지만 BEV 3D perception head와 flow-matching Planning Expert를 추가해 3D 인지·VQA·motion planning으로 근본 목적과 출력 구조가 확장되어 별도 계열로 판정
+- inclusionAI/LLaDA-Image 및 LLaDA-Image Base/Turbo/FP8 계열의 단순 양자화·포맷·경미한 파생본. 기존 LLaDA2.2 text diffusion LM과 달리 unified diffusion 기반 이미지 생성·편집, image-only pretraining, Twin-DMD few-step distillation을 도입해 modality·생성 방식·목적 변화가 커 별도 이미지 계열로 판정
+- LightOriginsHQ/LightNav-0 및 LightNav-0 계열의 단순 양자화·GGUF·포맷·경미한 embodiment 파생본. Qwen3-VL backbone 기반이지만 dual-channel pointing + RVQ action tokenizer로 navigation·object nav·tracking을 trajectory token interface에 통합해 행동 modality와 목적 변화가 커 별도 robotics/VLA 계열로 판정
