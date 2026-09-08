@@ -82,6 +82,12 @@
 | ai-agents | 2026-09-07 |
 | documentation-lookup | 2026-09-07 |
 | code-review | 2026-09-07 |
+| link-cli | 2026-09-08 |
+| service-catalog-template-coordinate | 2026-09-08 |
+| ai-coding-agents-tasks | 2026-09-08 |
+| agents-hooks | 2026-09-08 |
+| dmux-workflows | 2026-09-08 |
+| migrate-to-codex | 2026-09-08 |
 
 ## 재등장 규칙
 
