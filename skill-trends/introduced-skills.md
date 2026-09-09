@@ -88,6 +88,12 @@
 | agents-hooks | 2026-09-08 |
 | dmux-workflows | 2026-09-08 |
 | migrate-to-codex | 2026-09-08 |
+| tdd | 2026-09-09 |
+| codebase-design | 2026-09-09 |
+| hyperframes | 2026-09-09 |
+| openviking-context-database | 2026-09-09 |
+| openclaw-debugging | 2026-09-09 |
+| attack-path-analysis | 2026-09-09 |
 
 ## 재등장 규칙
 
