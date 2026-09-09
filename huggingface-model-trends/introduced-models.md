@@ -86,3 +86,10 @@ thinkingmachines/Inkling; zai-org/GLM-5.2; baidu/Unlimited-OCR; google/gemma-4-3
 - Qwen/Qwen-Drive-1.0-4B 및 Qwen-Drive-1.0 계열의 단순 양자화·포맷·경미한 driving fine-tune 파생본. Qwen3.5 VLM backbone은 유지하지만 BEV 3D perception head와 flow-matching Planning Expert를 추가해 3D 인지·VQA·motion planning으로 근본 목적과 출력 구조가 확장되어 별도 계열로 판정
 - inclusionAI/LLaDA-Image 및 LLaDA-Image Base/Turbo/FP8 계열의 단순 양자화·포맷·경미한 파생본. 기존 LLaDA2.2 text diffusion LM과 달리 unified diffusion 기반 이미지 생성·편집, image-only pretraining, Twin-DMD few-step distillation을 도입해 modality·생성 방식·목적 변화가 커 별도 이미지 계열로 판정
 - LightOriginsHQ/LightNav-0 및 LightNav-0 계열의 단순 양자화·GGUF·포맷·경미한 embodiment 파생본. Qwen3-VL backbone 기반이지만 dual-channel pointing + RVQ action tokenizer로 navigation·object nav·tracking을 trajectory token interface에 통합해 행동 modality와 목적 변화가 커 별도 robotics/VLA 계열로 판정
+
+### 2026-09-09
+- TokenRhythm/NeoHorse-1-4B 및 NeoHorse-1 계열의 단순 크기·양자화·GGUF/MLX·포맷·경미한 파생본. Qwen3.5-4B 기반 architecture는 유지하지만 routing-guided agentic post-training, heterogeneous routing harness, curriculum SFT와 on-policy distillation로 Agent/tool 학습 구조가 크게 바뀌어 별도 계열로 판정
+- ampixa/sanoTTS 계열(약 294k~2.27M voice variants 포함)의 단순 크기·INT8/GGUF/WASM/MCU 포팅·포맷·경미한 파생본. Piper/VITS·Kokoro teacher distillation을 초소형 runtime graph로 압축해 ESP32-S3·WASM까지 내려가는 edge TTS 계열
+- rumik-ai/rumik-oss-1 및 rumik-oss 1 base/직접 양자화·포맷·경미한 파생본. Tiny Aya Fire 기반이지만 Mimi discrete speech token, 8-codebook autoregressive audio generation, 22개 언어 code-switching과 description/inline vocalization control을 결합한 multilingual TTS 계열
+- perplexity-ai/pplx-pii-masking 및 직접 양자화·포맷·경미한 파생본. bidirectional Qwen3 encoder에 37-way BIOES PII token head와 conversation sensitivity head를 결합한 privacy masking 계열
+- Hcompany/NeoMME 계열(260M·800M base/retriever의 단순 크기·양자화·포맷·직접 task-head 파생본). text token과 raw image patch를 별도 vision tower 없이 single Transformer encoder에서 처리하고 masked discrete-diffusion pretraining을 사용하는 multimodal-native encoder 계열
