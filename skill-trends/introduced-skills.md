@@ -94,6 +94,12 @@
 | openviking-context-database | 2026-09-09 |
 | openclaw-debugging | 2026-09-09 |
 | attack-path-analysis | 2026-09-09 |
+| marketing-mindset | 2026-09-10 |
+| domain-modeling | 2026-09-10 |
+| planning-with-files | 2026-09-10 |
+| impeccable | 2026-09-10 |
+| inherit-legacy-style | 2026-09-10 |
+| deep-security-scan | 2026-09-10 |
 
 ## 재등장 규칙
 
