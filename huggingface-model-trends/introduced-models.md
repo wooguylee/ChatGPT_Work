@@ -93,3 +93,10 @@ thinkingmachines/Inkling; zai-org/GLM-5.2; baidu/Unlimited-OCR; google/gemma-4-3
 - rumik-ai/rumik-oss-1 및 rumik-oss 1 base/직접 양자화·포맷·경미한 파생본. Tiny Aya Fire 기반이지만 Mimi discrete speech token, 8-codebook autoregressive audio generation, 22개 언어 code-switching과 description/inline vocalization control을 결합한 multilingual TTS 계열
 - perplexity-ai/pplx-pii-masking 및 직접 양자화·포맷·경미한 파생본. bidirectional Qwen3 encoder에 37-way BIOES PII token head와 conversation sensitivity head를 결합한 privacy masking 계열
 - Hcompany/NeoMME 계열(260M·800M base/retriever의 단순 크기·양자화·포맷·직접 task-head 파생본). text token과 raw image patch를 별도 vision tower 없이 single Transformer encoder에서 처리하고 masked discrete-diffusion pretraining을 사용하는 multimodal-native encoder 계열
+
+### 2026-09-10
+- nex-agi/Nex-N2.5-mini 및 **Nex-N2.5 계열(mini·Pro·Max)**의 단순 크기·양자화·GGUF/MLX·포맷·경미한 fine-tune 파생본. computer/browser use, 프로그램 실행·테스트, visual feedback 기반 self-correction을 장기 Agent loop에 통합한 차세대 agentic 계열
+- inclusionAI/Ling-3.0-flash-VL 및 동일 VL checkpoint의 단순 양자화·포맷·경미한 파생본. 기존 inclusionAI/Ling-3.0 계열이 누적 목록에 있으나 ViT visual encoder + 2-layer projector, VideoRoPE, KDA/Gated MLA hybrid backbone으로 image/video modality와 reasoning·planning·acting·verification 경로가 크게 확장되어 별도 multimodal 분기로 판정
+- OrionLLM/OxCoder-9B 및 OxCoder-9B 직접 양자화·GGUF/MLX·포맷·adapter·경미한 파생본. Qwen3.5-9B 기반에 Frontier Agent Traces를 증류해 Claude Code·OpenCode·Codex형 coding trajectory, LSP diagnostics, read-before-write와 minimal-diff 행동을 학습한 agentic coding 계열
+- Extropic-AI/Z1T-0 및 Z1T-0의 단순 포팅·양자화·포맷·경미한 파생본. fixed-connectivity sparse probabilistic hardware Z1에 맞춰 4-sparse tanh-linear projection, Dynamic Tanh normalization, Gated Convolutional Attention과 heterogeneous Z1/FPGA decode를 설계한 hardware/architecture co-design 계열
+- ibm-granite/granite-timeseries-patchtst-fm-r2 및 PatchTST-FM-r2 동일 checkpoint의 단순 포맷·양자화·경미한 fine-tune 파생본. r1의 표준 Transformer를 Conformer-style block으로 교체하고 50% overlapping patch, Hamming weighting, overlap-and-add inference, 99-quantile probabilistic forecast를 도입한 차세대 time-series foundation model
