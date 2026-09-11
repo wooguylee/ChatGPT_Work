@@ -100,6 +100,12 @@
 | impeccable | 2026-09-10 |
 | inherit-legacy-style | 2026-09-10 |
 | deep-security-scan | 2026-09-10 |
+| handoff | 2026-09-11 |
+| to-tickets | 2026-09-11 |
+| systematic-debugging | 2026-09-11 |
+| supabase | 2026-09-11 |
+| orch-pipeline | 2026-09-11 |
+| qodo-review | 2026-09-11 |
 
 ## 재등장 규칙
 
