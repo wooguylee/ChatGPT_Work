@@ -106,6 +106,12 @@
 | supabase | 2026-09-11 |
 | orch-pipeline | 2026-09-11 |
 | qodo-review | 2026-09-11 |
+| google-agents-cli-scaffold | 2026-09-12 |
+| review-loop | 2026-09-12 |
+| 3dsmax-mcp | 2026-09-12 |
+| launch | 2026-09-12 |
+| openclaw-test-heap-leaks | 2026-09-12 |
+| build-chatgpt-app | 2026-09-12 |
 
 ## 재등장 규칙
 
