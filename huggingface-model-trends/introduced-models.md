@@ -81,7 +81,7 @@ thinkingmachines/Inkling; zai-org/GLM-5.2; baidu/Unlimited-OCR; google/gemma-4-3
 - darkps/ice-012-audio 및 ICE-012 Audio 동일 체크포인트의 단순 양자화·포맷·경미한 파생본. Qwen3 기반 causal backbone에 8-codebook audio-token embedding/output heads와 Higgs Audio V2 tokenizer를 결합한 streaming multilingual TTS·voice-cloning 계열
 
 ### 2026-09-07
-- XHToken/Spark-X2.5-4B 및 Spark-X2.5 계열(1.7B 포함)의 단순 크기·GGUF/MLX/양자화·포맷·경미한 fine-tune 파생본. hybrid full-attention + sliding-window attention, native 1M context, MOPD 기반 post-training을 결합한 compact coding·agent 계열
+- XHToken/Spark-X2.5-4B 및 Spark-X2.5 계열(1.7B 포함)의 단순 크기·GGUF/MLX·양자화·포맷·경미한 fine-tune 파생본. hybrid full-attention + sliding-window attention, native 1M context, MOPD 기반 post-training을 결합한 compact coding·agent 계열
 - IFM/K2-Horizon-MoVA-36B-A4B 및 K2-Horizon 계열(0.9B·7B·36B-A4B·375B-A23B 등)의 단순 크기·GGUF/양자화·포맷·경미한 파생본. MoE + Mixture-of-Values attention과 native 512K context를 핵심으로 하는 reasoning·agent 계열
 - Qwen/Qwen-Drive-1.0-4B 및 Qwen-Drive-1.0 계열의 단순 양자화·포맷·경미한 driving fine-tune 파생본. Qwen3.5 VLM backbone은 유지하지만 BEV 3D perception head와 flow-matching Planning Expert를 추가해 3D 인지·VQA·motion planning으로 근본 목적과 출력 구조가 확장되어 별도 계열로 판정
 - inclusionAI/LLaDA-Image 및 LLaDA-Image Base/Turbo/FP8 계열의 단순 양자화·포맷·경미한 파생본. 기존 LLaDA2.2 text diffusion LM과 달리 unified diffusion 기반 이미지 생성·편집, image-only pretraining, Twin-DMD few-step distillation을 도입해 modality·생성 방식·목적 변화가 커 별도 이미지 계열로 판정
@@ -100,3 +100,8 @@ thinkingmachines/Inkling; zai-org/GLM-5.2; baidu/Unlimited-OCR; google/gemma-4-3
 - OrionLLM/OxCoder-9B 및 OxCoder-9B 직접 양자화·GGUF/MLX·포맷·adapter·경미한 파생본. Qwen3.5-9B 기반에 Frontier Agent Traces를 증류해 Claude Code·OpenCode·Codex형 coding trajectory, LSP diagnostics, read-before-write와 minimal-diff 행동을 학습한 agentic coding 계열
 - Extropic-AI/Z1T-0 및 Z1T-0의 단순 포팅·양자화·포맷·경미한 파생본. fixed-connectivity sparse probabilistic hardware Z1에 맞춰 4-sparse tanh-linear projection, Dynamic Tanh normalization, Gated Convolutional Attention과 heterogeneous Z1/FPGA decode를 설계한 hardware/architecture co-design 계열
 - ibm-granite/granite-timeseries-patchtst-fm-r2 및 PatchTST-FM-r2 동일 checkpoint의 단순 포맷·양자화·경미한 fine-tune 파생본. r1의 표준 Transformer를 Conformer-style block으로 교체하고 50% overlapping patch, Hamming weighting, overlap-and-add inference, 99-quantile probabilistic forecast를 도입한 차세대 time-series foundation model
+
+### 2026-09-11
+- deepseek-ai/DeepSeek-V4.1-Flash 및 DeepSeek-V4.1 계열의 단순 크기·양자화·GGUF/FP8/FP4/NVFP4·포맷·경미한 파생본. 기존 DeepSeek-V4 계열과 달리 Causal Encoder-Decoder, CSA2, FP4 KV cache, Single-Pass mHC, Engram, DSpark와 native multimodal 구조를 도입한 새 architecture family로 별도 계열 판정
+- m-a-p/YuE2-3B 및 YuE2 계열의 단순 양자화·MLX/포맷·경미한 파생본. symbolic score planning, AR–NAR Mixture-of-Transformers, flow-matching acoustic latent generation과 VAE stereo decoding을 결합한 music generation/agentic editing 계열
+- tencent/AuK 및 AuK-Flash 등 AuK 계열의 단순 distillation·양자화·포맷 변형본. MLLM semantic conditioning + joint audio VAE + dual-stream MMDiT→single-stream DiT hybrid rectified-flow로 TTS·speech editing·enhancement·separation을 통합한 speech foundation 계열
