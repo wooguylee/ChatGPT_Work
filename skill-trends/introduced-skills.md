@@ -112,6 +112,12 @@
 | launch | 2026-09-12 |
 | openclaw-test-heap-leaks | 2026-09-12 |
 | build-chatgpt-app | 2026-09-12 |
+| google-agents-cli-deploy | 2026-09-14 |
+| multi-agent-review | 2026-09-14 |
+| browser-use | 2026-09-14 |
+| ppt-generation | 2026-09-14 |
+| openclaw-ghsa-maintainer | 2026-09-14 |
+| web-artifacts-builder | 2026-09-14 |
 
 ## 재등장 규칙
 
