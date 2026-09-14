@@ -37,7 +37,6 @@ thinkingmachines/Inkling; zai-org/GLM-5.2; baidu/Unlimited-OCR; google/gemma-4-3
 - NeoQuasar/Kronos-base 및 Kronos 금융 K-line 계열(동일 체크포인트·크기 변형·토크나이저 포함)
 
 ## 이 채팅에서 마이그레이션한 소개 모델
-
 ### 2026-08-25
 - FireRedTeam/FireRedAudio 및 FireRedAudio 직접 크기·양자화·포맷·경미한 파생본
 - openbmb/MiniCPM5-1B — 기존 누적 목록에도 포함되어 있으며 MiniCPM5-1B 직접 변형본 전체 제외
@@ -111,3 +110,6 @@ thinkingmachines/Inkling; zai-org/GLM-5.2; baidu/Unlimited-OCR; google/gemma-4-3
 - ai-sage/GigaChat3.5-432B-A28B-Reasoning 및 동일 Reasoning checkpoint의 단순 FP8/BF16·양자화·포맷·경미한 파생본. 432B total/28B active MoE에 MLA + GatedDeltaNet, GatedNorm, 3 MTP heads를 사용하고 6개 domain별 online-RL expert를 on-policy distillation으로 병합한 full-reasoning 분기
 - yandex/AliceAI-T5-35B-A0.6B 및 AliceAI-T5 동일 base checkpoint의 단순 크기·양자화·포맷·경미한 fine-tune/adapter 파생본. 34.35B unique parameter의 encoder-decoder sparse MoE, layer당 512 experts 중 top-8 routing, RoPE+YaRN 128K context를 사용하는 text-to-text base 계열
 - CohereLabs/North-Small-Translate-1.0 및 North Translate 1.0 동일 architecture의 단순 정밀도·양자화·포맷·경미한 번역 fine-tune 파생본. 218B total/25B active, 128 experts 중 top-8 + shared experts, 4096 sliding-window/global non-positional attention 3:1 혼합과 번역 전용 post-training을 사용하는 multilingual translation 계열. 기존 North-Micro-Vision-Instruct와는 목적·규모·모달리티가 달라 별도 분기로 판정
+
+### 2026-09-13
+- nasa-ibm-ai4science/NASA-IBM-Lunar-Foundation-Model 및 NASA-IBM Lunar Foundation Model 동일 backbone의 단순 LoRA·task-head·양자화·포맷·경미한 파생본. ViT-B encoder-decoder에 11개 lunar remote-sensing modality의 modality-wise tokenization, acquisition-geometry context token, NAC/WAC 100× mixed-resolution pretraining과 FlexiViT를 결합한 달 원격탐사 multimodal foundation 계열
