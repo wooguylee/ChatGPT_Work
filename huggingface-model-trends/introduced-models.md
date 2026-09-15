@@ -113,3 +113,7 @@ thinkingmachines/Inkling; zai-org/GLM-5.2; baidu/Unlimited-OCR; google/gemma-4-3
 
 ### 2026-09-13
 - nasa-ibm-ai4science/NASA-IBM-Lunar-Foundation-Model 및 NASA-IBM Lunar Foundation Model 동일 backbone의 단순 LoRA·task-head·양자화·포맷·경미한 파생본. ViT-B encoder-decoder에 11개 lunar remote-sensing modality의 modality-wise tokenization, acquisition-geometry context token, NAC/WAC 100× mixed-resolution pretraining과 FlexiViT를 결합한 달 원격탐사 multimodal foundation 계열
+
+### 2026-09-14
+- internlm/Atria-Dawn-Preview 및 Atria Dawn Preview FP8·양자화·포맷·경미한 직접 파생본. GLM-5.2 744B MoE foundation 기반이지만 연구·엔지니어링 환경에서 problem analysis→tool use→code/experiment execution→result analysis→failure recovery를 반복하는 end-to-end agent loop와 256K context, Codex/Claude Code/API 연동을 핵심 목적으로 한 별도 agentic post-trained 계열로 판정. base architecture 자체가 새롭다는 의미는 아님
+- oruk/orukeet 및 동일 r3 checkpoint의 NeMo·ONNX INT8·native Q8/F16·transcribe.cpp GGUF 포맷/양자화 파생본. NVIDIA Parakeet TDT 0.6B v3 기반이지만 encoder temporal depthwise filter 24,576개 중 12,288개를 fitted/frozen Gabor kernel으로 구조적으로 치환하고 multilingual·multi-accent adaptation을 결합해 단순 fine-tune보다 architecture/학습 방법 변화가 큰 별도 ASR 계열로 판정
