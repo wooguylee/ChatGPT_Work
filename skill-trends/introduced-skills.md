@@ -118,6 +118,12 @@
 | ppt-generation | 2026-09-14 |
 | openclaw-ghsa-maintainer | 2026-09-14 |
 | web-artifacts-builder | 2026-09-14 |
+| orca-cli | 2026-09-15 |
+| mcp-apps-builder | 2026-09-15 |
+| mcp-skill-authoring | 2026-09-15 |
+| cass | 2026-09-15 |
+| team-agent-orchestration | 2026-09-15 |
+| task-observer | 2026-09-15 |
 
 ## 재등장 규칙
 
