@@ -117,3 +117,8 @@ thinkingmachines/Inkling; zai-org/GLM-5.2; baidu/Unlimited-OCR; google/gemma-4-3
 ### 2026-09-14
 - internlm/Atria-Dawn-Preview 및 Atria Dawn Preview FP8·양자화·포맷·경미한 직접 파생본. GLM-5.2 744B MoE foundation 기반이지만 연구·엔지니어링 환경에서 problem analysis→tool use→code/experiment execution→result analysis→failure recovery를 반복하는 end-to-end agent loop와 256K context, Codex/Claude Code/API 연동을 핵심 목적으로 한 별도 agentic post-trained 계열로 판정. base architecture 자체가 새롭다는 의미는 아님
 - oruk/orukeet 및 동일 r3 checkpoint의 NeMo·ONNX INT8·native Q8/F16·transcribe.cpp GGUF 포맷/양자화 파생본. NVIDIA Parakeet TDT 0.6B v3 기반이지만 encoder temporal depthwise filter 24,576개 중 12,288개를 fitted/frozen Gabor kernel으로 구조적으로 치환하고 multilingual·multi-accent adaptation을 결합해 단순 fine-tune보다 architecture/학습 방법 변화가 큰 별도 ASR 계열로 판정
+
+### 2026-09-16
+- TaichuAI/ZDTaichu5.0-9B 및 ZDTaichu5.0 동일 backbone의 단순 크기·양자화·포맷·경미한 fine-tune 파생본. Qwen3.5-9B + C-RADIOv4-H에 Entropy-Gated Adaptive Recurrent Reasoning을 결합하고 text/image/video, 공간·3D·embodied reasoning, tool use를 통합한 multimodal agent/embodied 계열
+- Accio-Lab/occamy-1.0 및 Occamy 1.0 직접 GGUF/NVFP4·양자화·포맷·경미한 파생본. Qwen3.6-35B-A3B architecture는 유지하지만 full-parameter SFT + HDPO, Marathon/Sprint expert merge, Single-Rollout Asynchronous Optimization(SAO)과 장시간 stateful co-work/tool-use 학습으로 agent 학습 방법·근본 목적이 크게 달라 별도 post-trained 계열로 판정
+- knowledgator/gliformer-large-v1 및 GLiFormer v1 동일 architecture의 단순 크기·양자화·포맷·경미한 task-head 파생본. 575.6M DeBERTa 기반 layout-aware shared encoder에 inference-time label/schema 조건과 NER·classification·joint relation·nested structured extraction·embedding heads를 통합한 generalist information-extraction encoder 계열
