@@ -124,6 +124,12 @@
 | cass | 2026-09-15 |
 | team-agent-orchestration | 2026-09-15 |
 | task-observer | 2026-09-15 |
+| typesafe-ai | 2026-09-16 |
+| security-audit | 2026-09-16 |
+| copilots | 2026-09-16 |
+| codex-qa | 2026-09-16 |
+| openclaw-test-performance | 2026-09-16 |
+| openai-api-troubleshooting | 2026-09-16 |
 
 ## 재등장 규칙
 
