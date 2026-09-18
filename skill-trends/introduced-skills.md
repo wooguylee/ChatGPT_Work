@@ -130,6 +130,12 @@
 | codex-qa | 2026-09-16 |
 | openclaw-test-performance | 2026-09-16 |
 | openai-api-troubleshooting | 2026-09-16 |
+| context-engineering | 2026-09-17 |
+| deepeval | 2026-09-17 |
+| ai-sdk | 2026-09-17 |
+| ai-gateway | 2026-09-17 |
+| node-connect | 2026-09-17 |
+| frontend-app-builder | 2026-09-17 |
 
 ## 재등장 규칙
 
