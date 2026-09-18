@@ -122,3 +122,7 @@ thinkingmachines/Inkling; zai-org/GLM-5.2; baidu/Unlimited-OCR; google/gemma-4-3
 - TaichuAI/ZDTaichu5.0-9B 및 ZDTaichu5.0 동일 backbone의 단순 크기·양자화·포맷·경미한 fine-tune 파생본. Qwen3.5-9B + C-RADIOv4-H에 Entropy-Gated Adaptive Recurrent Reasoning을 결합하고 text/image/video, 공간·3D·embodied reasoning, tool use를 통합한 multimodal agent/embodied 계열
 - Accio-Lab/occamy-1.0 및 Occamy 1.0 직접 GGUF/NVFP4·양자화·포맷·경미한 파생본. Qwen3.6-35B-A3B architecture는 유지하지만 full-parameter SFT + HDPO, Marathon/Sprint expert merge, Single-Rollout Asynchronous Optimization(SAO)과 장시간 stateful co-work/tool-use 학습으로 agent 학습 방법·근본 목적이 크게 달라 별도 post-trained 계열로 판정
 - knowledgator/gliformer-large-v1 및 GLiFormer v1 동일 architecture의 단순 크기·양자화·포맷·경미한 task-head 파생본. 575.6M DeBERTa 기반 layout-aware shared encoder에 inference-time label/schema 조건과 NER·classification·joint relation·nested structured extraction·embedding heads를 통합한 generalist information-extraction encoder 계열
+
+### 2026-09-17
+- XingChen-AGI/Xing4.0-29B-A4B 및 Xing4.0-29B-A4B 동일 checkpoint의 FP8·GGUF·양자화·포맷·경미한 fine-tune 파생본. 개발사 카드 기준 29B total/4B active MoE에 mHC + MLA + MTP, 64 routed experts 중 token당 4개 활성 + shared expert, 256K native context(512K 확장 가능)를 결합한 coding·reasoning·agent 계열
+- zeroweight-ai/ZeroTTS 및 동일 ZeroTTS weights의 ONNX·정밀도·포맷·경미한 파생본. 202M Vietnamese streaming TTS로 MOSS-Audio-Tokenizer-Nano decoder, speaker-latent conditioning, ONNX Runtime 기반 CPU real-time generation을 핵심으로 하며 공개 repository에는 새 speaker latent를 만드는 voice encoder가 포함되지 않음
