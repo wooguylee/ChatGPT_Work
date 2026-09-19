@@ -126,3 +126,10 @@ thinkingmachines/Inkling; zai-org/GLM-5.2; baidu/Unlimited-OCR; google/gemma-4-3
 ### 2026-09-17
 - XingChen-AGI/Xing4.0-29B-A4B 및 Xing4.0-29B-A4B 동일 checkpoint의 FP8·GGUF·양자화·포맷·경미한 fine-tune 파생본. 개발사 카드 기준 29B total/4B active MoE에 mHC + MLA + MTP, 64 routed experts 중 token당 4개 활성 + shared expert, 256K native context(512K 확장 가능)를 결합한 coding·reasoning·agent 계열
 - zeroweight-ai/ZeroTTS 및 동일 ZeroTTS weights의 ONNX·정밀도·포맷·경미한 파생본. 202M Vietnamese streaming TTS로 MOSS-Audio-Tokenizer-Nano decoder, speaker-latent conditioning, ONNX Runtime 기반 CPU real-time generation을 핵심으로 하며 공개 repository에는 새 speaker latent를 만드는 voice encoder가 포함되지 않음
+
+### 2026-09-19
+- Edge0/Edge0-35B-A3B-preview 및 Edge0 35B A3B preview 동일 base+Recover-LoRA+prerouter checkpoint의 단순 복제·정밀도·포맷·경미한 adapter 파생본. Qwen3.6-35B-A3B 기반이지만 trained prerouter로 다음 expert routing을 예측하고 SSD expert offload와 Recover-LoRA distillation을 결합해 active memory를 전체 parameter 크기와 분리하는 edge-serving 계열로 별도 판정
+- Cactus-Compute/needle3 및 Needle 3 동일 checkpoint의 단순 layer-slice·CQ2/CQ4·포맷·LoRA 병합 파생본. 기존 needle·needle2와 달리 Monarch Hadamard MLP, causal-conv GQA, engram n-gram memory, multi-lane hyper-connections, 2~20 layer deployable ladder training을 도입해 명백한 차세대 architecture로 별도 판정
+- stable-ai/LimiX-2 및 LimiX-2 400M 동일 checkpoint의 단순 포맷·경미한 fine-tune 파생본. CMN(Contextual Mechanism Network)+CCMM으로 target-centric 예측에서 context-dependent joint mechanism modeling으로 전환하고 SCM synthetic pretraining을 사용하는 structured-data foundation 계열
+- jinaai/jina-ocr-v1 및 동일 checkpoint의 단순 양자화·포맷·경미한 OCR fine-tune 파생본. DeepSeek-OCR backbone에 재귀 공유 K=3 FastMTP speculative decoding head와 dense verifiable-reward post-training을 결합한 OCR/document-intelligence 계열
+- netease-youdao/Confucius4-R2T2 및 R2T2 동일 checkpoint의 단순 양자화·포맷·경미한 fine-tune 파생본. 기존 Confucius4-TTS와 달리 Qwen3-ASR 기반 ASR이며 stable-prefix·forced alignment·token-level segmentation과 Longest Stable Prefix 학습으로 append-only true streaming transcription을 구현한 별도 ASR 계열
