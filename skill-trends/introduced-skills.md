@@ -136,6 +136,12 @@
 | ai-gateway | 2026-09-17 |
 | node-connect | 2026-09-17 |
 | frontend-app-builder | 2026-09-17 |
+| google-agents-cli-publish | 2026-09-19 |
+| supabase-postgres-best-practices | 2026-09-19 |
+| claude-api | 2026-09-19 |
+| mpp | 2026-09-19 |
+| eval-harness | 2026-09-19 |
+| aspnet-core | 2026-09-19 |
 
 ## 재등장 규칙
 
