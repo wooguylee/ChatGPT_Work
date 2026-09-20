@@ -142,6 +142,12 @@
 | mpp | 2026-09-19 |
 | eval-harness | 2026-09-19 |
 | aspnet-core | 2026-09-19 |
+| ai-image-generation | 2026-09-20 |
+| web-design-guidelines | 2026-09-20 |
+| video-shotcraft | 2026-09-20 |
+| interactivity-best-practices | 2026-09-20 |
+| react-patterns | 2026-09-20 |
+| frontend-testing-debugging | 2026-09-20 |
 
 ## 재등장 규칙
 
