@@ -57,7 +57,6 @@ thinkingmachines/Inkling; zai-org/GLM-5.2; baidu/Unlimited-OCR; google/gemma-4-3
 - BreezeBlue/Breeze-TTS-2 및 직접 checkpoint·adapter·양자화·포맷·경미한 파생본
 - thomsonreuters/Thomson-1.0-Small 및 Thomson-1.0-Small의 직접 양자화·포맷·경미한 파생본(Qwen3.6-35B-A3B/Snowdon1.1-Small lineage)
 - open-gigaai/GigaBrain-0.7-3.5B-Base 및 GigaBrain-0.7 동일 base checkpoint의 단순 embodiment fine-tune·양자화·포맷 파생본
-
 ### 2026-08-28
 - kyutai/pocket-tts 및 직접 양자화·ONNX/MLX/WASM/C++/C# 포팅·포맷·경미한 파생본
 - PerceptronAI/Isaac-0.5 계열(공식 base/action checkpoints 포함) 및 단순 양자화·포맷·직접 파생본
@@ -117,7 +116,6 @@ thinkingmachines/Inkling; zai-org/GLM-5.2; baidu/Unlimited-OCR; google/gemma-4-3
 ### 2026-09-14
 - internlm/Atria-Dawn-Preview 및 Atria Dawn Preview FP8·양자화·포맷·경미한 직접 파생본. GLM-5.2 744B MoE foundation 기반이지만 연구·엔지니어링 환경에서 problem analysis→tool use→code/experiment execution→result analysis→failure recovery를 반복하는 end-to-end agent loop와 256K context, Codex/Claude Code/API 연동을 핵심 목적으로 한 별도 agentic post-trained 계열로 판정. base architecture 자체가 새롭다는 의미는 아님
 - oruk/orukeet 및 동일 r3 checkpoint의 NeMo·ONNX INT8·native Q8/F16·transcribe.cpp GGUF 포맷/양자화 파생본. NVIDIA Parakeet TDT 0.6B v3 기반이지만 encoder temporal depthwise filter 24,576개 중 12,288개를 fitted/frozen Gabor kernel으로 구조적으로 치환하고 multilingual·multi-accent adaptation을 결합해 단순 fine-tune보다 architecture/학습 방법 변화가 큰 별도 ASR 계열로 판정
-
 ### 2026-09-16
 - TaichuAI/ZDTaichu5.0-9B 및 ZDTaichu5.0 동일 backbone의 단순 크기·양자화·포맷·경미한 fine-tune 파생본. Qwen3.5-9B + C-RADIOv4-H에 Entropy-Gated Adaptive Recurrent Reasoning을 결합하고 text/image/video, 공간·3D·embodied reasoning, tool use를 통합한 multimodal agent/embodied 계열
 - Accio-Lab/occamy-1.0 및 Occamy 1.0 직접 GGUF/NVFP4·양자화·포맷·경미한 파생본. Qwen3.6-35B-A3B architecture는 유지하지만 full-parameter SFT + HDPO, Marathon/Sprint expert merge, Single-Rollout Asynchronous Optimization(SAO)과 장시간 stateful co-work/tool-use 학습으로 agent 학습 방법·근본 목적이 크게 달라 별도 post-trained 계열로 판정
@@ -133,3 +131,10 @@ thinkingmachines/Inkling; zai-org/GLM-5.2; baidu/Unlimited-OCR; google/gemma-4-3
 - stable-ai/LimiX-2 및 LimiX-2 400M 동일 checkpoint의 단순 포맷·경미한 fine-tune 파생본. CMN(Contextual Mechanism Network)+CCMM으로 target-centric 예측에서 context-dependent joint mechanism modeling으로 전환하고 SCM synthetic pretraining을 사용하는 structured-data foundation 계열
 - jinaai/jina-ocr-v1 및 동일 checkpoint의 단순 양자화·포맷·경미한 OCR fine-tune 파생본. DeepSeek-OCR backbone에 재귀 공유 K=3 FastMTP speculative decoding head와 dense verifiable-reward post-training을 결합한 OCR/document-intelligence 계열
 - netease-youdao/Confucius4-R2T2 및 R2T2 동일 checkpoint의 단순 양자화·포맷·경미한 fine-tune 파생본. 기존 Confucius4-TTS와 달리 Qwen3-ASR 기반 ASR이며 stable-prefix·forced alignment·token-level segmentation과 Longest Stable Prefix 학습으로 append-only true streaming transcription을 구현한 별도 ASR 계열
+
+### 2026-09-20
+- convaiinnovations/laya 및 Laya English·multilingual·typed-decisions checkpoint 계열의 단순 양자화·포맷·경미한 task fine-tune 파생본. ModernBERT/mmBERT 기반 비생성 typed-decision 구조와 option-marker decision head, RLCD proper-scoring calibration 학습을 결합한 routing·guardrail·scoring 계열
+- m-a-p/SheetSage2 및 동일 MERT-v2-FullSong 기반 checkpoint의 단순 adapter·양자화·포맷·경미한 파생본. audio를 melody·chords·beats·key·structure의 editable ABC/MIDI/annotation으로 변환하는 music transcription 계열로, 기존 YuE2 generation 계열과 근본 목적·출력이 달라 별도 판정
+- XGENlabs/XGEN-JING의 현재 공개 JING-Flash-v1 bidirectional checkpoint 및 동일 weights의 단순 양자화·포맷·가속 파생본. MiniMax-H3 기반이지만 action·reference image·observation history를 조건으로 first-person video+audio를 생성하는 interactive experience/world-model 목적과 행동 입력 modality가 추가되어 별도 post-trained 계열로 판정. 향후 causal model은 실제 구조 공개 후 재판정
+- Linkup-Platform/linkup-sparseup-embed-v1 및 동일 SPARSEUP checkpoint의 단순 양자화·포맷·경미한 fine-tune 파생본. LateOn lineage를 쓰지만 MLM expansion→logit shift→position top-k→max-pool→vocab folding의 learned vocabulary-sparse representation으로 retrieval 출력 구조와 index 방식이 달라 기존 mDenseOn·mLateOn과 별도 sparse-retrieval 계열로 판정
+- facebook/VGGT-Omega 계열(VGGT-Omega-1B-512·1B-416-Reproduction·1B-256-Text-Alignment 포함)의 단순 정밀도·포맷·경미한 fine-tune 파생본. single dense prediction head, register aggregation/register attention, dynamic-scene·self-supervised scaling을 도입한 feed-forward 3D reconstruction 계열
