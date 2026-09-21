@@ -148,6 +148,12 @@
 | interactivity-best-practices | 2026-09-20 |
 | react-patterns | 2026-09-20 |
 | frontend-testing-debugging | 2026-09-20 |
+| writing-for-agents | 2026-09-21 |
+| git-guardrails-claude-code | 2026-09-21 |
+| azure-architecture-autopilot | 2026-09-21 |
+| knowledge-ops | 2026-09-21 |
+| learn | 2026-09-21 |
+| assess-patch-risk | 2026-09-21 |
 
 ## 재등장 규칙
 
