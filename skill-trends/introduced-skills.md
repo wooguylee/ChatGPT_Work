@@ -154,6 +154,12 @@
 | knowledge-ops | 2026-09-21 |
 | learn | 2026-09-21 |
 | assess-patch-risk | 2026-09-21 |
+| momentic-spec | 2026-09-22 |
+| fastify-best-practices | 2026-09-22 |
+| skill-security-check | 2026-09-22 |
+| nvflare-convert-pytorch | 2026-09-22 |
+| parallel-debugging | 2026-09-22 |
+| fact-checker | 2026-09-22 |
 
 ## 재등장 규칙
 
