@@ -160,6 +160,12 @@
 | nvflare-convert-pytorch | 2026-09-22 |
 | parallel-debugging | 2026-09-22 |
 | fact-checker | 2026-09-22 |
+| tesseract-video | 2026-09-23 |
+| prisma-client-api | 2026-09-23 |
+| add-codex | 2026-09-23 |
+| agent-session-format-check | 2026-09-23 |
+| dotnet-patterns | 2026-09-23 |
+| web-perf | 2026-09-23 |
 
 ## 재등장 규칙
 
