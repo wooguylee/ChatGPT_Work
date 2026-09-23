@@ -150,3 +150,7 @@ thinkingmachines/Inkling; zai-org/GLM-5.2; baidu/Unlimited-OCR; google/gemma-4-3
 - XiaomiMiMo/MiMo-V2.6-Flash-RL을 대표로 하는 MiMo-V2.6 계열(Flash-RL·Pro-RL·공개 Distill variant 포함)의 단순 크기·양자화·GGUF/FP8·포맷·distillation 파생본. native text/image/video/audio, 1M context, mixed-domain asynchronous GRPO, Groupwise Reward Synthesis/Advantage Redistribution, MOPD2와 agent/tool serving을 결합한 omnimodal agent 계열
 - inclusionAI/Realtime-Venus 계열(Realtime-Venus-Omni·Realtime-Venus-Audio 및 직접 양자화·포맷·경미한 파생본). MiniCPM-o 4.5 / Omni-Flow 기반이지만 proactive full-duplex AV interaction, interruption handling, 동일 causal timeline의 비동기 `<delegate>` tool delegation, training-free long-video memory를 통합해 interaction·agent/tool 구조가 크게 달라 별도 계열로 판정
 - SupraLabs/Supra2-IMG 및 동일 checkpoint의 단순 양자화·포맷·경미한 image fine-tune 파생본. 기존 SupraLabs/Supra2-100M text 계열과 달리 from-scratch 104.1M DiT + frozen Flan-T5-Base + SD-VAE 기반 256×256 text-to-image 모델로 modality·architecture·생성 방식·근본 목적이 모두 달라 별도 계열로 판정
+
+### 2026-09-23
+- inclusionAI/Ming-Image-0.1-Design 및 동일 Design checkpoint의 단순 양자화·포맷·경미한 image fine-tune 파생본. 6B text-to-image 디자인 모델로 UI·인포그래픽·포스터·text-rich visual composition과 native RGBA 투명 배경 생성을 핵심으로 하는 Ming-Image 0.1 Design 계열
+- radar-generalist/RADAR 및 RADAR/RADAR+ 동일 연구 계열의 단순 checkpoint 복제·포맷·경미한 fine-tune 파생본. 40만+ contrast-enhanced abdominal CT와 1,500만 anatomy-aware image-text pairs를 임상 보고서에서 학습한 abdominal CT generalist vision-language 계열이며 CC BY-NC-SA 4.0 연구 전용 모델
