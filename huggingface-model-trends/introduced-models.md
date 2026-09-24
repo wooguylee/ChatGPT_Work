@@ -154,3 +154,8 @@ thinkingmachines/Inkling; zai-org/GLM-5.2; baidu/Unlimited-OCR; google/gemma-4-3
 ### 2026-09-23
 - inclusionAI/Ming-Image-0.1-Design 및 동일 Design checkpoint의 단순 양자화·포맷·경미한 image fine-tune 파생본. 6B text-to-image 디자인 모델로 UI·인포그래픽·포스터·text-rich visual composition과 native RGBA 투명 배경 생성을 핵심으로 하는 Ming-Image 0.1 Design 계열
 - radar-generalist/RADAR 및 RADAR/RADAR+ 동일 연구 계열의 단순 checkpoint 복제·포맷·경미한 fine-tune 파생본. 40만+ contrast-enhanced abdominal CT와 1,500만 anatomy-aware image-text pairs를 임상 보고서에서 학습한 abdominal CT generalist vision-language 계열이며 CC BY-NC-SA 4.0 연구 전용 모델
+
+### 2026-09-24
+- nvidia/Nemotron-3-Diarization 및 동일 checkpoint의 단순 양자화·포맷·경미한 fine-tune 파생본. 약 99.2M의 31-layer Transformer encoder에 AOSC + FIFO streaming cache를 결합해 최대 8화자의 streaming/offline speaker diarization을 수행하는 계열. 기존 Nemotron-3.5-ASR-Streaming·Nemotron-3-Embed와 목적·출력 구조가 달라 별도 계열로 판정
+- paradigma-inc/limite-1b-violetto를 대표로 하는 Limite 1B 계열(base·base-soup·Violetto 포함)의 단순 양자화·포맷·경미한 fine-tune 파생본. 1B dense autoregressive Transformer를 300B 미만 curated tokens로 from scratch pretrain하고 SFT+RL로 competition-level mathematics에 특화한 131K-context reasoning 계열
+- vamboai/morena-1.5b-base를 대표로 하는 MORENA 계열(1.5B base/instruct·0.5B mini/mini-instruct·0.2B nano 및 직접 pruning/distillation·양자화·포맷·경미한 파생본). 12개 Latin-script African languages 중심으로 from scratch 학습한 1.485B multilingual foundation 계열
