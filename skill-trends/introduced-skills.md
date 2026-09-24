@@ -166,6 +166,12 @@
 | agent-session-format-check | 2026-09-23 |
 | dotnet-patterns | 2026-09-23 |
 | web-perf | 2026-09-23 |
+| vercel-composition-patterns | 2026-09-24 |
+| cloudflare | 2026-09-24 |
+| qwen-mm-plugins-api | 2026-09-24 |
+| mcp-management | 2026-09-24 |
+| stripe-best-practices | 2026-09-24 |
+| docs-sync | 2026-09-24 |
 
 ## 재등장 규칙
 
