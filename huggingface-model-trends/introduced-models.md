@@ -159,3 +159,10 @@ thinkingmachines/Inkling; zai-org/GLM-5.2; baidu/Unlimited-OCR; google/gemma-4-3
 - nvidia/Nemotron-3-Diarization 및 동일 checkpoint의 단순 양자화·포맷·경미한 fine-tune 파생본. 약 99.2M의 31-layer Transformer encoder에 AOSC + FIFO streaming cache를 결합해 최대 8화자의 streaming/offline speaker diarization을 수행하는 계열. 기존 Nemotron-3.5-ASR-Streaming·Nemotron-3-Embed와 목적·출력 구조가 달라 별도 계열로 판정
 - paradigma-inc/limite-1b-violetto를 대표로 하는 Limite 1B 계열(base·base-soup·Violetto 포함)의 단순 양자화·포맷·경미한 fine-tune 파생본. 1B dense autoregressive Transformer를 300B 미만 curated tokens로 from scratch pretrain하고 SFT+RL로 competition-level mathematics에 특화한 131K-context reasoning 계열
 - vamboai/morena-1.5b-base를 대표로 하는 MORENA 계열(1.5B base/instruct·0.5B mini/mini-instruct·0.2B nano 및 직접 pruning/distillation·양자화·포맷·경미한 파생본). 12개 Latin-script African languages 중심으로 from scratch 학습한 1.485B multilingual foundation 계열
+
+### 2026-09-25
+- black-forest-labs/flux-3-action-base 및 FLUX 3 Action 동일 world-action backbone의 SO-101·DROID 공식 policy, 단순 action-head 교체·양자화·포맷·경미한 embodiment fine-tune 파생본. 7B base가 camera frame·robot state·text instruction을 받아 다음 action chunk와 다음 video frame을 공동 denoise하는 world-action 계열
+- Contrastive-LM/CLM-v0.1-8B 및 동일 Qwen3-8B frozen encoder + state/action projection-head 구조의 단순 task-head fine-tune·양자화·포맷 파생본. bidirectional InfoNCE로 state/action을 분리 임베딩하고 후보를 생성 없이 ranking하는 Agent decision/verifier 계열
+- apple/LensVLM-9B 및 동일 LensVLM checkpoint의 단순 양자화·GGUF/MLX·포맷·경미한 document fine-tune 파생본. 압축 문서 이미지를 먼저 스캔하고 질문 관련 페이지만 learned tool로 원해상도 선택 확장하는 selective-context-expansion Document VLM 계열
+- Edge0/Audio8-ASR-Infinite 및 동일 checkpoint의 단순 양자화·포맷·경미한 streaming fine-tune 파생본. 기존 Audio8-ASR-0.1B와 달리 Voxtral Realtime 4B causal audio tower + Qwen2.5-3B decoder, DSM-style streaming, selectable audio clock, rolling KV cache, exact RoPE rebasing, semantic VAD를 결합해 장시간 native streaming을 목적으로 하므로 별도 Audio8 ASR 계열로 판정
+- netease-youdao/Confucius4-T3PO 및 동일 T3PO checkpoint의 단순 양자화·포맷·경미한 translation fine-tune 파생본. 기존 Confucius4-TTS·R2T2와 달리 Qwen2.5-14B 기반 text-to-text simultaneous translation에서 READ/WRITE 정책, interleaved history/KV reuse, Pareto-aware RL을 사용하므로 별도 streaming translation 계열로 판정
