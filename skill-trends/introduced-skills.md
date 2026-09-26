@@ -172,6 +172,18 @@
 | mcp-management | 2026-09-24 |
 | stripe-best-practices | 2026-09-24 |
 | docs-sync | 2026-09-24 |
+| architecture-decision-records | 2026-09-25 |
+| mastra | 2026-09-25 |
+| build-an-agent-skill | 2026-09-25 |
+| xint | 2026-09-25 |
+| workiq-copilot | 2026-09-25 |
+| track-findings | 2026-09-25 |
+| building-pydantic-ai-agents | 2026-09-26 |
+| gws-gmail-triage | 2026-09-26 |
+| extract-template | 2026-09-26 |
+| cmux-cloud-vm | 2026-09-26 |
+| notcrawl | 2026-09-26 |
+| figma-use-motion | 2026-09-26 |
 
 ## 재등장 규칙
 
