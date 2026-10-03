@@ -173,3 +173,10 @@ thinkingmachines/Inkling; zai-org/GLM-5.2; baidu/Unlimited-OCR; google/gemma-4-3
 - Viggle/Meridian 및 Meridian teacher/turbo LoRA와 동일 geometry-guided novel-view synthesis 계열의 단순 포맷·경미한 파생본
 - FrontiersMind/Lumma-fev-0.6b 및 Lumma-Fev 계열(4B·9B 등 단순 크기 변형 포함)의 양자화·포맷·경미한 파생본. prefill-only pointer head로 option probability를 반환하는 typed-decision 계열
 - wfzyx/von 및 Von 1.x 계열(von-1.0 rename 포함)의 단순 checkpoint·양자화·포맷·경미한 파생본. ModernBERT 기반 Option-Marker head와 option-order-invariant attention/position 처리를 사용하는 decision 계열
+
+### 2026-10-03
+- PSRben/VisionHOPE 및 VisionHOPE-T/S/B의 분류·COCO·ADE20K 공식 checkpoint와 단순 크기·task-head·양자화·포맷·경미한 파생본. self-referential nested learning의 5개 결합 기억, soft injection cap·spectral clamp 안정화, 행·열 정렬 4방향 scan을 핵심으로 하는 self-modifying visual backbone 계열
+- Cloudflare/clef 및 Clef-flash와 동일 Clef 계열의 단순 크기·양자화·포맷·경미한 task fine-tune 파생본. Qwen 기반이지만 prefill-only joint schema head, option-specific evidence routing·cross-field attention, Brier calibration·RLCD 학습으로 생성 방식·출력 구조·학습 목적이 크게 달라 별도 typed-decision 계열로 판정
+- nvidia/Kumo-Tabular 및 Kumo Tabular Small/Medium/Large의 classification·regression checkpoint와 단순 양자화·포맷·경미한 파생본. 합성 SCM 표 사전학습, Fourier cell embedding, interleaved row/column attention, dataset-wise ICL·Test-GQA·999-quantile regression을 결합한 별도 tabular foundation 계열
+- NaiveAI/Naive-N0.5-Flash 및 동일 계열의 FP8·GGUF·단순 양자화·포맷·경미한 파생본. MiMo-V2.5 base에서 global attention을 GQA4 기반 lightweight DSA로 교체한 39 SWA+9 DSA stack과 3.25T-token 추가 학습, native 1M context를 도입해 architecture·핵심 적응 학습 변화가 큰 별도 coding·AI R&D 계열로 판정
+- IQuestLab/IQuest-Q1 및 동일 IQuest-Q1 checkpoint의 단순 양자화·포맷·경미한 coding fine-tune 파생본. 320B total/약 15B active, 88-layer 3 SWA+1 FA hybrid attention, 256/8 MoE, 512K context와 recursive MTP를 사용하는 text-only agentic coding 계열. 최초 공개일·상세 사전학습 계보는 조사 시 미확인
