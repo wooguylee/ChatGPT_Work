@@ -166,3 +166,10 @@ thinkingmachines/Inkling; zai-org/GLM-5.2; baidu/Unlimited-OCR; google/gemma-4-3
 - apple/LensVLM-9B 및 동일 LensVLM checkpoint의 단순 양자화·GGUF/MLX·포맷·경미한 document fine-tune 파생본. 압축 문서 이미지를 먼저 스캔하고 질문 관련 페이지만 learned tool로 원해상도 선택 확장하는 selective-context-expansion Document VLM 계열
 - Edge0/Audio8-ASR-Infinite 및 동일 checkpoint의 단순 양자화·포맷·경미한 streaming fine-tune 파생본. 기존 Audio8-ASR-0.1B와 달리 Voxtral Realtime 4B causal audio tower + Qwen2.5-3B decoder, DSM-style streaming, selectable audio clock, rolling KV cache, exact RoPE rebasing, semantic VAD를 결합해 장시간 native streaming을 목적으로 하므로 별도 Audio8 ASR 계열로 판정
 - netease-youdao/Confucius4-T3PO 및 동일 T3PO checkpoint의 단순 양자화·포맷·경미한 translation fine-tune 파생본. 기존 Confucius4-TTS·R2T2와 달리 Qwen2.5-14B 기반 text-to-text simultaneous translation에서 READ/WRITE 정책, interleaved history/KV reuse, Pareto-aware RL을 사용하므로 별도 streaming translation 계열로 판정
+
+### 2026-09-26
+- AlexWortega/openjev 및 openjev 동일 계열의 단순 크기·양자화·포맷·경미한 파생본. Qwen3.5 기반 cross-encoder sequence classification으로 contradiction·entailment·neutral 확률을 반환하는 decision/NLI 계열
+- akhilaaa3/Jev-Omni 및 동일 12B checkpoint의 단순 양자화·포맷·경미한 파생본. Gemma 4 12B IT 기반 text·image·audio·video 입력의 closed-set multimodal decision 계열
+- Viggle/Meridian 및 Meridian teacher/turbo LoRA와 동일 geometry-guided novel-view synthesis 계열의 단순 포맷·경미한 파생본
+- FrontiersMind/Lumma-fev-0.6b 및 Lumma-Fev 계열(4B·9B 등 단순 크기 변형 포함)의 양자화·포맷·경미한 파생본. prefill-only pointer head로 option probability를 반환하는 typed-decision 계열
+- wfzyx/von 및 Von 1.x 계열(von-1.0 rename 포함)의 단순 checkpoint·양자화·포맷·경미한 파생본. ModernBERT 기반 Option-Marker head와 option-order-invariant attention/position 처리를 사용하는 decision 계열
