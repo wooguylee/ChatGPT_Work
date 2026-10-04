@@ -187,6 +187,13 @@
 | vercel-react-native-skills | 2026-10-03 |
 | verification-before-completion | 2026-10-03 |
 
+| hf-mem | 2026-10-04 |
+| huggingface-local-models | 2026-10-04 |
+| durable-objects | 2026-10-04 |
+| workers-best-practices | 2026-10-04 |
+| triage | 2026-10-04 |
+| to-spec | 2026-10-04 |
+
 ## 재등장 규칙
 
 이 목록에 있는 Skill은 기본적으로 다시 소개하지 않습니다. 다만 대규모 업데이트, 급격한 순위 상승, 주요 기능 변화 등 명확한 재평가 사유가 있는 경우 `재등장`으로 표시하고 다시 포함할 수 있습니다.
