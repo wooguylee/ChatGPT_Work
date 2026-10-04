@@ -180,3 +180,7 @@ thinkingmachines/Inkling; zai-org/GLM-5.2; baidu/Unlimited-OCR; google/gemma-4-3
 - nvidia/Kumo-Tabular 및 Kumo Tabular Small/Medium/Large의 classification·regression checkpoint와 단순 양자화·포맷·경미한 파생본. 합성 SCM 표 사전학습, Fourier cell embedding, interleaved row/column attention, dataset-wise ICL·Test-GQA·999-quantile regression을 결합한 별도 tabular foundation 계열
 - NaiveAI/Naive-N0.5-Flash 및 동일 계열의 FP8·GGUF·단순 양자화·포맷·경미한 파생본. MiMo-V2.5 base에서 global attention을 GQA4 기반 lightweight DSA로 교체한 39 SWA+9 DSA stack과 3.25T-token 추가 학습, native 1M context를 도입해 architecture·핵심 적응 학습 변화가 큰 별도 coding·AI R&D 계열로 판정
 - IQuestLab/IQuest-Q1 및 동일 IQuest-Q1 checkpoint의 단순 양자화·포맷·경미한 coding fine-tune 파생본. 320B total/약 15B active, 88-layer 3 SWA+1 FA hybrid attention, 256/8 MoE, 512K context와 recursive MTP를 사용하는 text-only agentic coding 계열. 최초 공개일·상세 사전학습 계보는 조사 시 미확인
+
+### 2026-10-04
+- Aleph-Alpha/Kolibri-1 및 Kolibri-1-BF16·FP8·GGUF 등 동일 Kolibri 1 계열의 단순 정밀도·크기·양자화·포맷·경미한 fine-tune 파생본. 78B total/3.46B active, 50-layer SWA:GQA 4:1 MoE, Exact Quantile Balancing 및 독일어·영어 중심 20T-token 사전학습을 갖춘 별도 foundation 계열. native 학습 문맥 262,144 tokens, 1,048,576까지 개발사 검증
+- well9472/Nanosaur2-670M 및 동일 Nanosaur2 checkpoint의 단순 크기·LoRA·양자화·포맷·경미한 illustration fine-tune 파생본. 670M DiT + frozen Gemma-3-270M + 129M DINOv2 semantic VAE, SPRINT sparse middle blocks·x-prediction/v-loss·path-drop guidance와 별도 illustration base training을 결합한 이미지 생성 연구 계열
