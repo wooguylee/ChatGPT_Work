@@ -2,6 +2,15 @@
 
 Daily Skill Trends 보고서와 소개 인덱스의 변경 기록입니다. 보고서의 날짜는 Asia/Seoul 기준입니다.
 
+## 2026-10-04
+
+- [오늘의 보고서](2026/10/2026-10-04.md)에 신규 소개 Skill 6개를 기록: hf-mem, huggingface-local-models, durable-objects, workers-best-practices, triage, to-spec.
+- Top Pick: hf-mem. Codex 즉시 활용 후보: to-spec.
+- main에 보고서를 저장한 뒤 전체 원문 재조회 및 작성본 일치를 확인했고, 이후 introduced-skills.md에 6개를 추가하고 전체 재조회로 검증했다. 누적 인덱스는 180개에서 186개가 되었다.
+- 기존 날짜별 보고서 30개를 조회해 소개 이름을 인덱스와 대조했으며 추가 누락은 발견하지 않았다. 기존 항목·최초 소개일·재등장 규칙을 보존했다.
+- 공식 Skill 원문과 공개 지표를 구분했다. hf-mem 개별 설치 수는 미확인으로 남기고, huggingface-local-models의 6일 전 크롤링 수치 및 Snyk Warn, triage의 감사 Warn을 명시했다.
+- 신규 소개일과 출시일을 구분했으며 과거 날짜 보고서는 새로 작성하지 않았다.
+
 ## 2026-10-03
 
 - [오늘의 보고서](2026/10/2026-10-03.md)에 신규 소개 Skill 6개를 기록: vgpu, shadcn, prisma-orm-setup, remotion-best-practices, vercel-react-native-skills, verification-before-completion.
