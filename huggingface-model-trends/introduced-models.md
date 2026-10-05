@@ -184,3 +184,8 @@ thinkingmachines/Inkling; zai-org/GLM-5.2; baidu/Unlimited-OCR; google/gemma-4-3
 ### 2026-10-04
 - Aleph-Alpha/Kolibri-1 및 Kolibri-1-BF16·FP8·GGUF 등 동일 Kolibri 1 계열의 단순 정밀도·크기·양자화·포맷·경미한 fine-tune 파생본. 78B total/3.46B active, 50-layer SWA:GQA 4:1 MoE, Exact Quantile Balancing 및 독일어·영어 중심 20T-token 사전학습을 갖춘 별도 foundation 계열. native 학습 문맥 262,144 tokens, 1,048,576까지 개발사 검증
 - well9472/Nanosaur2-670M 및 동일 Nanosaur2 checkpoint의 단순 크기·LoRA·양자화·포맷·경미한 illustration fine-tune 파생본. 670M DiT + frozen Gemma-3-270M + 129M DINOv2 semantic VAE, SPRINT sparse middle blocks·x-prediction/v-loss·path-drop guidance와 별도 illustration base training을 결합한 이미지 생성 연구 계열
+
+### 2026-10-05
+- Cactus-Compute/whistle 및 동일 Whistle checkpoint의 단순 decoder-depth·양자화·포맷·플랫폼 포팅·경미한 음성 fine-tune 파생본. 기존 Needle3와 런타임·block을 공유하지만 log-mel/convolutional stem, 8-layer 비인과 audio encoder와 각 decoder layer의 gated cross-attention을 도입해 modality·입력 경로가 달라진 별도 on-device ASR 계열. encoder는 항상 8층이며 decoder는 2~8층 선택
+- shhivv/taiga-s1 및 동일 Taiga-S1 checkpoint의 단순 양자화·포맷·경미한 CAD task fine-tune 파생본. from-scratch 1,228,163-parameter typed-state/goal Transformer와 candidate-action scoring, modular done-head·coupled ordinals·randomized positions, supervised learning + DAgger를 결합한 FreeCAD PartDesign 행동 선택 계열
+- perplexity-ai/pplx-embed-v2-context-9b-preview 및 동일 v2 contextual-retrieval checkpoint의 단순 크기·embedding 차원·양자화·포맷·경미한 fine-tune 파생본. 내부 ColBERT retrieval model에서 출발해 context-compression teacher의 token relevance를 chunk soft target으로 집계하고 document InfoNCE + forward-KL chunk distillation, contextual pooling·projection, Matryoshka·QAT를 결합한 별도 contextual-embedding 계열. 기존 pplx-pii-masking과 목적·출력·학습법이 다르며 Preview와 후속 embedding의 호환성을 가정하지 않음
