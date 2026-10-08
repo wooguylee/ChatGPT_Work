@@ -2,6 +2,18 @@
 
 Daily Skill Trends 보고서와 소개 인덱스의 변경 기록입니다. 보고서의 날짜는 Asia/Seoul 기준입니다.
 
+## 2026-10-08
+
+- [오늘의 보고서](2026/10/2026-10-08.md)에 신규 소개 공식 Skill 5개를 기록: hf-cli, terraform-style-guide, terraform-stacks, find-bugs, secret-serialization.
+- Top Pick: hf-cli. Codex 즉시 활용 후보: find-bugs.
+- main에 보고서를 저장한 뒤 전체 원문을 재조회해 작성본과 정확히 일치하고 Git blob SHA도 일치함을 확인했다. 이후 introduced-skills.md에 5개를 추가하고 전체 원문 재조회·정확한 일치·기존 내용 보존을 검증했다. 누적 인덱스는 204개에서 209개가 되었다.
+- 기존 날짜별 보고서 34개의 소개 204개를 전체 인덱스와 대조했으며 추가 누락·최초 소개일 불일치는 없었다. 기존 항목·날짜·재등장 규칙을 그대로 보존했다.
+- hf-cli의 v2.1.1 생성 원문·현행 설치 경로와 Jobs의 과금·취소 경계를 확인했다. huggingface-jobs는 2026-04-11 공식 삭제 커밋을 근거로 별도 신규 추천에서 제외해 5개만 선정했다.
+- Terraform 스타일 검토와 자원 주소·provider 변경을 구분했다. Stacks의 일부 deployment-group/auto-approve 예제·요금제 표기가 현재 제품 문서와 다름을 설명하고 로컬 검증·speculative 업로드·실제 배포의 경계를 명시했다.
+- find-bugs의 기본 diff에서 미커밋·미추적 파일이 빠질 수 있음을 설명했다. secret-serialization의 JS reference와 현재 SDK develop 구현의 toJSON 동작 차이, Node showHidden 옵션의 예외를 확인했다.
+- URL별로 다른 skills.sh 캐시, 개별 Skill 지표와 저장소 전체 지표, Git 변경 이력과 출시일을 구분했다. 접근하지 못한 hf-cli 감사 상세와 secret-serialization 개별 지표는 미확인으로 남겼다.
+- 과거 날짜 보고서는 새로 만들지 않았고 skill-trends 밖의 저장소 파일은 수정하지 않았다.
+
 ## 2026-10-07
 
 - [오늘의 보고서](2026/10/2026-10-07.md)에 신규 소개 Skill 6개를 기록: react-doctor, upgrade-stripe, terraform-search-import, refactor-module, xlsx, discernment-nudge.
