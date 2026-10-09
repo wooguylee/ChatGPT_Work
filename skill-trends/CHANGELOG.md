@@ -2,6 +2,18 @@
 
 Daily Skill Trends 보고서와 소개 인덱스의 변경 기록입니다. 보고서의 날짜는 Asia/Seoul 기준입니다.
 
+## 2026-10-09
+
+- [오늘의 보고서](2026/10/2026-10-09.md)에 신규 소개 공식 Skill 6개를 기록: property-based-testing, differential-review, sharp-edges, pdf, docx, pptx.
+- Top Pick: property-based-testing. Codex 즉시 활용 후보: sharp-edges.
+- main에 보고서를 저장한 뒤 전체 원문을 재조회해 작성본과 정확히 일치함을 확인했다. 이후 introduced-skills.md에 6개를 추가하고 전체 원문 재조회·정확한 일치·기존 내용 보존을 검증했다. 누적 인덱스는 209개에서 215개가 되었다.
+- 기존 날짜별 보고서 35개의 소개 209개를 전체 인덱스와 대조했으며 추가 누락·최초 소개일 불일치는 없었다. 기존 항목·날짜·재등장 규칙을 보존했다.
+- Trail of Bits의 현재 공식 Codex plugin 경로와 세 SKILL.md를 확인했다. 속성 테스트의 동어반복·입력 필터링·반례 해석, differential-review의 baseline checkout과 검토 범위, sharp-edges의 정적 검토와 실행 재현 경계를 명시했다.
+- insecure-defaults는 폐기된 것이 아니라 commands·workflows plugin으로 바뀌었으며 예전 SKILL.md가 404여서 이번 독립 Skill 선정에서 제외했다.
+- Anthropic pdf·docx·pptx의 source-available 제한적 라이선스를 확인하고 Codex 외부 설치를 권장하지 않았다. 공식 Claude document-skills 묶음 경로를 안내했다. PDF의 대소문자 경로 차이, Word 변경 이력·주석, PowerPoint 공유 객체·실제 렌더링 검증을 설명했다.
+- skills.sh의 조회별 캐시 차이와 저장소 전체 지표를 구분했다. 접근하지 못한 문서 Skill 감사 Warn 상세는 미확인으로 남겼고 sharp-edges의 9월 감사 결과를 현재 revision 판정으로 확대하지 않았다.
+- 신규 소개일과 출시일을 구분했다. 과거 날짜 보고서를 새로 만들지 않았고 skill-trends 밖의 저장소 파일을 수정하지 않았다.
+
 ## 2026-10-08
 
 - [오늘의 보고서](2026/10/2026-10-08.md)에 신규 소개 공식 Skill 5개를 기록: hf-cli, terraform-style-guide, terraform-stacks, find-bugs, secret-serialization.
