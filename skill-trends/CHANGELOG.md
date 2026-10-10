@@ -2,6 +2,18 @@
 
 Daily Skill Trends 보고서와 소개 인덱스의 변경 기록입니다. 보고서의 날짜는 Asia/Seoul 기준입니다.
 
+## 2026-10-10
+
+- [오늘의 보고서](2026/10/2026-10-10.md)에 신규 소개 공식 Skill 6개를 기록: variant-analysis, audit-context-building, semgrep, internal-comms, theme-factory, canvas-design.
+- Top Pick: variant-analysis. Codex 즉시 활용 후보: audit-context-building.
+- main에 보고서를 저장한 뒤 전체 원문을 재조회해 작성본과 정확히 일치함을 확인했다. 이후 introduced-skills.md에 6개를 추가하고 전체 원문 재조회·정확한 일치·기존 내용 보존을 검증했다. 누적 인덱스는 215개에서 221개가 되었다.
+- 기존 날짜별 보고서 36개의 소개 215개를 전체 인덱스와 대조했으며 누락·최초 소개일 불일치는 없었다. 기존 항목·날짜·재등장 규칙을 보존했다.
+- Trail of Bits의 세 현행 SKILL.md와 Codex plugin 경로를 확인했다. 코드 전제 정리·취약점 판정·변형 후보 검증을 구분하고, semgrep Skill의 계획 승인과 별도 workflow의 실행 동의 차이를 명시했다.
+- semgrep의 실패·부분 실행·대상 없음·크기 제한 제외와 검출 0개를 구분했다. metrics=off가 오프라인 보장은 아니라는 점, Pro 확인 등 준비 단계의 네트워크 가능성, 감사 Warn 상세 접근 실패를 기록했다.
+- Anthropic 세 예제의 개별 Apache 2.0 라이선스와 example-skills 묶음 구성을 확인했다. internal-comms의 3P 기간 표현·9월 15일 Snyk 경고, theme-factory의 폰트·대비 검증, canvas-design의 필수 문구 보존·실제 피드백과 원문 가정의 구분을 설명했다.
+- skills.sh 관측값·감사 날짜·저장소 전체 지표를 구분했다. 설치·실행·렌더링 시험을 했다고 주장하지 않았으며 신규 소개일을 출시일로 해석하지 않았다.
+- 과거 날짜 보고서는 새로 작성하지 않았고 skill-trends 밖의 저장소 파일을 수정하지 않았다.
+
 ## 2026-10-09
 
 - [오늘의 보고서](2026/10/2026-10-09.md)에 신규 소개 공식 Skill 6개를 기록: property-based-testing, differential-review, sharp-edges, pdf, docx, pptx.
