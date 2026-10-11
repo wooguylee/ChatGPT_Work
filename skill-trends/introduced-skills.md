@@ -235,6 +235,13 @@
 | theme-factory | 2026-10-10 |
 | canvas-design | 2026-10-10 |
 
+| modern-python | 2026-10-11 |
+| supply-chain-risk-auditor | 2026-10-11 |
+| goal-prompt | 2026-10-11 |
+| mutation-testing | 2026-10-11 |
+| fp-check | 2026-10-11 |
+| post-patch-validation | 2026-10-11 |
+
 ## 재등장 규칙
 
 이 목록에 있는 Skill은 기본적으로 다시 소개하지 않습니다. 다만 대규모 업데이트, 급격한 순위 상승, 주요 기능 변화 등 명확한 재평가 사유가 있는 경우 `재등장`으로 표시하고 다시 포함할 수 있습니다.
