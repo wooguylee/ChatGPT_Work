@@ -2,6 +2,19 @@
 
 Daily Skill Trends 보고서와 소개 인덱스의 변경 기록입니다. 보고서의 날짜는 Asia/Seoul 기준입니다.
 
+## 2026-10-11
+
+- [오늘의 보고서](2026/10/2026-10-11.md)에 신규 소개 공식 Skill 6개를 기록: modern-python, supply-chain-risk-auditor, goal-prompt, mutation-testing, fp-check, post-patch-validation.
+- Top Pick: post-patch-validation(격리된 환경·허가된 검사·사람 검토 조건). Codex 즉시 활용 후보: goal-prompt.
+- main에 보고서를 저장한 뒤 전체 원문을 재조회해 작성본과 정확히 일치함을 확인했다. 이후 introduced-skills.md에 6개를 추가하고 전체 원문 재조회·정확한 일치·기존 내용 보존을 검증했다. 누적 인덱스는 221개에서 227개가 되었다.
+- 기존 날짜별 보고서 37개의 소개 221개를 전체 인덱스와 대조했으며 누락·최초 소개일 불일치는 없었다. 기존 항목·날짜·재등장 규칙을 보존했다.
+- 공식 여섯 SKILL.md·plugin README·marketplace 버전·관련 구현을 확인했다. modern-python의 PATH hook 영향, 동봉 참고문서와 현행 uv script lock 지원의 차이, pytest 9.0 설정 문법 조건을 명시했다.
+- supply-chain-risk-auditor의 지원 lockfile·직접/전이 의존성 범위·외부 API 전송·평가 불가 상태를 설명했다. goal-prompt의 formatter 기본 길이 제한과 영어 종료 조건 정규식을 실제 호스트 보장과 구분했다.
+- mutation survivor와 실제 버그, fp-check의 이진 게이트와 자료 부족, post-patch-validation의 증거 완결성과 안전 판정을 구분했다. 패치 검사는 호출자 권한으로 실행되므로 OS 격리·명시적 실행 권한·사람 검토를 강조했다.
+- post-patch-validation의 Socket Warn 상세는 접근 실패로 미확인이다. skills.sh 캐시·관측 시점·저장소 전체 지표를 구분했고 급상승·출시일·실행 성능을 추정하지 않았다.
+- devcontainer-setup은 bypassPermissions 자동 설정·토큰 전달·확장 network capability를 확인해 오늘의 여섯 소개에서 제외했다.
+- 설치·감사·mutation test·취약점 재현·패치 검증·goal mode 실행을 했다고 주장하지 않았다. 과거 날짜 보고서는 새로 작성하지 않았고 skill-trends 밖의 저장소 파일을 수정하지 않았다.
+
 ## 2026-10-10
 
 - [오늘의 보고서](2026/10/2026-10-10.md)에 신규 소개 공식 Skill 6개를 기록: variant-analysis, audit-context-building, semgrep, internal-comms, theme-factory, canvas-design.
