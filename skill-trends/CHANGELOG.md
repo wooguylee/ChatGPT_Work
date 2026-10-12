@@ -2,6 +2,18 @@
 
 Daily Skill Trends 보고서와 소개 인덱스의 변경 기록입니다. 보고서의 날짜는 Asia/Seoul 기준입니다.
 
+## 2026-10-12
+
+- [오늘의 보고서](2026/10/2026-10-12.md)에 신규 소개 공식 Skill 5개를 기록: semgrep-rule-creator, semgrep-rule-variant-creator, algorithmic-art, brand-guidelines, slack-gif-creator.
+- Top Pick: semgrep-rule-variant-creator. Codex 즉시 활용 후보: brand-guidelines(Anthropic 관련 자료 또는 자체 브랜드 규칙 작성 참고용).
+- main에 보고서를 저장한 뒤 전체 원문을 재조회해 작성본과 정확히 일치함을 확인했다. 이후 introduced-skills.md에 5개를 추가하고 전체 원문 재조회·정확한 일치·기존 내용 보존을 검증했다. 누적 인덱스는 227개에서 232개가 되었다.
+- 기존 날짜별 보고서 38개의 소개 227개를 전체 인덱스와 대조했으며 누락·최초 소개일 불일치는 없었다. 기존 항목·날짜·재등장 규칙을 보존했다.
+- Semgrep 규칙 신규 제작과 언어별 이식을 구분했다. 실제 채점 JSON·안전 사례·버전 고정·동적 workflow 호환성과 테스트 통과의 범위를 명시했다.
+- constant-time-analysis는 신규 소개에서 제외했다. 정적 분석 설명과 달리 Node 바이트코드·PHP OPcache fallback 경로가 대상 파일을 subprocess로 실행하는 구현을 확인했다. 별도로 확인한 Trust Hub Fail의 상세는 접근 오류로 미확인이고 이 동작을 Fail 원인으로 추정하지 않았다.
+- algorithmic-art 템플릿의 CDN·Google Fonts 의존성, brand-guidelines의 Anthropic 전용 범위·한글 글꼴 검증, GIF validator의 픽셀 크기 중심 판정과 RGB 변환·프레임 감축 시 재생시간 변화를 설명했다.
+- creator의 9월 17일 Snyk Warn과 변경 가능한 원격 문서 의존성을 확인했다. skills.sh 캐시 차이·관측 시점·저장소 전체 지표를 구분했다. 감사 배지를 현재 revision 안전 보증으로 확대하지 않았다.
+- 설치·규칙 실행·암호 코드 실행·시각 자료 생성·Slack 업로드 시험은 수행하지 않았다. 과거 날짜 보고서는 새로 작성하지 않았고 skill-trends 밖의 저장소 파일을 수정하지 않았다.
+
 ## 2026-10-11
 
 - [오늘의 보고서](2026/10/2026-10-11.md)에 신규 소개 공식 Skill 6개를 기록: modern-python, supply-chain-risk-auditor, goal-prompt, mutation-testing, fp-check, post-patch-validation.
