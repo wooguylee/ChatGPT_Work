@@ -214,3 +214,8 @@ thinkingmachines/Inkling; zai-org/GLM-5.2; baidu/Unlimited-OCR; google/gemma-4-3
 
 ### 2026-10-12
 - vllm-sr/Vela-2.0-0.3B·0.8B·4B·9B를 묶은 Vela 2.0 routing/span 계열과 동일 가중치의 단순 크기·양자화·ONNX/GGUF·포맷·경미한 task fine-tune 파생본. 기존 Vela·Decision 초기 가중치와 mmBERT/Qwen 계보를 사용하되 typed decision에 word-label span readout을 결합하고, hybrid decoder에 router/broad span heads·대상 텍스트 재독해·단계별 동결 학습을 추가한 별도 출력·학습 분기로 판정. 0.3B는 307M 양방향 encoder·8,192 tokens·router head, 큰 모델은 756M/4.2B/7.9B hybrid decoder·16,384 tokens·router/broad heads로 구분. 모델 Apache-2.0; 0.3B tokenizer Gemma 약관과 원천 고지 별도. 0.3B release 선택의 test 결과 고려 고지 유지. 신규 from-scratch foundation 백본을 뜻하지 않으며 별도 d3/Decision 3.0은 오늘 보류해 등록하지 않음
+
+
+### 2026-10-13
+- openbmb/MiniCPM-V-4.7-35B-A3B 및 동일 V4.7 계열의 단순 크기·FP8/INT4/AWQ/GPTQ/GGUF·양자화·포맷·경미한 fine-tune 파생본과 DSpark 보조 배포. 기존 MiniCPM-o 4.5의 Qwen3-8B 기반 omni 구성과 달리 Qwen3.6 MoE·SigLIP2 및 intra-ViT early compression을 결합한 시각 이해 분기로 판정. 공식 35B total/3B active, Apache-2.0. 4x/16x 옵션 자체는 V4.6에도 있어 그것만으로 신규 판정하지 않으며 LES 실행 최적화·양자화본을 별도 계열로 세지 않음. V4.7의 음성 생성·full-duplex 지원을 가정하지 않음
+- lightonai/LightOnOCR-3-4B·0.8B·1B를 묶은 LightOnOCR-3 계열 및 동일 가중치의 단순 크기·양자화·포맷·경미한 OCR fine-tune 파생본. 4B/0.8B는 Qwen3.5 VLM 구조를 채택하고 all-region labeled grounding·그림 설명·chart-to-table 출력, grounding/OCR multitask SFT·영역 위치/분류와 문서 검증 RLVR을 결합해 기존 LightOnOCR-2 대비 주요 출력·학습 확장으로 판정. 1B는 이전 구조를 유지하며 별도 신규 수로 세지 않음. 이전 세대의 image bbox·RLVR 존재를 인정. Apache-2.0; 명칭 4B/0.8B와 HF 반올림 5B/0.9B를 구분하고 정확한 총수는 미확인
