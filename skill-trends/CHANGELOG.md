@@ -2,6 +2,19 @@
 
 Daily Skill Trends 보고서와 소개 인덱스의 변경 기록입니다. 보고서의 날짜는 Asia/Seoul 기준입니다.
 
+## 2026-10-13
+
+- [오늘의 보고서](2026/10/2026-10-13.md)에 신규 소개 공식 Skill 5개를 기록: django-access-review, django-perf-review, prompt-optimizer, code-simplifier, skill-scanner.
+- Top Pick: prompt-optimizer. Codex 즉시 활용 후보: code-simplifier. skill-scanner는 심볼릭 링크 선검토·비밀정보 없는 OS 격리·출력 가림을 전제로 한 조건부 후보다.
+- main에 보고서를 저장한 뒤 전체 원문을 재조회해 작성본과 정확히 일치함을 확인했다. 이후 introduced-skills.md에 5개를 추가하고 전체 원문 재조회·정확한 일치·기존 내용 보존을 검증했다. 누적 인덱스는 232개에서 237개가 되었다.
+- 기존 날짜별 보고서 39개의 소개 232개를 전체 인덱스와 대조했으며 누락·최초 소개일 불일치는 없었다. 기존 항목·날짜·재등장 규칙을 보존했다.
+- Django 객체 권한의 목록·생성 경계와 성능 검토의 데이터 규모·호출 빈도 근거를 설명했다. 벌크 쓰기·삭제의 save/delete 오버라이드와 시그널 차이는 공식 Django 문서로 대조했다.
+- prompt-optimizer의 평가·홀드아웃과 별도 실행기 부재, code-simplifier의 Anthropic 원본 출처·개별 Skill과 모델 지정 에이전트의 차이를 확인했다.
+- skill-scanner 구현이 파일을 읽은 뒤 심볼릭 링크를 검사하며 탐지 행 앞 200자를 evidence에 그대로 넣는 점을 확인했다. 패턴 검사의 파일 범위·도메인 허용목록 한계·결과 비밀값 가림을 명시했다. 자체 실행 재현 결과로 표현하지 않았다.
+- gha-security-review는 신규 소개에서 제외했다. 날짜가 있는 감사 상세는 9월 30일 Gen Fail·Socket Warn, 9월 29일 Snyk Pass이며 오래된 비-www 캐시와 다르다. 교육용 공격 예제라는 맥락과 현재 revision 일치 미확인을 구분했다.
+- 제외한 Skill도 포함하는 전체 Sentry plugin 설치는 오늘의 추천 경로에서 빼고 다섯 항목의 개별 설치를 우선하도록 검토·수정했다. 감사 배지를 현재 revision 안전 보증으로 확대하지 않았다.
+- 설치·Django 실행·부하 측정·프롬프트 평가·코드 수정·스캐너 실행·CI 시험은 수행하지 않았다. 과거 날짜 보고서는 새로 작성하지 않았고 skill-trends 밖의 저장소 파일을 수정하지 않았다.
+
 ## 2026-10-12
 
 - [오늘의 보고서](2026/10/2026-10-12.md)에 신규 소개 공식 Skill 5개를 기록: semgrep-rule-creator, semgrep-rule-variant-creator, algorithmic-art, brand-guidelines, slack-gif-creator.
