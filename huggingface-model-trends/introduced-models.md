@@ -219,3 +219,7 @@ thinkingmachines/Inkling; zai-org/GLM-5.2; baidu/Unlimited-OCR; google/gemma-4-3
 ### 2026-10-13
 - openbmb/MiniCPM-V-4.7-35B-A3B 및 동일 V4.7 계열의 단순 크기·FP8/INT4/AWQ/GPTQ/GGUF·양자화·포맷·경미한 fine-tune 파생본과 DSpark 보조 배포. 기존 MiniCPM-o 4.5의 Qwen3-8B 기반 omni 구성과 달리 Qwen3.6 MoE·SigLIP2 및 intra-ViT early compression을 결합한 시각 이해 분기로 판정. 공식 35B total/3B active, Apache-2.0. 4x/16x 옵션 자체는 V4.6에도 있어 그것만으로 신규 판정하지 않으며 LES 실행 최적화·양자화본을 별도 계열로 세지 않음. V4.7의 음성 생성·full-duplex 지원을 가정하지 않음
 - lightonai/LightOnOCR-3-4B·0.8B·1B를 묶은 LightOnOCR-3 계열 및 동일 가중치의 단순 크기·양자화·포맷·경미한 OCR fine-tune 파생본. 4B/0.8B는 Qwen3.5 VLM 구조를 채택하고 all-region labeled grounding·그림 설명·chart-to-table 출력, grounding/OCR multitask SFT·영역 위치/분류와 문서 검증 RLVR을 결합해 기존 LightOnOCR-2 대비 주요 출력·학습 확장으로 판정. 1B는 이전 구조를 유지하며 별도 신규 수로 세지 않음. 이전 세대의 image bbox·RLVR 존재를 인정. Apache-2.0; 명칭 4B/0.8B와 HF 반올림 5B/0.9B를 구분하고 정확한 총수는 미확인
+
+### 2026-10-14
+- fishaudio/drama-3 및 동일 Drama 3 계열의 단순 크기·양자화·포맷·경미한 음성 fine-tune 파생본. Qwen3.5 MoE 초기화에 시퀀스 전역 causal codebook-MTP decoder·부분 codebook fusion과 사람 선호 reward 학습을 결합한 별도 음성 생성·수정 분기. 공식 35B/약 3B active; Fish Audio Community License v1.0의 매출·Hosted Service 제한 적용. HF Research license tag와 실제 LICENSE 불일치를 보고서에 기록
+- AxiomicLabs/GPT-X3-150M 및 동일 GPT-X3 계열의 단순 크기·양자화·ONNX/GGUF·포맷·경미한 fine-tune 파생본. 기존 GPT-X2.5의 30층 XGQA/XSA에서 18 GDN2+6 gated GQA hybrid와 TST→next-token 학습으로 바뀐 별도 세대. 공식 149,400,930 parameters, 카드 Apache-2.0. 학습 설명 2,048 tokens와 config 8,192 positions를 구분하며 8K 품질 검증을 가정하지 않음
