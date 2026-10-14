@@ -2,6 +2,19 @@
 
 Daily Skill Trends 보고서와 소개 인덱스의 변경 기록입니다. 보고서의 날짜는 Asia/Seoul 기준입니다.
 
+## 2026-10-14
+
+- [오늘의 보고서](2026/10/2026-10-14.md)에 신규 소개 공식 Skill 5개를 기록: codeql, sarif-parsing, document-api-endpoint, gh-review-requests, pr-writer.
+- Top Pick: sarif-parsing. Codex 즉시 활용 후보: pr-writer의 초안 전용 사용. gh-review-requests·pr-writer의 Snyk Warn 상세는 미확인으로 명시하고 무조건적인 실행·게시 추천으로 표현하지 않았다.
+- main에 보고서를 저장한 뒤 전체 원문을 재조회해 작성본과 정확히 일치함을 확인했다. 이후 introduced-skills.md에 5개를 추가하고 전체 원문 재조회·정확한 일치·기존 내용 보존을 검증했다. 누적 인덱스는 237개에서 242개가 되었다.
+- 기존 날짜별 보고서 40개의 소개 237개를 전체 인덱스와 대조했으며 누락·최초 소개일 불일치·보고서에 없는 항목은 없었다. 기존 항목·날짜·재등장 규칙을 보존했다.
+- CodeQL DB 추출 품질·실제 쿼리 수 검증, 데이터 확장·run-all 범위와 빌드·설치·정리·덮어쓰기의 실행 경계를 설명했다.
+- SARIF level과 security-severity를 구분하고, ruleConfigurationOverrides 미처리·도구 이름 없는 중복 키·경로 변화에 따른 비교 한계를 구현과 대조했다.
+- Sentry API의 null·필드 부재와 경로 단위 레거시 마이그레이션, PUBLIC 승격·실제 인증 조회의 별도 권한을 설명했다.
+- gh-review-requests의 unread 알림 범위, --org가 저장소 조직 필터가 아니라는 점, API 오류를 빈 결과로 처리하는 한계를 확인했다. 검증되지 않은 페이지네이션 결함은 주장하지 않았다.
+- pr-writer의 PR 생성·PATCH·후속 갱신 지시와 초안 전용 요청을 구분했다. skills.sh의 재조회 수치 차이·캐시·감사 날짜·저장소 전체 지표를 구분했고 감사 대상과 현행 revision의 일치를 추정하지 않았다.
+- 설치·CodeQL 빌드·스캔·SARIF helper 실행·API 문서 생성·실제 토큰 조회·리뷰 조회 스크립트 실행·PR 게시 시험은 수행하지 않았다. 과거 날짜 보고서는 새로 작성하지 않았고 skill-trends 밖의 저장소 파일을 수정하지 않았다.
+
 ## 2026-10-13
 
 - [오늘의 보고서](2026/10/2026-10-13.md)에 신규 소개 공식 Skill 5개를 기록: django-access-review, django-perf-review, prompt-optimizer, code-simplifier, skill-scanner.
