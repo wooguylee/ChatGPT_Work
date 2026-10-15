@@ -223,3 +223,7 @@ thinkingmachines/Inkling; zai-org/GLM-5.2; baidu/Unlimited-OCR; google/gemma-4-3
 ### 2026-10-14
 - fishaudio/drama-3 및 동일 Drama 3 계열의 단순 크기·양자화·포맷·경미한 음성 fine-tune 파생본. Qwen3.5 MoE 초기화에 시퀀스 전역 causal codebook-MTP decoder·부분 codebook fusion과 사람 선호 reward 학습을 결합한 별도 음성 생성·수정 분기. 공식 35B/약 3B active; Fish Audio Community License v1.0의 매출·Hosted Service 제한 적용. HF Research license tag와 실제 LICENSE 불일치를 보고서에 기록
 - AxiomicLabs/GPT-X3-150M 및 동일 GPT-X3 계열의 단순 크기·양자화·ONNX/GGUF·포맷·경미한 fine-tune 파생본. 기존 GPT-X2.5의 30층 XGQA/XSA에서 18 GDN2+6 gated GQA hybrid와 TST→next-token 학습으로 바뀐 별도 세대. 공식 149,400,930 parameters, 카드 Apache-2.0. 학습 설명 2,048 tokens와 config 8,192 positions를 구분하며 8K 품질 검증을 가정하지 않음
+
+
+### 2026-10-15
+- datalab-to/indra-ocr 및 Indra OCR의 v1/v2/v3·수식 옵션·단순 크기·INT8·ONNX/포맷·경미한 fine-tune 파생본. 전용 줄 탐지·CTC 줄 인식·읽기 순서/레이아웃과 선택적 script routing·방향 교정·수식 attention decoder를 결합한 CPU 문서 인식 계열의 첫 소개. 주 rec.onnx 약 1M이며 전체 파이프라인 parameter 합계·학습 초기화 계보는 미확인; 모든 구성요소의 from-scratch 학습을 주장하지 않음. 코드 Apache-2.0, 가중치 modified OpenRAIL-M의 자금/매출·경쟁 이용 제한; 약관 원문 미열람 한계 기록. 한국어 Hangul 스캔 OCR은 미지원이며 디지털 PDF 텍스트 레이어 읽기와 구분. 근거: [2026-10-15 보고서](2026/10/2026-10-15.md)
