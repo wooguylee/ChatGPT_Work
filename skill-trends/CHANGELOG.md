@@ -2,6 +2,20 @@
 
 Daily Skill Trends 보고서와 소개 인덱스의 변경 기록입니다. 보고서의 날짜는 Asia/Seoul 기준입니다.
 
+## 2026-10-15
+
+- [오늘의 보고서](2026/10/2026-10-15.md)에 신규 소개 Skill 6개를 기록: gws-gmail-triage, gws-calendar-agenda, gws-sheets-read, cost-optimization, azure-diagnostics, azure-compliance.
+- Top Pick: cost-optimization의 보고서 전용 활용. Codex 즉시 활용 후보: azure-diagnostics의 제공 자료 전용 분석.
+- main에 보고서를 저장한 뒤 전체 원문을 재조회해 작성본과 정확히 일치함을 확인했다. 이후 introduced-skills.md에 6개를 추가하고 전체 원문 재조회·정확한 일치·기존 내용 보존을 검증했다. 누적 인덱스는 242개에서 248개가 되었다.
+- 기존 날짜별 보고서 41개의 소개 242개를 전체 인덱스와 대조했으며 누락·최초 소개일 불일치·보고서에 없는 항목은 없었다. 기존 항목·날짜·재등장 규칙을 보존했다.
+- Google Workspace 조직 소유와 Google 공식 제품 지원을 구분했다. 메일의 기본 is:unread 범위·단일 페이지·메타데이터 오류 생략·labelIds 출력, Calendar의 시간대·이름 부분 일치·현재부터 7일인 --week·페이지 제한·오류 생략을 구현과 대조했다.
+- Sheets values.get의 표시 값 기본값, scope 목록과 실제 최소 권한의 차이, 셀 범위가 OAuth 권한 범위를 제한하지 않는 점, helper의 sanitize=None을 명시했다. 읽기 전용 지침을 보안 격리나 외부 데이터 전송 차단으로 표현하지 않았다.
+- 현행 cost-optimization의 별도 azure-cost 플러그인 구조, 약정·리사이징 절감액 이중 계산 방지, ARM MCP preview 호스트 조건을 확인했다. 과거 azure-cost 이름·지표를 현행 개별 Skill에 옮기지 않았다.
+- azure-diagnostics의 기본 관찰과 privileged debug pod·외부 이미지 실행을 구분했다. Snyk 요약 Pass와 2026-05-19 Warn 상세의 불일치를 설명하고 경고가 해결됐다고 단정하지 않았다.
+- azure-compliance의 시크릿 get이 실제 비밀값을 반환할 수 있음을 공식 제품 문서와 대조했다. 만료 점검에는 메타데이터 전용 조회와 별도 변경 승인을 권했다.
+- Google 두 후보의 Snyk Warn 상세는 미확인이다. 페이지별 캐시·관측 시점·저장소 전체 지표를 구분했다. Node 버전 안내 불일치, MCP @latest 실행, telemetry도 설명했다.
+- 스킬 설치·인증·실제 Workspace 데이터 조회·Azure 비용 조회·azqr·Key Vault·debug pod 실행 시험은 수행하지 않았다. 과거 날짜 보고서는 새로 작성하지 않았고 skill-trends 밖의 저장소 파일을 수정하지 않았다.
+
 ## 2026-10-14
 
 - [오늘의 보고서](2026/10/2026-10-14.md)에 신규 소개 공식 Skill 5개를 기록: codeql, sarif-parsing, document-api-endpoint, gh-review-requests, pr-writer.
