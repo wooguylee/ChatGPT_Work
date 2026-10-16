@@ -2,6 +2,21 @@
 
 Daily Skill Trends 보고서와 소개 인덱스의 변경 기록입니다. 보고서의 날짜는 Asia/Seoul 기준입니다.
 
+## 2026-10-16
+
+- [오늘의 보고서](2026/10/2026-10-16.md)에 신규 소개 공식 Skill 6개를 기록: provider-docs, provider-test-patterns, provider-ephemeral-resources, azure-kusto, azure-resource-visualizer, azure-resource-lookup.
+- Top Pick: azure-resource-lookup의 범위가 명확한 인벤토리. Codex 즉시 활용 후보: provider-docs의 코드·문서 대조 초안.
+- main에 보고서를 저장한 뒤 전체 원문을 재조회해 작성본과 정확히 일치함을 확인했다. 이후 introduced-skills.md에 6개를 추가하고 전체 원문 재조회·정확한 일치·기존 내용 보존을 검증했다. 누적 인덱스는 248개에서 254개가 되었다.
+- 기존 날짜별 보고서 42개의 소개 248개를 전체 인덱스와 대조했으며 누락·최초 소개일 불일치·보고서에 없는 항목은 없었다. 기존 항목·날짜·재등장 규칙을 보존했다.
+- provider-docs 원문의 docs/*.md.tmpl 제안과 현재 tfplugindocs의 templates/ 입력·docs/ 출력 기본값 차이를 확인했다. 생성기가 Provider를 빌드하고 Terraform을 실행·다운로드할 수 있는 점과 --providers-schema 경로를 구분했다.
+- provider-test-patterns의 실제 자원 생성·삭제·비용, RootModule만 순회하는 예제 helper, 접두어 필터·개별 삭제 오류를 로그로만 남기는 sweeper 예제를 확인했다. 종료 코드만으로 정리 완료를 판단하지 않도록 설명했다.
+- provider-ephemeral-resources의 plan/state 비저장 범위, Renew의 새 결과값 반환 불가, write-only의 Terraform 1.11+ 조건을 제품 문서와 대조했다. echoprovider는 값을 일반 state로 복사하므로 더미·폐기 가능한 테스트 값과 산출물 관리가 필요함을 강조했다.
+- Azure Kusto의 ARM·데이터 권한 차이, RestrictedViewAccess·현재 도구 인자 조건, Resource Graph의 부분 권한·인덱싱 지연·KQL 부분집합을 확인했다. --first 건수 제한과 --subscriptions 범위 선택을 구분했다.
+- Resource Visualizer의 구성 기반 문서화와 실제 트래픽 관측을 구분했다. 비밀값을 출력에서 가리는 지침과 처음부터 불필요한 비밀값 조회를 피하는 권고를 구분하고 문서 생성·공유 범위를 설명했다.
+- azure-rbac는 README 이름과 현행 SKILL.md 확보 결과가 달라 선정에서 제외했으며 폐기됐다고 단정하지 않았다. 플러그인 Node 22+·MCP @latest·기본 read-only 옵션 부재·telemetry 및 Foundry README와 실제 MCP 설정의 차이를 명시했다.
+- GitHub 저장소 전체 지표와 개별 스킬 인기도를 구분했다. 이번에는 여섯 항목의 현재 개별 설치 수·외부 감사 결과를 확인하지 않았으며 급상승·신규 출시·안전 인증을 주장하지 않았다.
+- 스킬 설치·빌드·테스트·sweeper·Terraform plan/apply·자격증명 발급·Azure 실시간 조회·Mermaid 렌더링은 수행하지 않았다. 과거 날짜 보고서는 새로 작성하지 않았고 skill-trends 밖의 저장소 파일을 수정하지 않았다.
+
 ## 2026-10-15
 
 - [오늘의 보고서](2026/10/2026-10-15.md)에 신규 소개 Skill 6개를 기록: gws-gmail-triage, gws-calendar-agenda, gws-sheets-read, cost-optimization, azure-diagnostics, azure-compliance.
