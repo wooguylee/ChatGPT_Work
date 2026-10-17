@@ -274,6 +274,13 @@
 | azure-resource-visualizer | 2026-10-16 |
 | azure-resource-lookup | 2026-10-16 |
 
+| gha-security-review | 2026-10-17 |
+| gws-workflow-meeting-prep | 2026-10-17 |
+| gws-gmail-read | 2026-10-17 |
+| entry-point-analyzer | 2026-10-17 |
+| spec-to-code-compliance | 2026-10-17 |
+| constant-time-analysis | 2026-10-17 |
+
 ## 재등장 규칙
 
 이 목록에 있는 Skill은 기본적으로 다시 소개하지 않습니다. 다만 대규모 업데이트, 급격한 순위 상승, 주요 기능 변화 등 명확한 재평가 사유가 있는 경우 `재등장`으로 표시하고 다시 포함할 수 있습니다.
