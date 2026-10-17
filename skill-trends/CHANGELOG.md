@@ -2,6 +2,22 @@
 
 Daily Skill Trends 보고서와 소개 인덱스의 변경 기록입니다. 보고서의 날짜는 Asia/Seoul 기준입니다.
 
+## 2026-10-17
+
+- [오늘의 보고서](2026/10/2026-10-17.md)에 신규 소개 Skill 6개를 기록: gha-security-review, gws-workflow-meeting-prep, gws-gmail-read, entry-point-analyzer, spec-to-code-compliance, constant-time-analysis.
+- Top Pick: spec-to-code-compliance의 작은 명세부터 근거를 연결하는 검토. Codex 즉시 활용 후보: gha-security-review의 소스 검토 초안.
+- main에 보고서를 저장한 뒤 전체 원문을 재조회해 작성본과 정확히 일치함을 확인했다. 그 이후 introduced-skills.md에 6개를 추가하고 전체 원문 재조회·정확한 일치·기존 내용 보존을 검증했다. 누적 인덱스는 254개에서 260개가 되었다.
+- 기존 날짜별 보고서 43개의 소개 254개를 전체 인덱스와 대조했으며 누락·최초 소개일 불일치·보고서에 없는 항목은 없었다. 기존 항목·날짜·재등장 규칙을 보존했다.
+- 보고서의 GitHub·공식 API 출처 URL 33개를 재조회해 접근을 확인했다. Google Calendar·Gmail, GitHub workflow·gh api 및 BearSSL의 1차 문서도 확인했다. 저장소 지표·개별 인기도·출시일·분석 성능을 구분했다.
+- gha-security-review의 외부 공격자 범위와 Safe Patterns의 한계를 설명했다. with/env 전달 이후의 consumer, workflow_run·artifact 경계, 자체 action 태그의 불변성 한계와 현행 public-preview dependency lockfile을 공식 문서와 대조했다.
+- meeting-prep의 실제 캘린더 ID 사용, 종료 시각 기준 timeMin·maxResults=1로 진행 중·종일 일정이 나올 수 있는 점, 연결 문서 미조회와 Model Armor 미적용을 확인했다.
+- gmail-read의 body_text/body_html과 원문 jq .body 예시 차이, HTML-only의 snippet 대체 가능성, 별도 첨부 본문 미조회, JSON 필드·RFC Message-ID와 Gmail ID 차이를 확인했다. dry-run 샘플을 실제 메일 검증으로 보지 않고 terminal 문자 제거와 콘텐츠 보안 검사를 구분했다.
+- entry-point-analyzer의 실제 호출자 검사와 읽기 전용 함수 제외 범위를 명시했다. spec-to-code-compliance의 Workflow 의존·최대 30개 검사·미검사/미검증/읽기 실패 표시·DOCX/Notion export 제한을 확인했다.
+- constant-time-analysis의 --warnings와 데이터 흐름·설정별 한계를 설명했다. SKILL의 비실행 설명과 달리 JavaScript 분석기가 Node로 대상 파일을 실행할 수 있음을 구현에서 확인했다.
+- claude-settings-audit는 읽기 전용 목표와 넓은 gh api 허용 규칙의 차이 때문에 제외했다. insecure-defaults는 현행 command/workflow 플러그인으로 남아 있지만 SKILL.md가 없어 오늘 소개에서 제외했으며 폐기를 주장하지 않았다.
+- 설치·인증·실제 Workspace 조회·CI·Slither·spec-compliance workflow·constant-time 분석기는 실행하지 않았다. 과거 날짜 보고서는 새로 작성하지 않았고 skill-trends 밖의 파일은 수정하지 않았다.
+- 검증된 게시 커밋: [보고서 6fb54d3](https://github.com/wooguylee/ChatGPT_Work/commit/6fb54d3de7e1f8433fbdfdae4fce5280d80af122), [인덱스 b093627](https://github.com/wooguylee/ChatGPT_Work/commit/b093627c68bebfee7828a1f73536df8959cd4b24).
+
 ## 2026-10-16
 
 - [오늘의 보고서](2026/10/2026-10-16.md)에 신규 소개 공식 Skill 6개를 기록: provider-docs, provider-test-patterns, provider-ephemeral-resources, azure-kusto, azure-resource-visualizer, azure-resource-lookup.
