@@ -2,6 +2,22 @@
 
 Daily Skill Trends 보고서와 소개 인덱스의 변경 기록입니다. 보고서의 날짜는 Asia/Seoul 기준입니다.
 
+## 2026-10-18
+
+- [오늘의 보고서](2026/10/2026-10-18.md)에 신규 소개 Skill 5개를 기록: wiki-qa, wiki-onboarding, pydantic-models-py, gws-workflow-standup-report, recipe-find-free-time.
+- Top Pick: wiki-qa의 코드 근거 기반 질문 답변. Codex 즉시 활용 후보: pydantic-models-py의 기존 API 계약 검토.
+- main에 보고서를 저장한 뒤 전체 원문을 재조회해 작성본과 정확히 일치함을 확인했다. 그 이후 introduced-skills.md에 5개를 추가하고 전체 원문 재조회·정확한 일치·기존 내용 보존을 검증했다. 누적 인덱스는 260개에서 265개가 되었다.
+- 기존 날짜별 보고서 44개의 소개 260개를 전체 인덱스와 대조했으며 누락·최초 소개일 불일치·보고서에 없는 항목은 없었다. 기존 항목·날짜·재등장 규칙을 보존했다.
+- 보고서의 GitHub·공식 API 출처 URL 27개를 재조회해 접근을 확인했고 Pydantic·FastAPI·Google Calendar/Tasks·GitHub Copilot CLI·Git 공식 문서 12개도 확인했다. 저장소 전체 지표와 개별 Skill 인기도·출시일·성능을 구분했다.
+- wiki-qa의 실제 소스·인용 범위와 wiki-onboarding의 네 독자별 가이드를 설명했다. 온보딩 기본 분량 2,600~5,300줄·최소 다이어그램 합계 16개와 코드에서 확인할 수 없는 비용·담당자·SLA·로드맵의 추정 위험을 명시했다.
+- 두 wiki 스킬의 현재 checkout과 기본 브랜치 확인 차이, 개별 Skill 1.0.0·plugin manifest 2.0.0·marketplace 1.0.0의 표기 차이를 확인했다.
+- pydantic-models-py의 생략과 null, exclude_unset과 exclude_none, 입력·출력 alias, v2.11+ populate_by_name 권고 변경을 공식 문서와 대조했다. Cosmos DB 전용 doc_type과 일반 모델 계약을 구분했다.
+- standup의 primary/@default 고정, 일정 25개·작업 20개 단일 페이지, 오늘 작업 필터 부재·할당 작업 기본 제외, 조회 실패의 빈 배열 대체, 시간대 캐시·fallback, Model Armor 미적용을 확인했다.
+- free-time 레시피의 busy 구간 조회와 실제 이벤트 생성 단계를 구분했다. 캘린더별 오류·시간대·건수 한도와 원문의 과거 날짜·오프셋 없는 생성 예시를 현행 구현 및 Calendar API 요건과 대조했다.
+- fastapi-router-py는 템플릿의 소유권 검사 주석·누락과 문서 표현의 차이 때문에 신규 소개에서 제외했다. 특정 운영 서비스의 취약점을 발견·재현했다고 표현하지 않았다.
+- 설치·코드 생성/실행·테스트·문서 렌더링·인증·실제 Workspace 조회·회의 예약·배포는 수행하지 않았다. 과거 날짜 보고서는 새로 작성하지 않았고 skill-trends 밖의 파일은 수정하지 않았다.
+- 검증된 게시 커밋: [보고서 dabf9f3](https://github.com/wooguylee/ChatGPT_Work/commit/dabf9f33d90172bdd37e8c4f531d49168436852b), [인덱스 62c1f49](https://github.com/wooguylee/ChatGPT_Work/commit/62c1f496361ca260aaa32d5d7d6ebdceb353f8b0).
+
 ## 2026-10-17
 
 - [오늘의 보고서](2026/10/2026-10-17.md)에 신규 소개 Skill 6개를 기록: gha-security-review, gws-workflow-meeting-prep, gws-gmail-read, entry-point-analyzer, spec-to-code-compliance, constant-time-analysis.
