@@ -2,6 +2,21 @@
 
 Daily Skill Trends 보고서와 소개 인덱스의 변경 기록입니다. 보고서의 날짜는 Asia/Seoul 기준입니다.
 
+## 2026-10-19
+
+- [오늘의 보고서](2026/10/2026-10-19.md)에 신규 소개 Skill 5개를 기록: accessibility-scan, accessibility-inspect, playwright-best-practices-for-agents, zustand-store-ts, react-flow-node-ts.
+- Top Pick: accessibility-inspect의 증거 수준·미실행 항목 구분. Codex 즉시 활용 후보: zustand-store-ts를 활용한 기존 스토어의 읽기 전용 검토.
+- main에 보고서를 저장한 뒤 전체 원문을 재조회해 작성본과 정확히 일치함을 확인했다. 그 이후 introduced-skills.md에 5개를 추가하고 전체 원문 재조회·정확한 일치·기존 내용 보존을 검증했다. 누적 인덱스는 265개에서 270개가 되었다.
+- 기존 날짜별 보고서 45개의 소개 265개를 전체 인덱스와 대조했으며 누락·최초 소개일 불일치·보고서에 없는 항목은 없었다. 기존 항목·날짜·재등장 규칙을 보존했다.
+- 보고서의 GitHub·공식 API 출처 URL 31개를 재조회해 접근을 확인했다. W3C·Playwright·Zustand·React Flow 공식 문서도 대조했다. 저장소 전체 지표와 개별 Skill 인기도·출시일·성능·안전성 보증을 구분했다.
+- accessibility-scan의 live DOM·조건부 소스 매핑·로컬 패키지 IIFE 주입·@latest 실행 의존·관리 Chrome 종료 범위를 설명했다. 소스 수정 없음과 실행·페이지 요청·결과 수집의 경계를 구분했다.
+- accessibility-inspect의 심각도·증거 등급·미실행 원장, 실제 키 입력과 scripted focus의 차이, 접근성 트리와 보조공학 발화의 차이를 확인했다. 폼 제출·스크립트/CSS 조정의 상태 변경 가능성과 WCAG 2.5.8의 예외를 명시했다.
+- Checkly waiting.md의 click Editable 검사 오류를 Playwright 공식 표와 대조했다. 1.62 CLI 번들, 인증 상태의 민감성과 worker별 계정 조건을 설명했다. 문서에 적용되는 라이선스는 미확인으로 남기고 package.json의 MIT를 Skill 전체로 확대하지 않았다.
+- Zustand의 middleware와 기본 React selector 역할, unknown[]·타입 단언·빈 fetch 골격, 얕은 병합·안정된 selector·비동기 순서 테스트를 구분했다.
+- React Flow 템플릿의 프로젝트별 store·CSS 의존, input label·nodrag 누락과 nodeTypes 안정성, 편집 모드가 Handle 연결까지 제한하지 않는 점을 공식 API와 대조했다.
+- 설치·빌드·단위/E2E 테스트·접근성 스캔·브라우저 조작·보조공학 검증·계정 인증·결과 업로드·배포는 수행하지 않았다. 과거 날짜 보고서는 새로 작성하지 않았고 skill-trends 밖의 파일은 수정하지 않았다.
+- 검증된 게시 커밋: [보고서 38ba95d](https://github.com/wooguylee/ChatGPT_Work/commit/38ba95d01bea756b52b4131eb9c8939c6e5362a4), [인덱스 59dec86](https://github.com/wooguylee/ChatGPT_Work/commit/59dec869815c8214fc1faeb6145a14f3b34c8c97).
+
 ## 2026-10-18
 
 - [오늘의 보고서](2026/10/2026-10-18.md)에 신규 소개 Skill 5개를 기록: wiki-qa, wiki-onboarding, pydantic-models-py, gws-workflow-standup-report, recipe-find-free-time.
