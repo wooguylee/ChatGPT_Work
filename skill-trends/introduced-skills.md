@@ -287,6 +287,12 @@
 | gws-workflow-standup-report | 2026-10-18 |
 | recipe-find-free-time | 2026-10-18 |
 
+| accessibility-scan | 2026-10-19 |
+| accessibility-inspect | 2026-10-19 |
+| playwright-best-practices-for-agents | 2026-10-19 |
+| zustand-store-ts | 2026-10-19 |
+| react-flow-node-ts | 2026-10-19 |
+
 ## 재등장 규칙
 
 이 목록에 있는 Skill은 기본적으로 다시 소개하지 않습니다. 다만 대규모 업데이트, 급격한 순위 상승, 주요 기능 변화 등 명확한 재평가 사유가 있는 경우 `재등장`으로 표시하고 다시 포함할 수 있습니다.
