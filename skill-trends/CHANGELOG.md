@@ -2,6 +2,22 @@
 
 Daily Skill Trends 보고서와 소개 인덱스의 변경 기록입니다. 보고서의 날짜는 Asia/Seoul 기준입니다.
 
+## 2026-10-20
+
+- [오늘의 보고서](2026/10/2026-10-20.md)에 신규 소개 Skill 5개를 기록: eval-suite-planner, eval-generator, eval-result-interpreter, eval-triage-and-improvement, eval-faq.
+- Top Pick: eval-suite-planner의 템플릿 보존·채점기 검증 계획. Codex 즉시 활용 후보: eval-result-interpreter를 참고한 기존 결과의 읽기 전용 검토.
+- main에 보고서를 저장한 뒤 전체 원문을 재조회해 작성본과 정확히 일치하고 Git blob SHA도 일치함을 확인했다. 그 이후 introduced-skills.md에 5개를 추가하고 전체 원문 재조회·정확한 일치·기존 내용 보존을 검증했다. 누적 인덱스는 270개에서 275개가 되었다.
+- 기존 날짜별 보고서 46개의 소개 270개를 전체 인덱스와 대조했으며 누락·최초 소개일 불일치·보고서에 없는 항목은 없었다. 기존 항목·날짜·재등장 규칙을 보존했다.
+- 보고서의 GitHub·공식 API URL 19개를 재조회해 접근을 확인했고 Microsoft Learn 공식 문서 6개도 대조했다. 저장소 전체 지표·개별 설치 수·출시일·성능·안전 보증을 구분했다.
+- Microsoft eval-guide의 6월 24일 고정 커밋·1.0.0 manifest·MIT 라이선스와 다섯 SKILL.md를 확인했다. 같은 묶음의 다섯 역할을 독립 생태계 추세로 확대하지 않았다.
+- planner의 실제 빈 XLSX 템플릿 요구·형식 보존·TBD·채점기 검증 계획과 HTML/워크북의 별도 상태를 설명했다. generator의 두 열 CSV·별도 manifest·다중 턴 blueprint·[VERIFY] 제거와 사실 검증의 차이를 확인했다.
+- interpreter의 추정 gate·Pass/Fail 중심 요약을 보완하고 Invalid·Error·미확인·분모 처리를 구분했다. triage의 강제 이분류와 참조 플레이북의 복합/미분류 허용 차이, 원인 가설·설정 수정·재실행 범위를 설명했다.
+- FAQ의 pass@10 계산 오류를 독립·동일 성공확률 가정으로 교정하고, 조회 실패 시 내장 지식 fallback·고정 수치의 한계를 명시했다. canonical Step 6 채점기 검증과 일부 문서의 오래된 baseline 번호를 구분했다.
+- standard harness의 현행 8가지 방법·Tool use의 단일 응답 제한·올바른 거절에 대한 Custom 권장과 새 GitHub Copilot harness preview의 General quality 전용·기대 답 미비교·conversation/5MB 조건을 별도로 설명했다.
+- 동봉 runner의 General quality 기본값·manifest 미반영·Anthropic 전송·고정 모델·N/A 분모·호출 오류·CSV 셀 개행 한계를 정적 소스에서 확인했다. legacy 대시보드의 포트 프로세스 종료·이전 confirmed 피드백 재사용과 독립적인 사용자 승인 경계를 명시했다.
+- 설치·문서/테스트 데이터 생성·대시보드·인증·실제 에이전트 호출·평가·업로드·운영 설정 변경·배포는 수행하지 않았다. 과거 날짜 보고서는 새로 작성하지 않았고 skill-trends 밖의 파일은 수정하지 않았다.
+- 검증된 게시 커밋: [보고서 9b69941](https://github.com/wooguylee/ChatGPT_Work/commit/9b69941e05099fab1fde4047f2aa18dea7a6e1a8), [인덱스 a95ea0e](https://github.com/wooguylee/ChatGPT_Work/commit/a95ea0e84160c2977af00739b90781f47c3c7e57).
+
 ## 2026-10-19
 
 - [오늘의 보고서](2026/10/2026-10-19.md)에 신규 소개 Skill 5개를 기록: accessibility-scan, accessibility-inspect, playwright-best-practices-for-agents, zustand-store-ts, react-flow-node-ts.
