@@ -2,6 +2,22 @@
 
 Daily Skill Trends 보고서와 소개 인덱스의 변경 기록입니다. 보고서의 날짜는 Asia/Seoul 기준입니다.
 
+## 2026-10-21
+
+- [오늘의 보고서](2026/10/2026-10-21.md)에 신규 소개 Skill 5개를 기록: harness-writing, cargo-fuzz, atheris, azure-ai-contentsafety-py, azure-search-documents-py.
+- Top Pick: harness-writing의 대상 도달·결정성·재현성 검토. Codex 즉시 활용 후보: azure-search-documents-py를 참고한 기존 검색 어댑터의 읽기 전용 검토.
+- main에 보고서를 저장한 뒤 전체 원문을 재조회해 작성본과 정확히 일치하고 Git blob SHA도 일치함을 확인했다. 그 이후 introduced-skills.md에 5개를 추가하고 전체 원문 재조회·정확한 일치·기존 내용 보존을 검증했다. 누적 인덱스는 275개에서 280개가 되었다.
+- 기존 날짜별 보고서 47개의 소개 275개를 전체 인덱스와 대조했으며 누락·최초 소개일 불일치·중복·보고서에 없는 항목은 없었다. 기존 항목·날짜·재등장 규칙을 보존했다.
+- 보고서의 GitHub·공식 API 출처 URL 27개를 재조회해 접근을 확인했고, Testing Handbook·Clang·Microsoft Learn의 공식 웹 문서 9개도 대조했다. 저장소 전체 지표·개별 설치 수·출시일·성능·안전 보증을 구분했다.
+- Trail of Bits testing-handbook-skills 1.2.2와 문서의 CC BY-SA 4.0을 확인하고, 별도 handbook 웹사이트·cargo-fuzz·Atheris 엔진의 라이선스와 구분했다. Microsoft 두 SKILL의 1.0.0은 SDK 버전 고정이 아님을 명시했다.
+- harness-writing의 정수 포인터 강제 변환·빈 벡터 접근과 입력 필터링의 검사 범위를 검토했다. cargo-fuzz의 nightly·플랫폼·컴파일러 조건 및 sanitizer 비활성화·속도 주장의 한계를 설명했다.
+- Atheris 원문의 Python 3.7+ 안내와 현행 upstream 소스의 3.11–3.14 범위를 구분했다. import 계측·네이티브 재빌드·광범위한 예외 처리·누수 검사 비활성화의 영향을 명시했다.
+- Content Safety의 네 유해 범주 텍스트 분류기에서 한국어 품질의 자체 평가 필요성을 현재 공식 harm-categories 문서로 확인했다. ImageData bytes/base64 예제 차이·require_envvar와 실제 Azure 전송·blocklist 변경 경계를 설명했다.
+- Search 보조 예제의 async await 누락·OData 직접 보간, setup 스크립트의 실제 자원 생성/갱신·deployment/model 이름 혼용을 정적 소스에서 확인했다. 조회 권한·ACL·SDK 버전·비용 경계를 구분했다.
+- agent-framework-azure-ai-py의 예제와 현행 migration 안내 차이를 확인해 추천에서 제외했다. 수량을 억지로 채우지 않고 검토 가능한 5개만 선정했다.
+- 설치·코드 생성/수정·빌드·단위 테스트·퍼징·크래시 재현·Azure 인증/호출·콘텐츠 전송·인덱스/blocklist 변경·배포는 수행하지 않았다. 과거 날짜 보고서는 새로 작성하지 않았고 skill-trends 밖의 파일은 수정하지 않았다.
+- 검증된 게시 커밋: [보고서 c03ec71](https://github.com/wooguylee/ChatGPT_Work/commit/c03ec71dd2c8ab6b0e07a9a35ad090b0cb8537d6), [인덱스 5ff8f80](https://github.com/wooguylee/ChatGPT_Work/commit/5ff8f80ee6dc626f0c35cbfc3c5eab8626ef9ff8).
+
 ## 2026-10-20
 
 - [오늘의 보고서](2026/10/2026-10-20.md)에 신규 소개 Skill 5개를 기록: eval-suite-planner, eval-generator, eval-result-interpreter, eval-triage-and-improvement, eval-faq.
