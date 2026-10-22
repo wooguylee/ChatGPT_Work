@@ -304,6 +304,11 @@
 | atheris | 2026-10-21 |
 | azure-ai-contentsafety-py | 2026-10-21 |
 | azure-search-documents-py | 2026-10-21 |
+| wiki-researcher | 2026-10-22 |
+| wiki-architect | 2026-10-22 |
+| wiki-changelog | 2026-10-22 |
+| wiki-llms-txt | 2026-10-22 |
+| microsoft-docs | 2026-10-22 |
 
 ## 재등장 규칙
 
