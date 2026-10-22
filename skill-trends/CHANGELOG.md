@@ -2,6 +2,17 @@
 
 Daily Skill Trends 보고서와 소개 인덱스의 변경 기록입니다. 보고서의 날짜는 Asia/Seoul 기준입니다.
 
+## 2026-10-22
+
+- [오늘의 보고서](2026/10/2026-10-22.md)에 신규 소개 Skill 5개를 기록: wiki-researcher, wiki-architect, wiki-changelog, wiki-llms-txt, microsoft-docs. Top Pick은 wiki-researcher, Codex 활용 후보는 wiki-changelog의 읽기 전용 분석 절차다.
+- main에 보고서를 저장한 뒤 범위 제한 없는 전체 원문을 다시 가져와 작성본 12,325자와 정확히 일치함을 확인했다. [보고서 커밋](https://github.com/wooguylee/ChatGPT_Work/commit/6c0cb5983486cc60ddd53ea227a6f0cf8b19d8dd), 검증한 blob SHA: `f13c166e85b7fddafe87b0fdcdf15773338a8f88`.
+- 위 보고서 검증 이후 인덱스에 다섯 항목만 추가했다. 전체 인덱스 원문을 재조회해 작성본과 정확히 대조했고 누적 소개는 **280 → 285개**가 되었다. [인덱스 커밋](https://github.com/wooguylee/ChatGPT_Work/commit/8db9d2acd2cfd3cdf3b297edb6769b14f7609851), 검증한 blob SHA: `44b97b038387c08081caeb5c9fe41bc29353c843`.
+- 기존 날짜별 보고서 48개의 전체 내용을 조회해 소개 280개의 이름·최초 소개일을 전체 인덱스와 대조했다. 기존 표기 별칭을 정규화했으며 누락은 없었다. 기존 인덱스 항목·최초 소개일·재등장 규칙 및 이전 변경 기록을 보존했다.
+- 공식 Microsoft SKILL.md·명령·README·manifest·MIT LICENSE를 고정 커밋으로 검토했다. 네 위키 Skill은 같은 플러그인의 별개 단계이며 독립 생태계 네 개의 유행으로 표현하지 않았다. 기존 wiki-qa·wiki-onboarding·documentation-lookup 등과 기능 차이를 구분했다.
+- 원문과 실제 사용 시 주의점을 기록했다: 현재 체크아웃 브랜치를 원격 기본 브랜치로 오인하는 설명, catalogue 명령과 Skill의 온보딩 범위 차이, llms.txt v2의 Optional 관례·경로·컨텍스트 확장 관련 차이. Learn MCP 문서 조회와 실제 구독 설정 확인도 구분했다.
+- 관측일과 출시일, 저장소 지표와 개별 Skill 지표를 구분했다. 전주 비교는 10월 15일 보고서의 선정 주제 비교로 한정했다. 설치·MCP 연결·배포·성능 시험은 수행하지 않았고 과거 날짜 보고서는 생성하지 않았다.
+- 이 변경 기록은 위 보고서·인덱스의 검증 완료 후 작성했다. 자동화 설정은 변경하지 않았다.
+
 ## 2026-10-21
 
 - [오늘의 보고서](2026/10/2026-10-21.md)에 신규 소개 Skill 5개를 기록: harness-writing, cargo-fuzz, atheris, azure-ai-contentsafety-py, azure-search-documents-py.
