@@ -2,6 +2,16 @@
 
 Daily Skill Trends 보고서와 소개 인덱스의 변경 기록입니다. 보고서의 날짜는 Asia/Seoul 기준입니다.
 
+## 2026-10-23
+
+- [오늘의 보고서](2026/10/2026-10-23.md)에 신규 소개 Skill 5개를 기록: fastapi-router-py, azure-ai-document-intelligence-dotnet, azure-identity-py, azure-storage-blob-py, azure-servicebus-py. Top Pick은 azure-identity-py의 인증 경로 검토, Codex 활용 후보는 fastapi-router-py의 읽기 전용 권한 검토다.
+- main에 보고서를 저장한 뒤 범위 제한 없는 전체 원문을 재조회해 작성본 **11,557자**와 정확히 일치함을 확인했다. [보고서 커밋](https://github.com/wooguylee/ChatGPT_Work/commit/cbd3842e7557e2d4820fa8add8eab9bdc307692d), 검증한 blob SHA: `d04dd86f500986fe80d83fb38015819e3356bb4b`.
+- 보고서 전체 검증 후 최신 인덱스를 다시 읽어 다섯 항목만 추가했다. 전체 인덱스를 다시 가져와 작성본 **10,147자**와 정확히 대조했고 누적 소개는 **285 → 290개**가 되었다. [인덱스 커밋](https://github.com/wooguylee/ChatGPT_Work/commit/069f3f2c6df99586e0c181633d6cbfe7d43cd032), 검증한 blob SHA: `a9567783e0b26384a8bff058a78f854831a7584b`.
+- 기존 날짜별 보고서 49개 전체의 소개 285개를 이름·최초 소개일로 인덱스와 대조했다. 과거 표기 별칭을 정규화했으며 누락은 없었다. 기존 인덱스 내용·최초 소개일·재등장 규칙과 이전 변경 기록은 보존했다.
+- Microsoft 공식 다섯 SKILL.md, FastAPI 실제 템플릿, README·MIT LICENSE를 고정 커밋으로 확인하고 관련 Microsoft Learn 문서를 교차 확인했다. FastAPI 소유권 검사 주석·누락, v4.0에서 deprecated된 명함 모델, credential 설정의 패키지 버전 조건, Blob 덮어쓰기·메모리 처리, DLQ 예제의 메시지 제거를 주의점으로 기록했다.
+- 관측일과 출시일, 저장소 지표와 개별 Skill 지표를 구분했다. 전주 비교는 10월 16일 보고서의 선정 주제에 한정했다. 설치·실행·로그인·문서 전송·큐 소비·클라우드 변경은 수행하지 않았고, 과거 날짜 보고서를 만들지 않았다.
+- 이 변경 기록은 보고서·인덱스의 전체 검증 이후 작성했다. 자동화 설정은 변경하지 않았다.
+
 ## 2026-10-22
 
 - [오늘의 보고서](2026/10/2026-10-22.md)에 신규 소개 Skill 5개를 기록: wiki-researcher, wiki-architect, wiki-changelog, wiki-llms-txt, microsoft-docs. Top Pick은 wiki-researcher, Codex 활용 후보는 wiki-changelog의 읽기 전용 분석 절차다.
