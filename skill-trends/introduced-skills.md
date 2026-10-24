@@ -315,6 +315,11 @@
 | azure-identity-py | 2026-10-23 |
 | azure-storage-blob-py | 2026-10-23 |
 | azure-servicebus-py | 2026-10-23 |
+| azure-appconfiguration-py | 2026-10-24 |
+| azure-keyvault-py | 2026-10-24 |
+| azure-monitor-opentelemetry-py | 2026-10-24 |
+| azure-monitor-query-py | 2026-10-24 |
+| azure-containerregistry-py | 2026-10-24 |
 
 ## 재등장 규칙
 
