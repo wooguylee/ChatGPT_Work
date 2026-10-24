@@ -2,6 +2,16 @@
 
 Daily Skill Trends 보고서와 소개 인덱스의 변경 기록입니다. 보고서의 날짜는 Asia/Seoul 기준입니다.
 
+## 2026-10-24
+
+- [오늘의 보고서](2026/10/2026-10-24.md)에 신규 소개 Skill 5개를 기록: azure-appconfiguration-py, azure-keyvault-py, azure-monitor-opentelemetry-py, azure-monitor-query-py, azure-containerregistry-py. Top Pick은 Key Vault 비밀 원문 출력 경로 점검, Codex 활용 후보는 컨테이너 배포 명세의 tag·digest 검토다.
+- main에 보고서를 저장한 뒤 범위 제한 없는 전체 원문을 재조회해 작성본 **10,445자**와 정확히 일치함을 확인했다. [보고서 커밋](https://github.com/wooguylee/ChatGPT_Work/commit/2aa9030ba1b662f36c6d22bdff17ea597f01240a), 검증한 blob SHA: `e69ec96fcc9f5b69b7f2eced61a71db079459aa0`.
+- 보고서 전체 검증 이후 최신 인덱스를 다시 읽어 다섯 항목만 추가했다. 전체 인덱스를 재조회해 작성본 **10,357자**와 정확히 일치함을 확인했고 누적 소개는 **290 → 295개**가 되었다. [인덱스 커밋](https://github.com/wooguylee/ChatGPT_Work/commit/099e7ceacc76995c0c3d95657eb5787df54db428), 검증한 blob SHA: `50b0efd44b55a49c4b2cae450fbfcacd86d182b5`.
+- 기존 날짜별 보고서 50개 전체의 소개 290개를 이름·최초 소개일로 대조했다. Octocode 등의 기존 표기 별칭을 고려했으며 누락은 없었다. 추가한 다섯 행을 제거하면 기존 인덱스 원문과 정확히 같음을 확인했다. 기존 최초 소개일·재등장 규칙·이전 변경 기록을 보존한다.
+- Microsoft 공식 SKILL.md 다섯 개와 README를 고정 커밋으로 확인하고 각 SDK의 Microsoft Learn 문서를 교차 확인했다. App Configuration snapshot API 표기, OpenTelemetry 계측 옵션·Live Metrics 기본값, Monitor Query 2.0.0의 metrics 분리·부분 결과 구조, Container Registry manifest API 차이를 기록했다. 공식 Skill도 수정 없이 실행할 수 있다고 보장하지 않았다.
+- 관측일과 출시일, Skill 버전과 SDK 버전을 구분했다. 전주 비교는 10월 17일 보고서의 선정 주제와 소개 개수에 한정했다. 설치·실행·인증·비밀 조회·텔레메트리 전송·원격 쿼리·클라우드 변경은 수행하지 않았으며 과거 날짜 보고서는 생성하지 않았다.
+- 이 변경 기록은 보고서·인덱스 전체 검증 이후 작성했다. 자동화 설정은 변경하지 않았다.
+
 ## 2026-10-23
 
 - [오늘의 보고서](2026/10/2026-10-23.md)에 신규 소개 Skill 5개를 기록: fastapi-router-py, azure-ai-document-intelligence-dotnet, azure-identity-py, azure-storage-blob-py, azure-servicebus-py. Top Pick은 azure-identity-py의 인증 경로 검토, Codex 활용 후보는 fastapi-router-py의 읽기 전용 권한 검토다.
