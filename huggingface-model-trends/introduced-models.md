@@ -269,3 +269,7 @@ thinkingmachines/Inkling; zai-org/GLM-5.2; baidu/Unlimited-OCR; google/gemma-4-3
 
 ### 2026-10-23
 - nvidia/Nemotron-3.5-Parse 및 동일 Parse 3.5 계열의 단순 크기·양자화·GGUF·포맷·경미한 fine-tune 파생본. 기존 Parse 2.0의 ViT-H C-RADIO·별도 보관 auxiliary head와 비교해 C-RADIOv4-SO400M·동적 직사각형 NaViT·10-layer causal visual-prefix mBART·16 query/8 KV GQA 및 가중치 내 one-step MTP와 vLLM plugin 실행 경로를 확인한 주요 세대 변경 예외. 차트·다국어 기능 자체의 최초 도입이나 독립 from-scratch 계열이라는 뜻은 아님. 630,800,496 unique trainable parameters(MTP 포함·공유 embedding 한 번), 모델 OpenMDW-1.1·tokenizer MIT/attribution·외부 의존성 별도. 전체 학습량·초기화 계보·최소 VRAM 미확인. 카드 출시 10/17·관찰 10/23. 근거: [2026-10-23 보고서](2026/10/2026-10-23.md)
+
+
+### 2026-10-24
+- SoMarkAI/OXR-1.0 및 동일 OXR 계열의 단순 크기·양자화·GGUF·포맷·경미한 fine-tune 파생본. 공식 저장소가 핵심 문서 인식 모델의 from-scratch 사전학습과 RSI 후학습을 명시한 신규 계열의 첫 소개. 교체 가능한 layout model과 인식·읽기 순서를 함께 처리하는 OXR를 구분하며 D-FINE·XY-Cut++ 외부 코드 재사용을 인정. 제작자 핵심 1.3B, HF 반올림 2B와 차이 원인·전체 pipeline 규모·학습량 미확인. 코드 OXR custom license의 자금/매출 USD 2M 초과 시 별도 상업 허가·경쟁 hosted API 제한·표시 의무, 가중치 조건은 별도이며 독립 확인 미완료. 최초 공개일 미확인·관찰 10/24; benchmark snapshot 10/5를 출시일로 쓰지 않음. 근거: [2026-10-24 보고서](2026/10/2026-10-24.md)
