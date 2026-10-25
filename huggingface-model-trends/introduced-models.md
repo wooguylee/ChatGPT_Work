@@ -277,3 +277,7 @@ thinkingmachines/Inkling; zai-org/GLM-5.2; baidu/Unlimited-OCR; google/gemma-4-3
 
 ### 2026-10-25
 - tencent/Hy-Nomas 및 동일 생성 backbone의 base·distilled·INT8/FP8·Diffusers·단순 크기·양자화·포맷·cinematic/robotics LoRA·경미한 fine-tune 파생본. 54 dual-stream MMDiT의 segment-causal latent flow generation·카메라 extrinsics cross-attention·지속 KV history를 결합한 별도 상호작용 영상 세계 생성 분기로 판정. 기존 PixelUMM은 수정 decoder, Qwen2.5-VL-7B는 text encoder로 재사용하며 기존 raw-pixel PixelUMM 생성 백본의 단순 미세조정과 구분. 전체 파라미터·DiT 초기화·전체 사전학습 계보 미확인으로 from-scratch를 주장하지 않음. Tencent 공개 부분 Apache-2.0·외부 자산 조건 유지; 기존 PixelUMM 비상업 조건과 수정 decoder 별도 권리 미확인 한계 기록. 24 FPS는 출력 재생률이며 실시간 속도 아님. 최초 출시일 미확인·관찰 10/25. 근거: [2026-10-25 보고서](2026/10/2026-10-25.md)
+
+
+### 2026-10-26
+- hi3d-official/Hi3Dv1.0을 대표로 하는 Sparc3D/Hi3D geometry-refinement 계보 및 같은 구조의 512/1024/1536 설정·단순 크기·양자화·포맷·경미한 fine-tune 파생본. 아카이브에 없던 Sparc3D 구조 분기의 첫 소개이며 Hi3D가 Sparc3D 대비 별도 차세대라는 뜻은 아님. 원래 Sparc3D 논문이 TRELLIS pretrained flow 모델의 새 VAE latent fine-tuning을 명시하므로 가중치 계보를 인정한다. SDF/deformation을 직접 압축하는 Sparconv-VAE·self-pruning decoder·희소 flow sampling·mesh revoxelization 반복 정제 경로로 구분하며, 기존 UniForge3D/VGGT의 단순 직접 파생으로 판정하지 않는다. transformer 각각 약 1.8B, VAE/외부 encoder 포함 정확한 전체 규모와 현재 Hi3D 초기화 계보 미확인. Hi3D 지정 코드·8개 가중치/설정 파일은 Hi3D Open License 1.0의 상업 표시·규모 조건 적용, 외부 자산 원천 조건 유지. geometry-only·절대 scale 비보존·1536³는 96GB H20에서만 검증. 카드 출시 10/23·관찰 10/26. 근거: [2026-10-26 보고서](2026/10/2026-10-26.md)
