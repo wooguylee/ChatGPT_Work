@@ -320,6 +320,11 @@
 | azure-monitor-opentelemetry-py | 2026-10-24 |
 | azure-monitor-query-py | 2026-10-24 |
 | azure-containerregistry-py | 2026-10-24 |
+| azure-cosmos-py | 2026-10-25 |
+| azure-data-tables-py | 2026-10-25 |
+| azure-eventgrid-py | 2026-10-25 |
+| azure-eventhub-py | 2026-10-25 |
+| azure-storage-queue-py | 2026-10-25 |
 
 ## 재등장 규칙
 
