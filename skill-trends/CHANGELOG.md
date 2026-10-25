@@ -2,6 +2,16 @@
 
 Daily Skill Trends 보고서와 소개 인덱스의 변경 기록입니다. 보고서의 날짜는 Asia/Seoul 기준입니다.
 
+## 2026-10-25
+
+- [오늘의 보고서](2026/10/2026-10-25.md)에 신규 소개 Skill 5개를 기록: azure-cosmos-py, azure-data-tables-py, azure-eventgrid-py, azure-eventhub-py, azure-storage-queue-py. Top Pick은 Queue Storage의 관측·소비 경계 점검, Codex 활용 후보는 Event Hubs 체크포인트 실패 테스트다.
+- main에 보고서를 저장한 뒤 범위 제한 없는 전체 원문을 재조회해 작성본 **9,705자**와 정확히 일치함을 확인했다. [보고서 커밋](https://github.com/wooguylee/ChatGPT_Work/commit/31ddc7b403655d4bce8b53fdda8669d701894a59), 검증한 blob SHA: `3c0d25ea546603984fc5cf53a337b318fabd7c8f`.
+- 보고서 전체 검증 이후 최신 인덱스를 다시 읽어 다섯 행만 추가했다. 전체 인덱스를 재조회해 작성본 **10,539자**와 정확히 일치함을 확인했고 누적 소개는 **295 → 300개**가 되었다. [인덱스 커밋](https://github.com/wooguylee/ChatGPT_Work/commit/45e02090b76608414f8c2d838538e54edc94988a), 검증한 blob SHA: `997d074d307a65e97cfd5867024b0123892ca4d8`.
+- 기존 날짜별 보고서 51개 전체의 소개 제목 295개를 이름·최초 소개일로 대조했다. Octocode 등의 기존 별칭을 고려했으며 누락은 없었다. 추가한 다섯 행을 제거하면 이전 인덱스 원문과 정확히 같음을 확인했다. 이전 내용·최초 소개일·재등장 규칙을 보존했다.
+- Microsoft 공식 SKILL.md 다섯 개 전체와 README를 고정 커밋에서 확인하고 공식 SDK 문서를 교차 확인했다. Event Grid namespace_topic의 생성자 지정과 CloudEvent import 경로, Tables의 backend별 TokenCredential 지원 범위, Event Hubs 체크포인트, Queue Storage receive·peek 차이를 기록했다.
+- 관측일과 출시일, Skill 버전과 SDK 버전을 구분했다. 전주 비교는 10월 18일 보고서의 주제·개수에 한정했으며 인기 추이는 주장하지 않았다. 설치·실행·Azure 인증·서비스 호출·클라우드 변경은 수행하지 않았고 과거 보고서는 생성하지 않았다.
+- 이 변경 기록은 보고서·인덱스 전체 검증 이후 작성했다. 자동화 설정은 변경하지 않았다.
+
 ## 2026-10-24
 
 - [오늘의 보고서](2026/10/2026-10-24.md)에 신규 소개 Skill 5개를 기록: azure-appconfiguration-py, azure-keyvault-py, azure-monitor-opentelemetry-py, azure-monitor-query-py, azure-containerregistry-py. Top Pick은 Key Vault 비밀 원문 출력 경로 점검, Codex 활용 후보는 컨테이너 배포 명세의 tag·digest 검토다.
