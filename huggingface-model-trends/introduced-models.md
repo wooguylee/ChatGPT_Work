@@ -273,3 +273,7 @@ thinkingmachines/Inkling; zai-org/GLM-5.2; baidu/Unlimited-OCR; google/gemma-4-3
 
 ### 2026-10-24
 - SoMarkAI/OXR-1.0 및 동일 OXR 계열의 단순 크기·양자화·GGUF·포맷·경미한 fine-tune 파생본. 공식 저장소가 핵심 문서 인식 모델의 from-scratch 사전학습과 RSI 후학습을 명시한 신규 계열의 첫 소개. 교체 가능한 layout model과 인식·읽기 순서를 함께 처리하는 OXR를 구분하며 D-FINE·XY-Cut++ 외부 코드 재사용을 인정. 제작자 핵심 1.3B, HF 반올림 2B와 차이 원인·전체 pipeline 규모·학습량 미확인. 코드 OXR custom license의 자금/매출 USD 2M 초과 시 별도 상업 허가·경쟁 hosted API 제한·표시 의무, 가중치 조건은 별도이며 독립 확인 미완료. 최초 공개일 미확인·관찰 10/24; benchmark snapshot 10/5를 출시일로 쓰지 않음. 근거: [2026-10-24 보고서](2026/10/2026-10-24.md)
+
+
+### 2026-10-25
+- tencent/Hy-Nomas 및 동일 생성 backbone의 base·distilled·INT8/FP8·Diffusers·단순 크기·양자화·포맷·cinematic/robotics LoRA·경미한 fine-tune 파생본. 54 dual-stream MMDiT의 segment-causal latent flow generation·카메라 extrinsics cross-attention·지속 KV history를 결합한 별도 상호작용 영상 세계 생성 분기로 판정. 기존 PixelUMM은 수정 decoder, Qwen2.5-VL-7B는 text encoder로 재사용하며 기존 raw-pixel PixelUMM 생성 백본의 단순 미세조정과 구분. 전체 파라미터·DiT 초기화·전체 사전학습 계보 미확인으로 from-scratch를 주장하지 않음. Tencent 공개 부분 Apache-2.0·외부 자산 조건 유지; 기존 PixelUMM 비상업 조건과 수정 decoder 별도 권리 미확인 한계 기록. 24 FPS는 출력 재생률이며 실시간 속도 아님. 최초 출시일 미확인·관찰 10/25. 근거: [2026-10-25 보고서](2026/10/2026-10-25.md)
