@@ -2,6 +2,16 @@
 
 Daily Skill Trends 보고서와 소개 인덱스의 변경 기록입니다. 보고서의 날짜는 Asia/Seoul 기준입니다.
 
+## 2026-10-26
+
+- [오늘의 보고서](2026/10/2026-10-26.md)에 신규 소개 Skill 5개를 기록: recipe-backup-sheet-as-csv, recipe-compare-sheet-tabs, recipe-collect-form-responses, recipe-review-overdue-tasks, recipe-find-large-files. Top Pick은 두 탭의 키 기반 비교, Codex 활용 후보는 Tasks 예정일 의미를 검증하는 fixture 테스트다.
+- main에 보고서를 저장한 뒤 범위 제한 없는 전체 원문을 재조회해 작성본 **11,288자**와 정확히 일치함을 확인했다. [보고서 커밋](https://github.com/wooguylee/ChatGPT_Work/commit/c4b35f15f9dd2ec09c0846846ed868824a26b350), 검증한 blob SHA: `41c18e71907c6b71e21535ee61f88a072efc86d8`.
+- 보고서 전체 검증 이후 최신 인덱스를 다시 읽어 다섯 행만 추가했다. 전체 인덱스를 재조회해 작성본 **10,760자**와 정확히 일치함을 확인했고 누적 소개는 **300 → 305개**가 되었다. [인덱스 커밋](https://github.com/wooguylee/ChatGPT_Work/commit/1582207dd370071706c8a73a18cf06f9282a72ba), 검증한 blob SHA: `52ca13663db17ea07de04ee624b015a1b83669ef`.
+- 기존 날짜별 보고서 52개 전체의 소개 제목 300개를 이름·최초 소개일로 대조했다. Octocode 복합 표기와 brainstorming 부제를 고려했으며 누락은 없었다. 추가한 다섯 행을 제거하면 이전 인덱스 원문과 정확히 같음을 확인했다. 이전 내용·최초 소개일·재등장 규칙을 보존했다.
+- googleworkspace/cli의 다섯 SKILL.md와 기반 Skill·공통 지침·README·LICENSE, Sheets helper·formatter를 고정 커밋에서 확인했다. Google 공식 API 문서와 교차 확인해 CSV 첫 시트·10 MB 제한, +read 출력 형식 처리, Forms에 없는 forms.list 예제, Tasks due의 예정 날짜 의미와 페이지·할당 옵션, Drive quotaBytesUsed 반환 누락을 명시했다.
+- Google 조직의 원본 저장소와 공식 지원 제품을 구분했다. 공개·출시일과 관측일을 분리했으며 전주 비교는 10월 19일 보고서의 주제·개수에 한정했다. 설치·인증·계정 조회·파일 다운로드·클라우드 변경은 수행하지 않았고 과거 보고서는 생성하지 않았다.
+- 이 변경 기록은 보고서·인덱스 전체 검증 이후 작성했다. 자동화 설정은 변경하지 않았다.
+
 ## 2026-10-25
 
 - [오늘의 보고서](2026/10/2026-10-25.md)에 신규 소개 Skill 5개를 기록: azure-cosmos-py, azure-data-tables-py, azure-eventgrid-py, azure-eventhub-py, azure-storage-queue-py. Top Pick은 Queue Storage의 관측·소비 경계 점검, Codex 활용 후보는 Event Hubs 체크포인트 실패 테스트다.
