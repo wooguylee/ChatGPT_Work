@@ -2,6 +2,16 @@
 
 Daily Skill Trends 보고서와 소개 인덱스의 변경 기록입니다. 보고서의 날짜는 Asia/Seoul 기준입니다.
 
+## 2026-10-27
+
+- [오늘의 보고서](2026/10/2026-10-27.md)에 신규 소개 Skill 5개를 기록: redis-core, redis-connections, redis-search, redis-observability, redis-semantic-cache. Top Pick은 redis-connections, Codex 활용 후보는 redis-core의 데이터 모델 검토다.
+- main에 보고서를 저장한 뒤 범위 제한 없는 전체 원문을 재조회해 작성본 **9,755자**와 정확히 일치함을 확인했다. [보고서 커밋](https://github.com/wooguylee/ChatGPT_Work/commit/4756a4ec4faf1ec1dbc560b0090a7b9f31987f5f), 검증한 blob SHA: `478100ca963919f740c433296e32143450808e81`.
+- 보고서 전체 검증 이후 최신 인덱스를 다시 읽어 다섯 행만 추가했다. 전체 인덱스를 재조회해 작성본 **10,929자**와 정확히 일치함을 확인했고 누적 소개는 **305 → 310개**가 되었다. [인덱스 커밋](https://github.com/wooguylee/ChatGPT_Work/commit/4f13e9fd25819e3db93c2f61e15d0612021fac28), 검증한 blob SHA: `fa258409fbb54951094711a82e312d4db4034f01`.
+- 기존 날짜별 보고서 53개 전체의 소개 제목 305개를 전체 인덱스와 대조했다. Octocode 복합 표기와 brainstorming 부제를 정규화했으며 누락은 없었다. 추가한 다섯 행과 구분 줄을 제거하면 이전 인덱스와 정확히 같음을 검증했다. 기존 내용·최초 소개일·재등장 규칙을 보존했다.
+- Redis 공식 컬렉션의 SKILL.md 5개·README·LICENSE·LangCache 상세 원문을 고정 커밋에서 읽고 공식 제품 문서와 대조했다. redis-py pipeline의 트랜잭션 기본값, 클라이언트별 풀 동작, SCAN 범위, 관측 임계값의 한계, SLOWLOG RESET의 변경 성격, FT.HYBRID 버전과 검증되지 않은 성능 수치, LangCache preview·캐시 격리·전체 삭제 위험을 명시했다.
+- 보고서 관측일과 개별 출시일을 구분했다. 저장소 170 stars / 31 forks를 개별 Skill 사용량으로 표현하지 않았고 전주 비교는 10월 20일 보고서의 주제·개수에 한정했다. 설치·인증·운영 Redis 조회·명령 실행·클라우드 전송·비용 발생 작업은 하지 않았다.
+- 이 변경 기록은 보고서·인덱스 전체 검증 이후 작성했다. 과거 날짜 보고서와 자동화 설정, skill-trends 밖의 파일은 변경하지 않았다.
+
 ## 2026-10-26
 
 - [오늘의 보고서](2026/10/2026-10-26.md)에 신규 소개 Skill 5개를 기록: recipe-backup-sheet-as-csv, recipe-compare-sheet-tabs, recipe-collect-form-responses, recipe-review-overdue-tasks, recipe-find-large-files. Top Pick은 두 탭의 키 기반 비교, Codex 활용 후보는 Tasks 예정일 의미를 검증하는 fixture 테스트다.
