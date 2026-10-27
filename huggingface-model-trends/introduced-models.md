@@ -281,3 +281,7 @@ thinkingmachines/Inkling; zai-org/GLM-5.2; baidu/Unlimited-OCR; google/gemma-4-3
 
 ### 2026-10-26
 - hi3d-official/Hi3Dv1.0을 대표로 하는 Sparc3D/Hi3D geometry-refinement 계보 및 같은 구조의 512/1024/1536 설정·단순 크기·양자화·포맷·경미한 fine-tune 파생본. 아카이브에 없던 Sparc3D 구조 분기의 첫 소개이며 Hi3D가 Sparc3D 대비 별도 차세대라는 뜻은 아님. 원래 Sparc3D 논문이 TRELLIS pretrained flow 모델의 새 VAE latent fine-tuning을 명시하므로 가중치 계보를 인정한다. SDF/deformation을 직접 압축하는 Sparconv-VAE·self-pruning decoder·희소 flow sampling·mesh revoxelization 반복 정제 경로로 구분하며, 기존 UniForge3D/VGGT의 단순 직접 파생으로 판정하지 않는다. transformer 각각 약 1.8B, VAE/외부 encoder 포함 정확한 전체 규모와 현재 Hi3D 초기화 계보 미확인. Hi3D 지정 코드·8개 가중치/설정 파일은 Hi3D Open License 1.0의 상업 표시·규모 조건 적용, 외부 자산 원천 조건 유지. geometry-only·절대 scale 비보존·1536³는 96GB H20에서만 검증. 카드 출시 10/23·관찰 10/26. 근거: [2026-10-26 보고서](2026/10/2026-10-26.md)
+
+
+### 2026-10-27
+- tencent/WeVisOne-VL-4B 및 WeVisOne-VL-2B를 묶은 WeVisOne-VL 계열과 동일 pixel-decoder 구조의 단순 크기·양자화·포맷·경미한 fine-tune 파생본. Qwen3-VL 초기화 계보를 명시하며 독립 from-scratch 백본이나 Qwen의 다음 공식 세대라는 뜻이 아님. OBJ hidden state·box prior·pre-merging ViT feature를 새 9,609,764-parameter decoder에 연결해 mask/연속 alpha를 출력하고, 무작위 decoder 초기화→segmentation warm-up→NTP/pixel 1:1 공동학습→동결 VLM matting 학습을 확인한 주요 구조·출력 확장 분기로 판정. 기존 Qwen3-VL 구성요소를 쓰는 LightNav·Iris·Fibo2 등의 직접 파생으로 확인된 것이 아니며 명칭 부재만으로 선정하지 않음. 4B 제품명·HF 약 5B 표시, 전체 정확한 합계 미확인. HF Apache-2.0 tag·Tencent 코드 Apache-2.0, 외부 조건 유지·가중치 별도 LICENSE 전문 독립 확인 미완료. pixel decoder 영상 grid 미지원; 최소 VRAM·한국어 품질 미확인. 논문 10/22·관찰 10/27, 최초 가중치 public 전환일 미확인. 근거: [2026-10-27 보고서](2026/10/2026-10-27.md)
