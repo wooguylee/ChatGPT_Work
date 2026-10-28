@@ -2,6 +2,17 @@
 
 Daily Skill Trends 보고서와 소개 인덱스의 변경 기록입니다. 보고서의 날짜는 Asia/Seoul 기준입니다.
 
+## 2026-10-28
+
+- [오늘의 보고서](2026/10/2026-10-28.md)에 신규 소개 Skill 5개를 기록: redis-clustering, redis-security, iris-development, recipe-review-meet-participants, recipe-bulk-download-folder. Top Pick은 redis-clustering, Codex 활용 후보는 Drive 수집의 fixture 기반 manifest 설계다.
+- main에 보고서를 저장한 뒤 범위 제한 없는 전체 원문을 재조회해 작성본 **11,992자**와 정확히 일치함을 확인했다. [보고서 커밋](https://github.com/wooguylee/ChatGPT_Work/commit/f31d0e398f336a822c512848ccbdcf0851539e8b), 검증한 blob SHA: `ccd2c79ec5e8acfc2f3c3f698d5e803bc2b6ca86`.
+- 보고서 전체 검증 이후 최신 인덱스를 다시 읽어 다섯 행만 추가했다. 전체 인덱스 재조회 결과 **11,124자**가 작성본과 정확히 일치했고 누적 소개는 **310 → 315개**가 되었다. [인덱스 커밋](https://github.com/wooguylee/ChatGPT_Work/commit/98c558abd1b9d95cad09021f83b0ce46e586520c), 검증한 blob SHA: `6a6b5b3948e97f41a365be2a2b798bcac8f58433`.
+- 기존 날짜별 보고서 54개 전체의 소개 제목 310개와 전체 인덱스를 대조했다. Octocode 복합 표기와 brainstorming 부제를 정규화했으며 누락은 없었다. 추가한 다섯 행과 구분 줄을 제외하면 이전 인덱스와 정확히 같다. 기존 내용·최초 소개일·재등장 규칙을 보존했다.
+- Redis 원문의 pipeline 슬롯 일반화와 현행 redis-py ClusterPipeline 동작을 구분했다. 넓은 ACL 예제를 최소 권한으로 과장하지 않았고 rename-command의 폐기 예정 안내를 반영했다. RAM의 비동기 승격과 30초 예제의 한계, owner 필터와 실제 권한의 차이, 부분 성공을 명시했다.
+- Google Workspace CLI의 공식 지원 제품 아님 고지와 선행 스킬·인증 필요를 밝혔다. Meet 참석자/접속 세션·30일 기록 만료, Drive 재귀·페이지·MIME·파일명·완료 검증 및 export 제한을 구분했다. 원본의 짧은 레시피가 완전한 참석 계산기나 재귀 백업 구현이라고 주장하지 않았다.
+- 관측일과 최초 공개일을 구분하고 개별 설치 수·현재 안전 감사·실행 성능은 미확인으로 남겼다. 전주 비교는 10월 21일 보고서의 주제·개수에 한정했다. 설치·인증·운영 설정 변경·클라우드 메모리 전송·회의 조회·파일 다운로드는 실행하지 않았다.
+- 이 변경 기록은 보고서·인덱스 전체 검증 이후 작성했다. 과거 날짜 보고서와 자동화 설정, skill-trends 밖의 파일은 변경하지 않았다.
+
 ## 2026-10-27
 
 - [오늘의 보고서](2026/10/2026-10-27.md)에 신규 소개 Skill 5개를 기록: redis-core, redis-connections, redis-search, redis-observability, redis-semantic-cache. Top Pick은 redis-connections, Codex 활용 후보는 redis-core의 데이터 모델 검토다.
