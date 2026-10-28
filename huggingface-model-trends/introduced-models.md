@@ -285,3 +285,7 @@ thinkingmachines/Inkling; zai-org/GLM-5.2; baidu/Unlimited-OCR; google/gemma-4-3
 
 ### 2026-10-27
 - tencent/WeVisOne-VL-4B 및 WeVisOne-VL-2B를 묶은 WeVisOne-VL 계열과 동일 pixel-decoder 구조의 단순 크기·양자화·포맷·경미한 fine-tune 파생본. Qwen3-VL 초기화 계보를 명시하며 독립 from-scratch 백본이나 Qwen의 다음 공식 세대라는 뜻이 아님. OBJ hidden state·box prior·pre-merging ViT feature를 새 9,609,764-parameter decoder에 연결해 mask/연속 alpha를 출력하고, 무작위 decoder 초기화→segmentation warm-up→NTP/pixel 1:1 공동학습→동결 VLM matting 학습을 확인한 주요 구조·출력 확장 분기로 판정. 기존 Qwen3-VL 구성요소를 쓰는 LightNav·Iris·Fibo2 등의 직접 파생으로 확인된 것이 아니며 명칭 부재만으로 선정하지 않음. 4B 제품명·HF 약 5B 표시, 전체 정확한 합계 미확인. HF Apache-2.0 tag·Tencent 코드 Apache-2.0, 외부 조건 유지·가중치 별도 LICENSE 전문 독립 확인 미완료. pixel decoder 영상 grid 미지원; 최소 VRAM·한국어 품질 미확인. 논문 10/22·관찰 10/27, 최초 가중치 public 전환일 미확인. 근거: [2026-10-27 보고서](2026/10/2026-10-27.md)
+
+
+### 2026-10-28
+- LiquidAI/LFM3-1.7B·LFM3-1.7B-Base를 대표로 하는 LFM3 공유 백본 세대와 같은 출시 묶음의 VL·Audio·Omni·d1-2B·d1-Omni-2B 및 직접 크기·양자화·GGUF/MLX/ONNX/FP8/NVFP4·포맷·경미한 fine-tune 파생본. 기존 LFM2.5와 달리 13 gated convolution+5 SWA+6 global attention, kernel 3→7, head-wise gate·partial RoPE·sandwich norm 및 22T-token 사전학습(마지막 3.5T mid-training 포함)을 확인한 주요 차세대 예외. modality별 제품은 오늘 한 계열로 보수적으로 묶으며 동일 입출력·품질이라는 뜻은 아님. 대표 text 공식 1.73B·256K 문맥, 정확한 tensor 합계 미확인. LFM Open License v1.0의 USD 10M 연매출 기준 상업 제한·고지 조건 적용, 일반 Apache 아님. 발표 10/27·관찰 10/28; public 전환 시각 미확인. 약 1GB 4-bit 안내를 긴 문맥 포함 총 메모리 보증으로 쓰지 않음. 근거: [2026-10-28 보고서](2026/10/2026-10-28.md)
