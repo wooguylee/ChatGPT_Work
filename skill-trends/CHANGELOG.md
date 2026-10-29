@@ -2,6 +2,16 @@
 
 Daily Skill Trends 보고서와 소개 인덱스의 변경 기록입니다. 보고서의 날짜는 Asia/Seoul 기준입니다.
 
+## 2026-10-29
+
+- [오늘의 보고서](2026/10/2026-10-29.md)에 신규 소개 Skill **4개**를 기록: neon-auth, neon-object-storage, neon-functions, neon-ai-gateway. Top Pick은 neon-functions이며, Codex 실습 후보는 객체 manifest와 DB 참조의 fixture 기반 점검이다.
+- main에 보고서를 저장한 뒤 범위 제한 없는 전체 원문을 재조회해 작성본 **11,342자**와 정확히 일치함을 확인했다. [보고서 커밋](https://github.com/wooguylee/ChatGPT_Work/commit/86677230b7034afee49323346af6e75a2113e1e0), 검증한 blob SHA: `3882c8a11fd90162550f9d77873a7f4be94bbdbe`.
+- 보고서 전체 검증 이후 최신 인덱스를 다시 읽어 네 행만 추가했다. 전체 인덱스 재조회 결과 **11,254자**가 작성본과 정확히 일치했고 누적 소개는 **315 → 319개**가 되었다. [인덱스 커밋](https://github.com/wooguylee/ChatGPT_Work/commit/71e95d8535ab314a65994295d0b7a40625cfc3d2), 검증한 blob SHA: `cd27cc82e8593eae2aca5a24658ecd7fa9037598`.
+- 기존 날짜별 보고서 **55개 전체**의 소개 제목 **315개**와 전체 인덱스를 대조했다. Octocode 복합 표기와 brainstorming 부제를 정규화했으며 누락은 없었다. 추가한 네 행과 구분 줄을 제거하면 이전 인덱스와 정확히 같다. 기존 내용·최초 소개일을 보존했고 누락 날짜 보고서는 소급 생성하지 않았다.
+- 중복 검토에서 neon-postgres-branches는 기존 neon-postgres의 branching·migration·restore 소개와 겹쳐 제외했다. 목표 수량을 채우기 위해 같은 업무를 다시 세지 않았다. neon-ai-gateway는 기존 Vercel ai-gateway와 조직·브랜치 credential·endpoint·폐기 계약이 다른 공식 구현임을 설명했다.
+- Neon 공식 Skill snapshot `9df568a3f88a361ea33db00453ff754d07b3b3e1`과 현재 제품 문서를 교차 검증했다. OAuth Provider Beta와 원본의 오래된 지원 표 차이, AI Gateway scope 및 만료 미집행·명시적 revoke, S3 lifecycle/versioning 미집행, Functions의 재시작·timeout 경계를 반영했다. 설치·배포·유료 호출·secret 조회는 실행하지 않았다.
+- 관찰일과 출시일을 분리하고 미확인 버전·설치량·성장률·보안 점수를 추정하지 않았다. 전주 5개와 오늘 4개의 비교는 보고서 선정 수로 한정했다. 본 변경 기록은 이전 전체 내용을 보존한 추가이며, 저장 후 main에서 전체 원문을 다시 대조한다.
+
 ## 2026-10-28
 
 - [오늘의 보고서](2026/10/2026-10-28.md)에 신규 소개 Skill 5개를 기록: redis-clustering, redis-security, iris-development, recipe-review-meet-participants, recipe-bulk-download-folder. Top Pick은 redis-clustering, Codex 활용 후보는 Drive 수집의 fixture 기반 manifest 설계다.
