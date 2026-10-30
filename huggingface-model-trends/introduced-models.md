@@ -293,3 +293,7 @@ thinkingmachines/Inkling; zai-org/GLM-5.2; baidu/Unlimited-OCR; google/gemma-4-3
 
 ### 2026-10-29
 - nvidia/NVIDIA-Nemotron-3.5-Transcribe-30B-A4B 및 동일 SALM 구조의 BF16·FP8·NVFP4·GGUF·단순 크기·포맷·경미한 fine-tune 파생본과 DFlash2 보조 drafter. 기존 Lightning 30B-A3B·Nemotron 3 Diarization 재사용과 LLM 자체 구조 불변을 명시하며 독립 from-scratch 언어 계열로 주장하지 않음. 동결 diarizer 정보를 ASR 표현에 주입하는 Parallel Expert Encoder·serialized output training·answer-token-mass 혼합 SFT/전사 RL·공동 MTP를 확인한 주요 음성 입력/구조 확장 예외. 기존 cache-aware FastConformer ASR Streaming의 단순 대형화와 구분. 전체 약 34B/활성 4.3B(audio 포함), 정확한 tensor 합계 미확인; 40언어·최대 1시간·65,536 문맥의 offline 모델. 카드 OpenMDW-1.1·외부 고지 별도, LICENSE 전문 독립 확인 미완료. 공식 출시 10/28·관찰 10/29; 최초 public 전환 시각·한국어 품질·최소 VRAM 미확인. 근거: [2026-10-29 보고서](2026/10/2026-10-29.md)
+
+
+### 2026-10-30
+- mistralai/Mistral-Large-4-1T-A52B를 대표로 하는 Mistral Large 4 계열 및 동일 구조의 FP8·NVFP4·단순 크기·양자화·포맷·경미한 fine-tune 파생본과 DSpark3 보조 drafter. 기존 색인에 없던 Mistral Large 계열의 첫 소개이며 10/06 preview와 10/29 오픈웨이트 공개를 별도 계열로 세지 않음. 공식 from-scratch 학습 발표와 72층 MLA/sparse attention·128 routed top-4+shared MoE·Pixtral vision encoder 구조를 확인했으며 Shieldstral·Timestral의 단순 파생으로 판단하지 않음. 총 약 1T·활성 약 49B(embedding/output 포함 약 52B), 정확한 tensor 합계 미확인; 텍스트·이미지 입력/텍스트 출력·최대 1M 문맥. Mistral Ecosystem Open-Weight License의 MaaS 사업자 상업 이용 별도 계약 조건·내부 이용 예외·고지 유지 적용, 일반 MIT/Apache 아님. day-0 공개 10/29·관찰 10/30, 최초 public 전환 시각·최소 VRAM·한국어 품질 미확인. 근거: [2026-10-30 보고서](2026/10/2026-10-30.md)
