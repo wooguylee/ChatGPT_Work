@@ -2,6 +2,17 @@
 
 Daily Skill Trends 보고서와 소개 인덱스의 변경 기록입니다. 보고서의 날짜는 Asia/Seoul 기준입니다.
 
+## 2026-10-30
+
+- [오늘의 보고서](2026/10/2026-10-30.md)에 신규 Skill **5개**를 기록: gws-admin-reports, recipe-watch-drive-changes, recipe-save-email-attachments, recipe-sync-contacts-to-sheet, recipe-reschedule-meeting. Top Pick은 첨부파일 수집이며 즉시 실습 후보는 가짜 디렉터리 데이터 변환 테스트다.
+- 보고서를 main에 저장한 다음 범위 제한 없는 전체 원문 **13,019자**가 작성본과 정확히 일치함을 확인했다. [보고서 커밋](https://github.com/wooguylee/ChatGPT_Work/commit/c018574100f6c12b96815a016fa261dd1ff2e50d), 검증 blob SHA `d64db1e6427d4b7cf9ce9e9135d59056ff409037`.
+- 보고서 전체 검증 후 최신 인덱스를 다시 읽어 다섯 행을 추가했다. 전체 재조회 **11,471자**가 작성본과 정확히 일치했고 소개 수는 **319 → 324개**가 됐다. [인덱스 커밋](https://github.com/wooguylee/ChatGPT_Work/commit/6b9eec89e404d03d15335bee3f489fb238175c0d), 검증 blob SHA `5a9dba42059adec863901fea5f363025ac4334f5`.
+- 기존 날짜별 보고서 **56개 전체·소개 제목 319개**와 인덱스를 최초 소개일로 대조해 누락이 없음을 확인했다. Octocode 복합 표기와 brainstorming 부제를 정규화했다. 추가 행을 제거하면 이전 인덱스와 정확히 같으며, 기존 항목·최초 소개일·재등장 규칙을 보존했다.
+- 공식 조직 googleworkspace/cli의 snapshot `a3768d0e82ad83cca2da97724e46bea4ff0e6dbd`와 현재 Google API 문서를 확인했다. README의 공식 지원 제품이 아니라는 고지와 metadata 0.22.5/Apache-2.0의 범위를 구분했다.
+- 레시피의 오래된 Drive v1.updated를 현행 v3.contentChanged와 대조하고 파일/폴더·shared-drive target 차이를 명시했다. Gmail base64url 디코딩 누락과 upload 위치 인자, 도메인 디렉터리와 개인 주소록의 차이, append의 JSON 행 플래그 및 기존 Sheet 전제를 보정했다.
+- 조직 보고서 scope·보존 범위, 구독 갱신, 수집 중복, 반복 회차·참석자 통지 경계를 다뤘다. 설치·인증·실제 계정 수집·업로드·구독 생성·일정 변경을 수행하지 않았다. 관찰일을 출시일로 표시하지 않았고 설치량·급상승을 추정하지 않았다.
+- 본 기록은 이전 전체 CHANGELOG를 보존한 추가다. 저장 후 main에서 변경 파일 전체를 다시 대조하며, 과거 날짜 보고서나 예약 설정은 변경하지 않았다.
+
 ## 2026-10-29
 
 - [오늘의 보고서](2026/10/2026-10-29.md)에 신규 소개 Skill **4개**를 기록: neon-auth, neon-object-storage, neon-functions, neon-ai-gateway. Top Pick은 neon-functions이며, Codex 실습 후보는 객체 manifest와 DB 참조의 fixture 기반 점검이다.
