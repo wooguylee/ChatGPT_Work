@@ -2,6 +2,17 @@
 
 Daily Skill Trends 보고서와 소개 인덱스의 변경 기록입니다. 보고서의 날짜는 Asia/Seoul 기준입니다.
 
+## 2026-10-31
+
+- [오늘의 보고서](2026/10/2026-10-31.md)에 신규 Skill **5개**를 기록: azure-ai-textanalytics-py, azure-ai-translation-document-py, azure-ai-translation-text-py, azure-messaging-webpubsubservice-py, azure-storage-file-datalake-py. Top Pick은 문서 번역이며 즉시 실습 후보는 합성 NLP 결과의 정규화·부분 실패 테스트다.
+- main 저장 후 범위 제한 없는 보고서 **10,912자 전체**를 재조회해 작성본과 정확히 일치함을 확인했다. [보고서 커밋](https://github.com/wooguylee/ChatGPT_Work/commit/ba11a92c63e1840c4ff00a674b4524ba0e4b1630), 검증 blob SHA `4a81f416b53c04d4356a74b0182542e83155679c`.
+- 보고서 전체 검증 후 최신 인덱스를 다시 읽어 5개를 추가했다. 전체 재조회 **11,712자**가 작성본과 정확히 일치했고 소개 수는 **324 → 329개**가 됐다. [인덱스 커밋](https://github.com/wooguylee/ChatGPT_Work/commit/80f0e9e7c2131abf2e44975fa95ca9f3839efc8a), 검증 blob SHA `2c71e1147985347df22a6b9710ea6da1a12379f0`.
+- 기존 날짜별 보고서 **57개 전체·소개 제목 324개**를 최초 소개일 기준으로 대조해 누락이 없음을 확인했다. Octocode 복합 표기와 brainstorming 부제를 정규화했다. 추가 행을 제거하면 이전 인덱스와 정확히 같으며 기존 최초 소개일과 재등장 규칙을 보존했다.
+- Microsoft 공식 Skill snapshot `3f5b461b2314e01c400564051e92469114c5b68f`와 현행 SDK 문서를 비교했다. NLP 기능별 문서 수 제한, 단일 문서 번역 입력·Iterator 반환, Text Translation 2.0.0의 to_language/language, Web PubSub의 has_permission/close_user_connections, Data Lake의 신규 자식 ACL 상속 범위를 보강했다.
+- 공식 카탈로그와 원문 존재를 구분했다. aspire-ts는 해당 snapshot에서 SKILL.md를 확인하지 못해 제외했고 debugview·transcription은 추가 검증 미완료로 선정하지 않았다. 번역 문서와 문자열, 실시간 알림과 작업 큐, 계층형 파일과 단순 객체 저장의 차이를 설명했다.
+- 관찰일을 출시일로 표시하지 않았으며 설치량·인기 상승·성능을 추정하지 않았다. 설치·인증·실제 데이터 전송·유료 호출·토큰 발급·권한 변경은 수행하지 않았다.
+- 이 기록은 이전 전체 CHANGELOG를 보존한 추가다. 저장 후 변경한 세 파일 모두 main에서 전체 재조회로 대조하며 과거 날짜 보고서·다른 경로·예약 설정은 변경하지 않았다.
+
 ## 2026-10-30
 
 - [오늘의 보고서](2026/10/2026-10-30.md)에 신규 Skill **5개**를 기록: gws-admin-reports, recipe-watch-drive-changes, recipe-save-email-attachments, recipe-sync-contacts-to-sheet, recipe-reschedule-meeting. Top Pick은 첨부파일 수집이며 즉시 실습 후보는 가짜 디렉터리 데이터 변환 테스트다.
