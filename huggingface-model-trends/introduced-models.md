@@ -297,3 +297,7 @@ thinkingmachines/Inkling; zai-org/GLM-5.2; baidu/Unlimited-OCR; google/gemma-4-3
 
 ### 2026-10-30
 - mistralai/Mistral-Large-4-1T-A52B를 대표로 하는 Mistral Large 4 계열 및 동일 구조의 FP8·NVFP4·단순 크기·양자화·포맷·경미한 fine-tune 파생본과 DSpark3 보조 drafter. 기존 색인에 없던 Mistral Large 계열의 첫 소개이며 10/06 preview와 10/29 오픈웨이트 공개를 별도 계열로 세지 않음. 공식 from-scratch 학습 발표와 72층 MLA/sparse attention·128 routed top-4+shared MoE·Pixtral vision encoder 구조를 확인했으며 Shieldstral·Timestral의 단순 파생으로 판단하지 않음. 총 약 1T·활성 약 49B(embedding/output 포함 약 52B), 정확한 tensor 합계 미확인; 텍스트·이미지 입력/텍스트 출력·최대 1M 문맥. Mistral Ecosystem Open-Weight License의 MaaS 사업자 상업 이용 별도 계약 조건·내부 이용 예외·고지 유지 적용, 일반 MIT/Apache 아님. day-0 공개 10/29·관찰 10/30, 최초 public 전환 시각·최소 VRAM·한국어 품질 미확인. 근거: [2026-10-30 보고서](2026/10/2026-10-30.md)
+
+
+### 2026-10-31
+- sensenova/SenseNova-Loop-9B-Preview 및 동일 loop/mHC 계열의 단순 크기·양자화·GGUF·포맷·경미한 fine-tune 파생본과 보조 draft 배포. 32개 고유 decoder 중 [4,28) 24층을 공유 가중치로 두 번 실행하는 56층 연산 경로와 two-stream mHC·Sinkhorn routing을 확인한 주요 구조 변경 예외. Qwen35Encoder·Qwen3.5 호환 구조 재사용을 인정하며 hybrid attention·256K 자체를 신규성으로 세지 않음. 정확한 출시 초기화·전체 학습 계보 미확인으로 from-scratch라고 주장하지 않는다. 기존 SenseNova-U1.5 이미지 생성·편집 MoT나 Dory·ALoDLM의 직접 파생으로 확인된 것이 아님. 공식 약 9B 저장/14.6B 실행 환산, tensor 정수 합계·최소 VRAM·한국어 품질 미확인. 텍스트·이미지 입력/텍스트 출력, Preview. 모델 카드·프로젝트 Apache-2.0, TorchTitan 구현 BSD-3-Clause·외부 조건 별도; HF 별도 LICENSE 전문 미확인. 공식 발표 10/30·관찰 10/31, 최초 public 전환 시각 미확인. 근거: [2026-10-31 보고서](2026/10/2026-10-31.md)
