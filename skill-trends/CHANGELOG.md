@@ -2,6 +2,16 @@
 
 Daily Skill Trends 보고서와 소개 인덱스의 변경 기록입니다. 보고서의 날짜는 Asia/Seoul 기준입니다.
 
+## 2026-11-01
+
+- [오늘의 보고서](2026/11/2026-11-01.md)에 신규 Skill **5개**를 기록: azure-mgmt-apicenter-py, azure-mgmt-apimanagement-py, azure-ai-ml-py, azure-ai-language-conversations-py, azure-ai-vision-imageanalysis-py. Top Pick은 APIM 정책 검토이며 즉시 실습 후보는 CLU의 의도→대기 상태 adapter 테스트다.
+- main 저장 후 범위 제한 없는 보고서 **10,898자 전체**가 작성본과 정확히 일치함을 확인했다. [보고서 커밋](https://github.com/wooguylee/ChatGPT_Work/commit/9ace9b08826fda34d47e118be2ce7414ca706c92), 검증 blob SHA `93ef5fd3e6d10aaa6e0a043594e0e8d9cb2ea3cd`.
+- 보고서 전체 검증 후 최신 인덱스를 다시 읽어 5개를 추가했다. 전체 재조회 **11,933자**가 작성본과 정확히 일치했으며 소개 수는 **329 → 334개**다. [인덱스 커밋](https://github.com/wooguylee/ChatGPT_Work/commit/746746ef2542462657a47cdec5fabd155ce5afd8), 검증 blob SHA `2aa51aec27a355cad5c08e7cafb23898108bd4c9`.
+- 기존 보고서 **58개 전체·소개 제목 329개**를 최초 소개일 기준으로 대조해 누락 0개를 확인했다. 코드 표기·Octocode 복합 이름·brainstorming 부제를 정규화했다. 추가 행을 제거하면 이전 인덱스와 정확히 같으며 기존 날짜·재등장 규칙을 보존했다.
+- Microsoft 공식 Skill snapshot `3f5b461b2314e01c400564051e92469114c5b68f`와 현행 공식 문서·SDK 소스를 비교했다. MLClient의 context-manager 가정, API Center의 properties 경로, APIM의 base 상속·키 출력, CLU의 endpoint 인증 조건을 보강했다.
+- Image Analysis의 2028-09-25 종료 공지를 반영해 신규 장기 도입 대신 기존 코드의 계약 검토·이관 준비 용도로 선정했다. 관찰일을 출시일로 표시하지 않았으며 설치량·인기 상승·실행 성공을 추정하지 않았다.
+- 설치·인증·실제 데이터 전송·유료 호출·배포·키 발급·권한 변경은 수행하지 않았다. 이 기록은 이전 CHANGELOG 전체를 보존한 추가이며 변경 세 파일을 main에서 전체 재조회로 검증한다. 과거 날짜·다른 경로·예약 설정은 변경하지 않았다.
+
 ## 2026-10-31
 
 - [오늘의 보고서](2026/10/2026-10-31.md)에 신규 Skill **5개**를 기록: azure-ai-textanalytics-py, azure-ai-translation-document-py, azure-ai-translation-text-py, azure-messaging-webpubsubservice-py, azure-storage-file-datalake-py. Top Pick은 문서 번역이며 즉시 실습 후보는 합성 NLP 결과의 정규화·부분 실패 테스트다.
