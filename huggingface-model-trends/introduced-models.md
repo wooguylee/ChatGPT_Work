@@ -301,3 +301,7 @@ thinkingmachines/Inkling; zai-org/GLM-5.2; baidu/Unlimited-OCR; google/gemma-4-3
 
 ### 2026-10-31
 - sensenova/SenseNova-Loop-9B-Preview 및 동일 loop/mHC 계열의 단순 크기·양자화·GGUF·포맷·경미한 fine-tune 파생본과 보조 draft 배포. 32개 고유 decoder 중 [4,28) 24층을 공유 가중치로 두 번 실행하는 56층 연산 경로와 two-stream mHC·Sinkhorn routing을 확인한 주요 구조 변경 예외. Qwen35Encoder·Qwen3.5 호환 구조 재사용을 인정하며 hybrid attention·256K 자체를 신규성으로 세지 않음. 정확한 출시 초기화·전체 학습 계보 미확인으로 from-scratch라고 주장하지 않는다. 기존 SenseNova-U1.5 이미지 생성·편집 MoT나 Dory·ALoDLM의 직접 파생으로 확인된 것이 아님. 공식 약 9B 저장/14.6B 실행 환산, tensor 정수 합계·최소 VRAM·한국어 품질 미확인. 텍스트·이미지 입력/텍스트 출력, Preview. 모델 카드·프로젝트 Apache-2.0, TorchTitan 구현 BSD-3-Clause·외부 조건 별도; HF 별도 LICENSE 전문 미확인. 공식 발표 10/30·관찰 10/31, 최초 public 전환 시각 미확인. 근거: [2026-10-31 보고서](2026/10/2026-10-31.md)
+
+
+### 2026-11-02
+- baidu/Unlimited-OCR-2 및 동일 SR-SWA 세대의 단순 크기·양자화·포맷·경미한 fine-tune 파생본. 기존 Unlimited-OCR checkpoint 초기화·DeepEncoder/aligner 동결을 인정하며 from-scratch 계열로 주장하지 않음. 이전 R-SWA의 전체 시각 prefix 참조에서 Page Gate·Token Sieve의 학습되는 고정 예산 sparse routing, page2d 위치·겹침 경계 page KV/텍스트 tail 재사용으로 바뀌고 12M 문서·64K 1-epoch 후학습을 확인한 공식 주요 차세대 예외. 기존 여러 날의 보류를 새 공식 PDF와 이전 논문 대조로 해제. 본문 약 3B total/500M active, HF BF16 tensor 3,343,978,240개·I64 257개 별도이며 정확한 활성량 미확인. 카드 MIT·코드 MIT 전문 확인, HF 별도 LICENSE 404로 가중치 약관 전문 독립 확인 미완료. 10/27 출시·11/02 관찰; 최초 public 전환 시각·최소 VRAM·한국어 품질 미확인. 고정 step 비용을 총 처리시간 불변이나 무한 정확도로 해석하지 않음. 근거: [2026-11-02 보고서](2026/11/2026-11-02.md)
