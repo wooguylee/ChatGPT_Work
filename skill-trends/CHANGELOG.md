@@ -2,6 +2,17 @@
 
 Daily Skill Trends 보고서와 소개 인덱스의 변경 기록입니다. 보고서의 날짜는 Asia/Seoul 기준입니다.
 
+## 2026-11-02
+
+- [오늘의 보고서](2026/11/2026-11-02.md)에 신규 Skill **5개**를 기록: recipe-copy-sheet-for-new-month, recipe-create-doc-from-template, recipe-create-expense-tracker, recipe-create-task-list, recipe-label-and-archive-emails. Top Pick은 월별 탭 복제이며 즉시 실습 후보는 지출표 입력 fixture 검토다.
+- main 저장 후 범위 제한 없는 보고서 **10,858자 전체**가 작성본과 정확히 일치함을 확인했다. [보고서 커밋](https://github.com/wooguylee/ChatGPT_Work/commit/254d1567cb410ac8f7eb782f632d9f56e01b360d).
+- 보고서 전체 검증 후 최신 인덱스를 읽어 5개를 추가했다. **12,169자 전체** 재조회 원문이 정확히 일치했고 소개 수는 **334 → 339개**다. [인덱스 커밋](https://github.com/wooguylee/ChatGPT_Work/commit/28321e5abc7bbc6c6062f3aa700897bc3eef90e7). 추가한 행을 제거하면 기존 원문과 정확히 같아 기존 항목·날짜·재등장 규칙 보존을 확인했다.
+- 기존 날짜별 보고서 **59개 전체·소개 제목 334개**를 전체 인덱스와 최초 소개일 기준으로 대조했으며 누락 0개였다. 긴 이름 우선 대응과 코드 표기·Octocode 복합 이름·brainstorming 부제 정규화를 적용했다.
+- googleworkspace/cli snapshot `cd3697e07eb520056dcf142d0c7439bbb9ba32e9`의 원문 5개·기반 Skill·공통 문서·Docs/Sheets helper·README·LICENSE를 읽고 공식 API와 대조했다. 공식 지원 제품이 아니라는 README 고지를 유지했다.
+- 템플릿 문서 예제의 --document-id를 현재 --document와 구분하고, +write는 평문 append이지 placeholder 치환·Markdown 서식 적용이 아님을 명시했다. 지출표 --values의 쉼표 분할과 --json-values, USER_ENTERED 수식 해석, 현재 --range 지원을 확인했다.
+- 복제 후 실제 sheetId 전달, Tasks due의 날짜 전용 의미, Gmail 제목의 thread와 실제 message 단위 수정, 공유 시 기본 알림 메일·권한 경계를 설명했다. 원본 레시피를 그대로 실행하는 추천이 아니다.
+- 설치·인증·실제 업무 데이터 조회·클라우드 파일 생성·공유·메일 상태 변경을 하지 않았다. 기존 CHANGELOG 전체를 보존해 추가하며 세 변경 파일은 전체 main 재조회로 검증한다. 과거 날짜 보고서·다른 경로·자동화 설정은 변경하지 않았다.
+
 ## 2026-11-01
 
 - [오늘의 보고서](2026/11/2026-11-01.md)에 신규 Skill **5개**를 기록: azure-mgmt-apicenter-py, azure-mgmt-apimanagement-py, azure-ai-ml-py, azure-ai-language-conversations-py, azure-ai-vision-imageanalysis-py. Top Pick은 APIM 정책 검토이며 즉시 실습 후보는 CLU의 의도→대기 상태 adapter 테스트다.
