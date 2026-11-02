@@ -367,6 +367,12 @@
 | azure-ai-language-conversations-py | 2026-11-01 |
 | azure-ai-vision-imageanalysis-py | 2026-11-01 |
 
+| recipe-copy-sheet-for-new-month | 2026-11-02 |
+| recipe-create-doc-from-template | 2026-11-02 |
+| recipe-create-expense-tracker | 2026-11-02 |
+| recipe-create-task-list | 2026-11-02 |
+| recipe-label-and-archive-emails | 2026-11-02 |
+
 ## 재등장 규칙
 
 이 목록에 있는 Skill은 기본적으로 다시 소개하지 않습니다. 다만 대규모 업데이트, 급격한 순위 상승, 주요 기능 변화 등 명확한 재평가 사유가 있는 경우 `재등장`으로 표시하고 다시 포함할 수 있습니다.
