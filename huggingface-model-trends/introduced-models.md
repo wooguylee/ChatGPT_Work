@@ -305,3 +305,7 @@ thinkingmachines/Inkling; zai-org/GLM-5.2; baidu/Unlimited-OCR; google/gemma-4-3
 
 ### 2026-11-02
 - baidu/Unlimited-OCR-2 및 동일 SR-SWA 세대의 단순 크기·양자화·포맷·경미한 fine-tune 파생본. 기존 Unlimited-OCR checkpoint 초기화·DeepEncoder/aligner 동결을 인정하며 from-scratch 계열로 주장하지 않음. 이전 R-SWA의 전체 시각 prefix 참조에서 Page Gate·Token Sieve의 학습되는 고정 예산 sparse routing, page2d 위치·겹침 경계 page KV/텍스트 tail 재사용으로 바뀌고 12M 문서·64K 1-epoch 후학습을 확인한 공식 주요 차세대 예외. 기존 여러 날의 보류를 새 공식 PDF와 이전 논문 대조로 해제. 본문 약 3B total/500M active, HF BF16 tensor 3,343,978,240개·I64 257개 별도이며 정확한 활성량 미확인. 카드 MIT·코드 MIT 전문 확인, HF 별도 LICENSE 404로 가중치 약관 전문 독립 확인 미완료. 10/27 출시·11/02 관찰; 최초 public 전환 시각·최소 VRAM·한국어 품질 미확인. 고정 step 비용을 총 처리시간 불변이나 무한 정확도로 해석하지 않음. 근거: [2026-11-02 보고서](2026/11/2026-11-02.md)
+
+
+### 2026-11-03
+- nvidia/NVIDIA-NemotronLabs-RE-USE 및 RE-USE-laughter와 같은 USEMamba 복원 계열의 단순 크기·양자화·포맷·경미한 fine-tune 파생본. 기존 색인에 없던 USEMamba/RE-USE 계보의 첫 소개이며 기존 USEMamba 대비 독립 차세대 또는 모든 구성요소 from-scratch라는 뜻이 아님. dense encoder·30개 time/frequency Mamba 블록·분리 magnitude/phase decoder·sampling-frequency-independent STFT를 확인했고 기존 Nemotron ASR/LLM·AuK 가중치의 직접 파생으로 확인된 것이 아님. HF F32 9,607,747개, OpenMDW-1.1 전문·외부 고지 확인. 양방향 offline 배포이며 관련 실시간·GAN 논문의 모든 기능을 현 checkpoint에 귀속하지 않음. 현재 코드 CUDA 필수·FLAC 출력; 최소 VRAM·한국어/음악 품질 미검증. 카드 출시 10/22·관찰 11/03, 저장소 생성 07/22와 구분. 근거: [2026-11-03 보고서](2026/11/2026-11-03.md)
