@@ -2,6 +2,16 @@
 
 Daily Skill Trends 보고서와 소개 인덱스의 변경 기록입니다. 보고서의 날짜는 Asia/Seoul 기준입니다.
 
+## 2026-11-03
+
+- [오늘의 보고서](2026/11/2026-11-03.md)에 신규 Skill **5개**를 기록: recipe-create-events-from-sheet, recipe-create-feedback-form, recipe-create-meet-space, recipe-create-presentation, recipe-schedule-recurring-event. Top Pick은 피드백 폼이며 즉시 실습 후보는 시트→일정 변환의 합성 데이터 검증기다.
+- main 저장 후 보고서 **10,925자 전체**가 작성본과 정확히 일치함을 확인했다. [보고서 커밋](https://github.com/wooguylee/ChatGPT_Work/commit/582c6c774480740fb91fec4eefb03a96a9086d4b).
+- 보고서 검증 후 최신 인덱스에 5개를 추가했다. **12,399자 전체** 재조회 원문 일치, 소개 수 **339 → 344개**. [인덱스 커밋](https://github.com/wooguylee/ChatGPT_Work/commit/66513df14117e270d84b39750104ee68dae65e31). 추가 행 제거 결과가 이전 원문과 정확히 같아 기존 항목·날짜·규칙 보존을 확인했다.
+- 기존 보고서 **60개 전체·소개 제목 339개**를 최초 소개일 기준으로 대조했고 누락 0개였다. tree는 truncated=false이며 별도 skill-trends README·AGENTS는 없었다.
+- googleworkspace/cli snapshot `cd3697e07eb520056dcf142d0c7439bbb9ba32e9`의 원문·기반 Skill·공통 문서·Calendar helper·LICENSE와 공식 API를 검토했다. 원본 조직의 자료이지만 공식 지원 Google 제품이 아니라는 고지를 유지했다.
+- 표→일정 예제의 오프셋 누락·sendUpdates 미지정, Forms 질문 생성 생략과 게시 검수, Meet OPEN 입장 범위, Slides 내용 생성 생략·Drive 의존성, 반복 이벤트 검증용 agenda의 50개 제한·페이지 미순회·조회 실패 처리 한계를 명시했다.
+- 설치·인증·실제 계정 데이터 조회·파일/일정 생성·공유·발송을 수행하지 않았다. 이전 CHANGELOG 전체를 보존해 추가하며 변경 세 파일을 main에서 전체 재조회한다. 과거 날짜·다른 경로·자동화 설정은 변경하지 않았다.
+
 ## 2026-11-02
 
 - [오늘의 보고서](2026/11/2026-11-02.md)에 신규 Skill **5개**를 기록: recipe-copy-sheet-for-new-month, recipe-create-doc-from-template, recipe-create-expense-tracker, recipe-create-task-list, recipe-label-and-archive-emails. Top Pick은 월별 탭 복제이며 즉시 실습 후보는 지출표 입력 fixture 검토다.
