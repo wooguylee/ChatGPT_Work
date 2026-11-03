@@ -373,6 +373,12 @@
 | recipe-create-task-list | 2026-11-02 |
 | recipe-label-and-archive-emails | 2026-11-02 |
 
+| recipe-create-events-from-sheet | 2026-11-03 |
+| recipe-create-feedback-form | 2026-11-03 |
+| recipe-create-meet-space | 2026-11-03 |
+| recipe-create-presentation | 2026-11-03 |
+| recipe-schedule-recurring-event | 2026-11-03 |
+
 ## 재등장 규칙
 
 이 목록에 있는 Skill은 기본적으로 다시 소개하지 않습니다. 다만 대규모 업데이트, 급격한 순위 상승, 주요 기능 변화 등 명확한 재평가 사유가 있는 경우 `재등장`으로 표시하고 다시 포함할 수 있습니다.
