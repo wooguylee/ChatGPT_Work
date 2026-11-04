@@ -2,6 +2,17 @@
 
 Daily Skill Trends 보고서와 소개 인덱스의 변경 기록입니다. 보고서의 날짜는 Asia/Seoul 기준입니다.
 
+## 2026-11-04
+
+- [오늘의 보고서](2026/11/2026-11-04.md)에 신규 Skill **5개**를 기록: recipe-create-gmail-filter, recipe-create-vacation-responder, recipe-save-email-to-doc, recipe-generate-report-from-sheet, recipe-post-mortem-setup.
+- Top Pick: recipe-save-email-to-doc. Codex 즉시 활용 후보: recipe-generate-report-from-sheet의 합성 데이터 집계 테스트.
+- main 보고서 전체 10,856자를 작성본과 정확히 대조한 뒤 인덱스를 갱신했다. 인덱스 전체 재조회도 정확히 일치하며 누적 344→349개다. 기존 항목·최초 소개일·재등장 규칙을 보존했다.
+- 기존 날짜별 보고서 61개·소개 제목 344개를 전체 인덱스와 대조해 누락·최초 소개일 불일치 0개를 확인했다.
+- Gmail 필터의 INBOX 제거와 지속 규칙, 부재중 응답의 기간 누락·대상 제한·밀리초 시각, MIME 본문 추출을 공식 원문/API로 확인했다.
+- Docs 예제의 --document-id 및 --title/--body가 실제 helper의 --document/--text와 불일치함을 설명했다. 평문 append를 서식 변환으로 과장하지 않았고, 표 보고서의 고정 예제 수치를 실제 집계와 구분했다.
+- Drive 공유 알림, 회고 일정의 시간대·통지, 부분 실패 후 중복 방지와 사실/가설 구분을 보강했다.
+- 설치·계정 설정·문서 생성·공유·메일/Chat 발송 시험은 하지 않았다. 과거 날짜·다른 경로·자동화 설정은 변경하지 않았다. 변경 세 파일은 마지막으로 전체 재조회해 검증한다.
+
 ## 2026-11-03
 
 - [오늘의 보고서](2026/11/2026-11-03.md)에 신규 Skill **5개**를 기록: recipe-create-events-from-sheet, recipe-create-feedback-form, recipe-create-meet-space, recipe-create-presentation, recipe-schedule-recurring-event. Top Pick은 피드백 폼이며 즉시 실습 후보는 시트→일정 변환의 합성 데이터 검증기다.
