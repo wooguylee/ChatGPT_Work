@@ -2,6 +2,18 @@
 
 Daily Skill Trends 보고서와 소개 인덱스의 변경 기록입니다. 보고서의 날짜는 Asia/Seoul 기준입니다.
 
+## 2026-11-05
+
+- [오늘의 보고서](2026/11/2026-11-05.md)에 신규 Skill **6개**를 기록: attach-db, query, read-file, convert-file, spatial, duckdb-docs. 모두 duckdb/duckdb-skills의 서로 다른 분석 작업이며 시장 전체의 여섯 독립 유행으로 해석하지 않았다.
+- Top Pick: query. Codex 즉시 활용 후보: convert-file의 합성 변환 검증 계획. Claude Code plugin 명령의 Codex 호환성을 실행 확인했다고 주장하지 않았다.
+- main 저장 후 보고서 **13,203자 전체(Unicode 문자 기준)**가 작성본과 정확히 일치하고 Git blob SHA도 일치함을 확인했다. [보고서 커밋](https://github.com/wooguylee/ChatGPT_Work/commit/f619b8c156c21399e5611145f05f53afa2c96ac8).
+- 보고서 검증 뒤 최신 인덱스에 여섯 항목을 추가했다. **12,791자 전체** 재조회가 작성본과 정확히 일치하고, 추가 행을 제거하면 기존 원문과 같아 항목·최초 소개일·재등장 규칙 보존을 확인했다. 누적 **349 → 355개**. [인덱스 커밋](https://github.com/wooguylee/ChatGPT_Work/commit/74d175033886b6841cfbcab8ab522d99f429ff44).
+- 기존 날짜별 보고서 **62개 전체·소개 제목 349개**와 인덱스를 최초 소개일 기준으로 대조했다. 누락·날짜 불일치는 0개였다. 전체 tree는 truncated=false이며 별도 AGENTS·skill-trends README는 없었다.
+- 공식 원본 snapshot은 7feda8e01e22bc0886c86123f3884947e36d8c69, 커밋 날짜는 2026-04-14, plugin 묶음 버전은 0.2.4, 라이선스는 MIT다. 현재 공개 원문 조사와 신규 출시·인기 상승을 구분했다.
+- 여섯 SKILL.md·spatial 참고문서 두 개·설치 Skill·README·metadata·LICENSE와 공식 문서를 대조했다. .xls 미지원, COPY 기존 파일 덮어쓰기·동일 입출력 경로 위험, spheroid 함수의 잘못된 입력형 설명, DuckDB 문서 필터 lts/stable 불일치를 기록했다.
+- state.sql과 ~/.duckdbrc의 실행 순서, allowed_paths의 보안 한계, 추정 행 수와 바이트 수, 20행 표본과 전체 스캔 비용, 일시 secret과 영구 저장을 구분했다. spatial은 설명 오류를 수정해 활용하는 조건부 후보로 남겼다.
+- 설치·SQL·확장 로드·원격 데이터 조회·문서 인덱스 다운로드·변환·공간 분석 시험은 수행하지 않았다. 기존 CHANGELOG 전체를 보존해 추가하며, 이 기록 저장 후 보고서·인덱스·CHANGELOG 세 파일을 main에서 범위 제한 없이 다시 가져와 전체 대조한다. 과거 날짜·다른 보고서 경로·자동화 설정은 변경하지 않았다.
+
 ## 2026-11-04
 
 - [오늘의 보고서](2026/11/2026-11-04.md)에 신규 Skill **5개**를 기록: recipe-create-gmail-filter, recipe-create-vacation-responder, recipe-save-email-to-doc, recipe-generate-report-from-sheet, recipe-post-mortem-setup.
