@@ -2,6 +2,20 @@
 
 Daily Skill Trends 보고서와 소개 인덱스의 변경 기록입니다. 보고서의 날짜는 Asia/Seoul 기준입니다.
 
+## 2026-11-06
+
+- [오늘의 보고서](2026/11/2026-11-06.md)에 신규 Skill **5개**를 기록: data-designer, accelerated-computing-cudf, compute-sanitizer-diagnose-cuda-bugs, nemo-retriever, nemotron-retrieval-recipes. Top Pick은 data-designer이며 Codex 실습 후보는 cuDF 결과 동등성 테스트 계획이다.
+- main 저장 후 보고서 **16,731자 전체(Unicode 문자 기준)**가 작성본과 정확히 일치하고 Git blob SHA도 일치함을 확인했다. [보고서 커밋](https://github.com/wooguylee/ChatGPT_Work/commit/5c880500fbe1b5827b407894c5cb9e3c602a67bb), blob SHA `fff45a6f7fa698c60688d80283488a2ed1d675e9`.
+- 보고서 검증 후 최신 인덱스에 다섯 항목을 추가했다. **12,997자 전체**를 다시 읽어 작성본과 정확한 일치를 확인했고 누적 **355 → 360개**다. [인덱스 커밋](https://github.com/wooguylee/ChatGPT_Work/commit/7cb138044b932ab555925483d9281f5e3285cbe3). 추가 행을 제거하면 이전 원문과 같아 기존 항목·최초 소개일·재등장 규칙 보존을 확인했다.
+- 기존 날짜별 보고서 **63개 전체·소개 제목 355개**를 인덱스와 대조해 누락·최초 소개일 불일치·중복 0개를 확인했다. 전체 tree는 truncated=false이며 별도 AGENTS·skill-trends README는 없었다.
+- NVIDIA 공식 카탈로그 snapshot은 `9f98b1b2735b5ff4fd30cb2a88c0f3c54babdf9e`다. 최근 metadata 재생성 커밋을 개별 Skill의 출시나 성능 개선으로 표현하지 않았다. 31개 GitHub 출처 URL과 5개 공식 제품 문서 URL을 조회했고, 서명 파일 존재와 실제 서명 검증 성공을 구분했다.
+- Data Designer의 단일 긍정 평가 과제·API 키·대화형/Autopilot 실행 경계를 명시했다. cuDF의 개발 버전·CPU fallback·nullable 의미와 amount 열을 먼저 제거하는 Dask 예제를 검토했다.
+- Compute Sanitizer의 blocking 정밀도 설명·racecheck 요약 파서·coredump 옵션 표기 차이를 공식 문서와 대조했다. Agent 평가 점수·총 토큰 사용을 실제 GPU 속도나 사용자 커널의 탐지율로 확대하지 않았다.
+- NeMo Retriever의 local/service·GPU·remote endpoint 조건과 NVAIE 지원 제외를 확인했다. 평가 문서의 PASS와 효과성 수치·게이트 설명 사이의 불일치는 미해결로 남겼다.
+- Nemotron retrieval recipes는 현행 embed profile 차이와 dry-run의 제한을 밝혔고, 현재 소스 확인을 전제로 텍스트 rerank 계획용으로 좁혀 소개했다.
+- rag-eval·rag-perf는 기반 Blueprint의 유지보수 종료·신규 production 비권장 고지를 확인해 제외했다. skill-card-generator는 오래된 보안 평가 하락·라이선스 경로·부모 저장소 탐색 범위의 추가 검토가 필요해 제외했으며 세 후보 모두 인덱스에 넣지 않았다.
+- 설치·모델 호출·학습·문서 적재/전송·GPU 실행·보안 공격 시험·서명 검증을 수행하지 않았다. 기존 CHANGELOG 전체를 보존해 추가하며, 이 기록 저장 후 보고서·인덱스·CHANGELOG 세 파일을 main에서 범위 제한 없이 다시 읽어 전체 대조한다. 과거 날짜·다른 보고서 경로·자동화 설정은 변경하지 않았다.
+
 ## 2026-11-05
 
 - [오늘의 보고서](2026/11/2026-11-05.md)에 신규 Skill **6개**를 기록: attach-db, query, read-file, convert-file, spatial, duckdb-docs. 모두 duckdb/duckdb-skills의 서로 다른 분석 작업이며 시장 전체의 여섯 독립 유행으로 해석하지 않았다.
