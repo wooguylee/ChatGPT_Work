@@ -392,6 +392,12 @@
 | spatial | 2026-11-05 |
 | duckdb-docs | 2026-11-05 |
 
+| data-designer | 2026-11-06 |
+| accelerated-computing-cudf | 2026-11-06 |
+| compute-sanitizer-diagnose-cuda-bugs | 2026-11-06 |
+| nemo-retriever | 2026-11-06 |
+| nemotron-retrieval-recipes | 2026-11-06 |
+
 ## 재등장 규칙
 
 이 목록에 있는 Skill은 기본적으로 다시 소개하지 않습니다. 다만 대규모 업데이트, 급격한 순위 상승, 주요 기능 변화 등 명확한 재평가 사유가 있는 경우 `재등장`으로 표시하고 다시 포함할 수 있습니다.
