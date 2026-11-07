@@ -2,6 +2,20 @@
 
 Daily Skill Trends 보고서와 소개 인덱스의 변경 기록입니다. 보고서의 날짜는 Asia/Seoul 기준입니다.
 
+## 2026-11-07
+
+- [오늘의 보고서](2026/11/2026-11-07.md)에 신규 Skill **6개**를 기록: using-dbt-for-analytics-engineering, adding-dbt-unit-test, working-with-dbt-mesh, building-dbt-semantic-layer, answering-natural-language-questions-with-dbt, troubleshooting-dbt-job-errors. Top Pick은 adding-dbt-unit-test이며 Codex 실습 후보는 analytics engineering의 모델 검토 계획이다.
+- main 저장 후 보고서 **22,696자 전체(Unicode 문자 기준)**가 작성본과 정확히 일치하고 Git blob SHA도 일치함을 확인했다. [보고서 커밋](https://github.com/wooguylee/ChatGPT_Work/commit/41c790ac3da30865cb31b6ec6b238c3d10fe8f65), blob SHA `99d775a7333096c0c89b44bf84b68766b8799993`.
+- 보고서 검증 뒤 최신 인덱스에 여섯 항목을 추가했다. **13,284자 전체**를 다시 읽어 작성본과 정확한 일치를 확인했고 누적 **360 → 366개**다. [인덱스 커밋](https://github.com/wooguylee/ChatGPT_Work/commit/ad90fee99df6ae8a2afad06520ca9b69f2388ceb). 추가 행을 제거하면 이전 원문과 같아 기존 항목·최초 소개일·재등장 규칙 보존을 확인했다.
+- 기존 날짜별 보고서 **64개 전체·소개 제목 360개**를 인덱스와 대조해 누락·최초 소개일 불일치·중복 0개를 확인했다. 전체 tree는 truncated=false이며 별도 AGENTS·skill-trends README는 없었다.
+- 공식 dbt Skill snapshot은 `b8facde20b7a92c40ce3e6b86b71c4b92aa44040`, 일상 개발 plugin 버전은 1.6.0, 라이선스는 Apache-2.0이다. 현재 원문 조사와 신규 출시·인기 상승을 구분했다. 보고서의 **GitHub 출처 URL 26개와 공식 dbt 문서 URL 20개**를 조회했다.
+- 모델의 grain·조인 중복·state 비교 기준을 설명했다. dbt show는 기존 테이블 존재 검사가 아니라 모델 SQL을 다시 실행하고, inline 조회에는 쓰기 방지 보장이 없음을 공식 문서로 확인했다.
+- unit test의 합성 fixture·증분 모델 기대값·부모 relation 조건과 bare selector의 한계를 명시했다. 공식 build의 unit test → materialization → data test 순서, 원문 versions YAML 들여쓰기 오류, --empty의 실제 실행·변경 가능성을 구분했다.
+- Mesh의 계약·버전·소비자 전환과 warehouse 권한을 구분했다. latest_version_pointer의 v1.12 도입·v2 기본 활성화와 이름 충돌을 현행 문서로 대조했다. Semantic Layer의 latest YAML에서 다른 프로젝트 모델을 직접 참조하는 구성의 미지원 조건과 time spine 예시의 오래된 날짜 범위도 기록했다.
+- 자연어 분석은 기존 지표 정의를 우선하도록 설명했다. get_model_details의 대체 도구, execute_sql의 OAuth/PAT·프로젝트 권한 조건, SQL 초안과 실제 실행 결과를 구분했다. job 진단에서는 정확한 run·step 아티팩트와 코드 비교를 강조하고 compile의 warehouse 접근 가능성을 명시했다.
+- 개별 Skill·Codex 대상·commit 고정 설치 예시는 공식 Skills CLI 문서와 대조했으며 실행하지 않았다. 평가 실행기의 빈 allowed_tools 처리, macOS 자격증명 복사 코드, 임시 폴더와 OS 격리의 차이를 확인했다. 평가 도구의 존재를 성능 검증으로 확대하지 않았다.
+- 설치·dbt 실행·웨어하우스 조회·MCP 인증·job 재실행·배포·평가 실행은 수행하지 않았다. 기존 CHANGELOG 전체를 보존해 추가하며, 이 기록 저장 후 보고서·인덱스·CHANGELOG 세 파일을 main에서 범위 제한 없이 다시 읽어 전체 대조한다. 과거 날짜·다른 보고서 경로·자동화 설정은 변경하지 않았다.
+
 ## 2026-11-06
 
 - [오늘의 보고서](2026/11/2026-11-06.md)에 신규 Skill **5개**를 기록: data-designer, accelerated-computing-cudf, compute-sanitizer-diagnose-cuda-bugs, nemo-retriever, nemotron-retrieval-recipes. Top Pick은 data-designer이며 Codex 실습 후보는 cuDF 결과 동등성 테스트 계획이다.
