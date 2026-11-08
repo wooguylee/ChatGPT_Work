@@ -2,6 +2,21 @@
 
 Daily Skill Trends 보고서와 소개 인덱스의 변경 기록입니다. 보고서의 날짜는 Asia/Seoul 기준입니다.
 
+## 2026-11-08
+
+- [오늘의 보고서](2026/11/2026-11-08.md)에 신규 Skill **6개**를 기록: expo-project-structure, expo-router, expo-data-fetching, expo-dev-client, expo-upgrade, eas-update. Top Pick은 expo-data-fetching의 실패 상태 검토이며 Codex 실습 후보는 신규 앱 구조안이다.
+- main 저장 후 보고서 **17,016자 전체(Unicode 문자 기준), 31,339 bytes**가 작성본과 정확히 일치하고 Git blob SHA도 일치함을 확인했다. [보고서 커밋](https://github.com/wooguylee/ChatGPT_Work/commit/3c5dcfe19a378185c65307c801c6b6c84c112126), blob SHA `d8e2aad103a3509a2e029b2d04de134d0a45db58`.
+- 보고서 검증 뒤 최신 인덱스에 여섯 항목을 추가했다. **13,481자 전체**를 재조회해 작성본과 정확한 일치를 확인했고 누적 **366 → 372개**다. [인덱스 커밋](https://github.com/wooguylee/ChatGPT_Work/commit/32e25207fc90c2c91daa597867d4fdc102cf844a), blob SHA `27db5dfc87e3df2d9ee797e49df01f819a65d63a`. 추가 행을 제거하면 이전 원문과 같아 기존 항목·최초 소개일·재등장 규칙 보존을 확인했다.
+- 기존 날짜별 보고서 **65개 전체·소개 제목 366개**와 전체 인덱스를 대조해 누락·최초 소개일 불일치·중복 0개를 확인했다. 전체 tree는 truncated=false이며 별도 AGENTS·skill-trends README는 없었다. 오늘 파일 부재를 저장 직전에 다시 확인했다.
+- 공식 Expo Skill snapshot은 `a9e5bd3fa00b4e61f632e43f85da73aee1942582`, plugin metadata 버전은 1.14.3, 저장소 라이선스는 MIT다. 커밋 시각과 개별 Skill 출시일, plugin 버전과 SDK 버전, 신규 소개와 시장 인기 상승을 구분했다.
+- expo-project-structure는 새 앱 전용이며 기존 앱 재구성을 권하지 않음을 명시했다. src/app 우선순위, 서버 코드 경계, API route 배포 조건을 설명했다.
+- expo-router의 원문 unstable-native-tabs 경로와 현재 SDK 58 native-tabs 경로를 구분했다. 예약 파일명 문법, 딥링크·로그인 복원·뒤로 가기·모달 반복 흐름의 검증 기준을 제시했다.
+- expo-data-fetching의 네 가지 화면 상태·초안 보존을 소개했다. React Query 취소 signal, 쓰기 재시도와 중복 방지, 공개 환경 변수, SDK 58 loader 설정·캐시 차이를 공식 문서로 대조했다. 동봉 잔액 loader 예제의 쿠키 유무와 실제 인증 검증의 차이도 명시했다.
+- expo-dev-client의 클라우드 유료 단정에 무료 할당량 조건을 보완했다. CLI 점검 블록의 eas update는 OTA 게시 명령이며 버전 확인용이 아님을 경고했다. 자동 제출 플래그, 시뮬레이터·기기·TestFlight 프로필을 구분했다.
+- expo-upgrade의 native 폴더 재생성 위험, SDK 55+ New Architecture 비활성화 불가, 특정 Hermes 버그 대응과 일반 업그레이드 절차의 차이를 확인했다. Deprecated Packages 표를 일괄 삭제 목록으로 사용하지 않도록 설명했다.
+- eas-update의 플랫폼·runtime·channel·branch·environment, 개발/출시형 빌드의 적용 시점과 게시 성공/사용자 적용의 차이를 정리했다. plugin의 원격 MCP 포함, OAuth·유료 호출·외부 피드백 전송의 별도 검토도 명시했다.
+- 설치·계정 연결·빌드·기기 시험·OTA 게시·스토어 제출·피드백 전송은 수행하지 않았다. 기존 CHANGELOG 전체를 보존해 추가하며, 이 기록 저장 후 보고서·인덱스·CHANGELOG 세 파일을 main에서 범위 제한 없이 다시 읽어 전체 대조한다. 과거 날짜·다른 보고서 경로·자동화 설정은 변경하지 않았다.
+
 ## 2026-11-07
 
 - [오늘의 보고서](2026/11/2026-11-07.md)에 신규 Skill **6개**를 기록: using-dbt-for-analytics-engineering, adding-dbt-unit-test, working-with-dbt-mesh, building-dbt-semantic-layer, answering-natural-language-questions-with-dbt, troubleshooting-dbt-job-errors. Top Pick은 adding-dbt-unit-test이며 Codex 실습 후보는 analytics engineering의 모델 검토 계획이다.
