@@ -405,6 +405,13 @@
 | answering-natural-language-questions-with-dbt | 2026-11-07 |
 | troubleshooting-dbt-job-errors | 2026-11-07 |
 
+| expo-project-structure | 2026-11-08 |
+| expo-router | 2026-11-08 |
+| expo-data-fetching | 2026-11-08 |
+| expo-dev-client | 2026-11-08 |
+| expo-upgrade | 2026-11-08 |
+| eas-update | 2026-11-08 |
+
 ## 재등장 규칙
 
 이 목록에 있는 Skill은 기본적으로 다시 소개하지 않습니다. 다만 대규모 업데이트, 급격한 순위 상승, 주요 기능 변화 등 명확한 재평가 사유가 있는 경우 `재등장`으로 표시하고 다시 포함할 수 있습니다.
