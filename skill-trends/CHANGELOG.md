@@ -2,6 +2,20 @@
 
 Daily Skill Trends 보고서와 소개 인덱스의 변경 기록입니다. 보고서의 날짜는 Asia/Seoul 기준입니다.
 
+## 2026-11-09
+
+- [오늘의 보고서](2026/11/2026-11-09.md)에 신규 Skill **5개**를 기록: clickhouse-best-practices, elasticsearch-esql, promql, svelte-code-writer, angular-developer. Top Pick은 ClickHouse DDL·SQL 검토이며 Codex 실습 후보는 Svelte 버전 맞춤 컴포넌트 검토다.
+- main 저장 후 보고서 **15,940자 전체(Unicode 문자 기준), 27,822 bytes**가 작성본과 정확히 일치하고 Git blob SHA도 일치함을 확인했다. [보고서 커밋](https://github.com/wooguylee/ChatGPT_Work/commit/66da1d90b42093bed19430c593ca4b1a9f88eb72), blob SHA `9bc5f9ae1643a5d92213703b655e0f6553606e6d`.
+- 보고서 검증 뒤 최신 인덱스에 다섯 항목을 추가했다. **13,656자 전체**를 재조회해 작성본과 정확한 일치·기존 원문 보존을 확인했고 누적 **372 → 377개**다. [인덱스 커밋](https://github.com/wooguylee/ChatGPT_Work/commit/c2829cf0293b542a5549ccf8b1349d5c30700871), blob SHA `664580beda27bf7f719973e1e4177b39101a98a8`. 추가 행을 제거하면 이전 원문과 같아 기존 항목·최초 소개일·재등장 규칙을 보존했다.
+- 기존 날짜별 보고서 **66개 전체·소개 제목 372개**와 전체 인덱스를 대조해 누락·최초 소개일 불일치·중복 0개를 확인했다. 전체 tree는 truncated=false이며 별도 AGENTS·skill-trends README는 없었다. 저장 직전 tree에서 skill-trends 변경이 없고 오늘 파일도 없음을 다시 확인했다.
+- 다섯 공식 원본을 commit SHA에 고정해 조사했다. 보고서의 **GitHub 출처 URL 18개와 공식 제품 문서 URL 10개**를 모두 조회했다. source 메타데이터·CLI/제품 버전·배포 경로·라이선스 범위를 구분하고 신규 소개를 오늘 출시·인기 상승으로 표현하지 않았다.
+- ClickHouse는 ORDER BY 불변이라는 단순화를 제한적 MODIFY ORDER BY 공식 문서로 보완했다. LIMIT·분산 서버 제한·부분 결과·NULL/JOIN 의미 변경을 구분했다. 원문의 31/28 규칙 수 불일치는 그대로 기록했다.
+- ES|QL은 실제 mapping·서버 버전·CLI 조건, WHERE → STATS → SORT → LIMIT 순서와 집계 입력/출력 제한을 설명했다. 기본 FROM과 TS/PROMQL의 별도 한도, preview 기능·제품 구독·오류/빈 결과를 구분했다.
+- promql은 classic histogram p95 초안과 rate 이후 집계를 확인했다. changes(up[5m]) == 0의 정상 시계열 오판, Alloy labeldrop 예제의 구성·인자 오류, 분모 필터의 no-data 의미를 명시했다. 실제 API 조회가 원래 흐름에 포함되므로 계획 전용으로 소개하지 않았고 좁은 쿼리 검토로 추천 범위를 한정했다.
+- Svelte의 정확한 버전 전달·쉘 달러 기호 인용 문제·autofixer와 전체 테스트의 차이, 단일 Skill과 자동 업데이트 plugin의 차이를 정리했다. Angular의 v22 신규 Signal Forms 조건·기존 폼 전략·build와 동작 검증·클라이언트 guard와 서버 권한 검사를 구분했다.
+- Shopify 통합 Skill은 기본 telemetry 및 코드·검색 내용·최근 사용자 프롬프트 전송 범위와 hook을 확인해 이번 추천에서 제외했다. opt-out 존재와 실제 적용·검증을 구분했으며 구형 개별 Skill의 deprecated 상태도 확인했다. 제외 후보는 인덱스에 넣지 않았다.
+- 설치·계정 연결·서버 질의·쿼리 성능 시험·컴파일·프레임워크 테스트·배포·telemetry 전송은 수행하지 않았다. 기존 CHANGELOG 전체를 보존해 추가하며, 이 기록 저장 후 보고서·인덱스·CHANGELOG 세 파일을 main에서 범위 제한 없이 다시 읽어 전체 대조한다. 과거 날짜·다른 보고서 경로·자동화 설정은 변경하지 않았다.
+
 ## 2026-11-08
 
 - [오늘의 보고서](2026/11/2026-11-08.md)에 신규 Skill **6개**를 기록: expo-project-structure, expo-router, expo-data-fetching, expo-dev-client, expo-upgrade, eas-update. Top Pick은 expo-data-fetching의 실패 상태 검토이며 Codex 실습 후보는 신규 앱 구조안이다.
