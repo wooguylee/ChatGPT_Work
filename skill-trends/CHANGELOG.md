@@ -2,6 +2,19 @@
 
 Daily Skill Trends 보고서와 소개 인덱스의 변경 기록입니다. 보고서의 날짜는 Asia/Seoul 기준입니다.
 
+## 2026-11-10
+
+- [오늘의 보고서](2026/11/2026-11-10.md)에 신규 Skill **5개**를 기록: convex-authz, convex-migrate, convex-agent, convex-insights, convex-test. Top Pick과 Codex 실습 후보는 메모리 기반 교차 사용자 회귀 테스트다.
+- main 저장 후 보고서 **13,057자 전체(Unicode 문자 기준), 24,936 bytes**가 작성본과 정확히 일치하고 Git blob SHA도 일치함을 확인했다. [보고서 커밋](https://github.com/wooguylee/ChatGPT_Work/commit/2fc4804ac5c23dc1deec4ef90a0be4db18fcd3e4), blob SHA `038c1b88bf51f6ca8ef4435c8a48858e2d8a1689`.
+- 보고서 검증 뒤 최신 인덱스에 다섯 항목을 추가했다. **13,811자 전체**를 다시 읽어 작성본과 정확한 일치·기존 원문 보존을 확인했고 누적 **377 → 382개**다. [인덱스 커밋](https://github.com/wooguylee/ChatGPT_Work/commit/475e3425b64f0b569c70e76bceed422b662854a7), blob SHA `908a3ebb64a7e1a803e48f6881a898351ba870b8`. 추가 행을 제거하면 이전 원문과 같아 기존 항목·최초 소개일·재등장 규칙을 보존했다.
+- 기존 날짜별 보고서 **67개 전체·소개 제목 377개**와 전체 인덱스를 대조해 누락·최초 소개일 불일치·중복 0개를 확인했다. 전체 tree는 truncated=false이며 별도 AGENTS·skill-trends README는 없었다. 저장 직전 tree에서 skill-trends 변경이 없고 오늘 파일도 없음을 다시 확인했다.
+- 다섯 공식 원본을 **f60629d7c6c1f27eb58a56260546d2445049274d**에 고정했다. 보고서의 **GitHub 출처 URL 12개와 공식 제품 문서 URL 8개**를 모두 조회했다. README의 오래된 이름과 실제 SKILL.md 이름을 구분했고, 별도 Skill 버전 미표기·리비전별 Apache-2.0 범위도 기록했다.
+- convex-authz의 네 가지 권한 결함 유형은 유용한 체크리스트로 소개하되, 사용자 테이블이 없으면 identity가 항상 null이라는 일반화·정규식 오탐/누락·참조 helper 부재·공개 API 전환의 영향을 명시했다. 타입 검사나 검색 0건을 보안 검증으로 표현하지 않았다.
+- convex-migrate의 선택 필드 → 백필 → 검증 → 필수화 순서에 기존 타입 호환·동시 쓰기·재시작·의미 검증을 보완했다. 운영 snapshot을 개발 환경에 복사하는 권한과 snapshot 이후 쓰기를 잃을 수 있는 복구 위험을 구분했다.
+- convex-agent 원문의 오래된 Gateway 제약을 현재 문서와 대조했다. 현재 임베딩 지원, Agent/RAG의 convex 1.46+와 token helper의 1.45+ 차이, provider 0.2.1+·AI SDK 7.0.105+ 조건, 유료 팀의 연결된 local deployment 지원을 기록했다. 키 관리·비용·데이터 전송·action의 transaction 경계를 구분했다.
+- convex-insights는 최근 N개 표본과 72시간 건강 지표, CLI와 MCP 인자 차이, 운영의 비민감 읽기·PII 읽기·비밀/쓰기 권한을 구분했다. MCP 문서 내부 설명 차이와 deploy-key 인증에서 insights 미지원도 명시했다. convex-test는 합성 identity·가짜 시간·회귀 assertion을 제안하고 실제 로그인·운영 자원 한도 검증과 구분했다.
+- 이전된 next-best-practices·next-upgrade와 겹치는 종합 감사 후보는 신규 수량을 채우는 데 쓰지 않았다. 설치·계정 연결·실제 로그 조회·DB 변경·모델 호출·컴파일·테스트·배포는 수행하지 않았다. 기존 CHANGELOG 전체를 보존해 추가하며, 이 기록 저장 후 보고서·인덱스·CHANGELOG 세 파일을 main에서 범위 제한 없이 다시 읽어 전체 대조한다. 과거 날짜·다른 보고서 경로·자동화 설정은 변경하지 않았다.
+
 ## 2026-11-09
 
 - [오늘의 보고서](2026/11/2026-11-09.md)에 신규 Skill **5개**를 기록: clickhouse-best-practices, elasticsearch-esql, promql, svelte-code-writer, angular-developer. Top Pick은 ClickHouse DDL·SQL 검토이며 Codex 실습 후보는 Svelte 버전 맞춤 컴포넌트 검토다.
