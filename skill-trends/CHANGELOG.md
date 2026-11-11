@@ -2,6 +2,20 @@
 
 Daily Skill Trends 보고서와 소개 인덱스의 변경 기록입니다. 보고서의 날짜는 Asia/Seoul 기준입니다.
 
+## 2026-11-11
+
+- [오늘의 보고서](2026/11/2026-11-11.md)에 신규 Skill **6개**를 기록: langchain-fundamentals, langchain-rag, langgraph-fundamentals, langgraph-persistence, langgraph-human-in-the-loop, deep-agents-memory. Top Pick은 langgraph-human-in-the-loop, Codex 실습 후보는 합성 문서 세 건의 병렬 검토 그래프다.
+- main 저장 후 보고서 **17,462자 전체(Unicode 문자 기준), 33,077 bytes**가 작성본과 정확히 일치하고 Git blob SHA도 일치함을 확인했다. [보고서 커밋](https://github.com/wooguylee/ChatGPT_Work/commit/b6ff8c1f1d91740bb265e297059d01dc7a88bc7a), blob SHA `7893cac81aa96f86f0ff35668965e6801c6bb754`.
+- 보고서 검증 뒤 최신 소개 인덱스에 여섯 항목을 추가했다. **14,043자 전체**를 재조회해 작성본과 정확한 일치·기존 원문 보존을 확인했고 누적 **382 → 388개**다. [인덱스 커밋](https://github.com/wooguylee/ChatGPT_Work/commit/392e96be964c0afbd0fda775bd0a340549a63ad5), blob SHA `e6db388fc4b9c0996325befa5f2ebc8b345a6d01`. 추가 행을 제거하면 이전 원문과 같아 기존 항목·최초 소개일·재등장 규칙을 보존했다.
+- 기존 날짜별 보고서 **68개 전체·소개 제목 382개**와 전체 인덱스를 대조해 누락·최초 소개일 불일치·중복 0개를 확인했다. truncated=false 전체 tree에 별도 AGENTS·skill-trends README는 없었다. 저장 직전 전체 tree에서 skill-trends 변경이 없고 오늘 파일도 없음을 다시 확인했다.
+- 공식 원본을 **126c384d8552dcb476b226c244172186cc3f4328**에 고정했다. 여섯 SKILL.md·관련 참조·MIT LICENSE를 확인했고, 보고서의 **GitHub 출처 URL 13개·공식 제품 문서 URL 16개**를 모두 조회했다. README의 21개 표기와 실제 22개 SKILL.md, 별도 Skill 버전 미표기·초기 개발 경고를 구분했다.
+- RAG 원문의 임베딩 차원 변경 불가 설명을 현재 text-embedding-3 dimensions 지원과 대조하고, InMemoryVectorStore import 경로·분할 길이·검색 평가·FAISS 역직렬화 위험을 보완했다. 합성 평가의 임시 합격선을 제품 성능으로 표현하지 않았다.
+- LangGraph 원문의 reducer 없는 병렬 덮어쓰기 설명을 동시 업데이트 오류와 구분했다. Command와 정적 경로의 동시 실행, checkpointer와 Store, 새 입력과 재개, subgraph 저장 범위, PostgreSQL 초기화 컨텍스트·system_prompt 인자를 설명했다.
+- 승인 재개 시 노드 재실행과 멱등성, 승인자·작업 버전·thread 소유권을 구분했다. 승인 뒤 작업도 장애·재시도 전체에서 정확히 한 번 실행을 자동 보장하지 않음을 명시했다.
+- Deep Agents의 backend factory가 0.5.0부터 deprecated지만 아직 동작한다는 현재 문서, 여전히 유효한 namespace callback, StateBackend의 thread 범위와 InMemoryStore의 비영속성, 메모리 삭제·checkpoint 사본과 파일 경로 제한·셸 격리의 차이를 기록했다.
+- 설치 예시는 개별 Skill·프로젝트 범위·원본 full commit을 사용한다. 현재 skills CLI의 Node 22.20+·telemetry 설정을 확인했으며 원본 고정과 설치기 버전 고정을 구분했다. 실제 설치·인증·모델 호출·임베딩·DB 연결·코드 실행·배포는 수행하지 않았다.
+- 기존 CHANGELOG 전체를 보존해 추가하며, 이 기록도 저장 후 변경한 세 파일과 함께 main에서 범위 제한 없이 재조회하여 작성본 전체와 대조한다. 과거 보고서·다른 보고서 경로·자동화 설정은 변경하지 않았다.
+
 ## 2026-11-10
 
 - [오늘의 보고서](2026/11/2026-11-10.md)에 신규 Skill **5개**를 기록: convex-authz, convex-migrate, convex-agent, convex-insights, convex-test. Top Pick과 Codex 실습 후보는 메모리 기반 교차 사용자 회귀 테스트다.
