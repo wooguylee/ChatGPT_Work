@@ -2,6 +2,19 @@
 
 Daily Skill Trends 보고서와 소개 인덱스의 변경 기록입니다. 보고서의 날짜는 Asia/Seoul 기준입니다.
 
+## 2026-11-12
+
+- [오늘의 보고서](2026/11/2026-11-12.md)에 신규 Skill **5개**를 기록: langchain-dependencies, langchain-middleware, langgraph-cli, deep-agents-core, deep-agents-orchestration. Top Pick은 langchain-middleware, Codex 실습 후보는 변경 없는 의존성 진단표다.
+- 보고서를 main에 저장한 후 **13,248자 전체(Unicode 문자 기준), 24,302 bytes**를 다시 읽어 작성본과 정확한 일치 및 Git blob SHA 일치를 확인했다. [보고서 커밋](https://github.com/wooguylee/ChatGPT_Work/commit/9fdcb4ba06a684c7b5042eb4ccb061cd1b961324), blob SHA `d502527acaf334ecc00740ebcf515618616f1bef`.
+- 보고서 검증 뒤 최신 인덱스에 다섯 항목을 추가했다. 전체 **14,230자**를 재조회해 작성본과 일치함을 확인했고, 누적 **388 → 393개**다. [인덱스 커밋](https://github.com/wooguylee/ChatGPT_Work/commit/9b0e29863228dae26a5695cabb99e909a18049c5), blob SHA `5f3b38b98c01ccd11658b17c74b0af8244a87f50`. 추가 행을 제거하면 기존 원문과 정확히 같아 최초 소개일·재등장 규칙을 보존했다.
+- 인덱스 저장 직후 첫 조회는 이전 SHA를 반환했다. 쓰기를 반복하지 않고 전체 재조회를 수행하여 최신 SHA와 본문 일치를 확인했다.
+- 기존 **69개 보고서 전체·388개 소개 제목**과 전체 인덱스를 대조해 누락·최초 소개일 불일치·중복 0개를 확인했다. 저장 직전 truncated=false 전체 tree에서 skill-trends 변경이 없고 오늘 보고서도 없음을 다시 확인했다.
+- 공식 원본을 **79f69154930ae1bc62a74a495ede558391861710**에 고정하고 실제 SKILL.md·README·MIT LICENSE·현재 공식 제품 문서를 확인했다. 관찰일과 원본 커밋 날짜·개별 출시일을 구별했다.
+- langchain-community sunset, 의존성 상한과 lockfile, middleware 반환 타입·추적 범위, CLI 원격 빌드·배포 대상·설정 상호배타를 보완했다. Deep Agents의 조건부 미들웨어, general-purpose Skill 상속, isolated와 beta fork, 도구 교체와 미들웨어 추가 도구를 구별했다.
+- langgraph-decision-models는 2026-09-16 typesafe-ai의 typed 판단·라우팅과 실질적으로 겹쳐 신규로 세지 않았다. 원문의 alpha 버전과 현재 공식 통합 문서 차이도 명시했다.
+- 설치·키 설정·모델 호출·서버 실행·배포는 수행하지 않았다. 전주 비교는 선정 수·주제 비교이며 인기도나 성능 변화가 아니다.
+- 기존 CHANGELOG 전체를 보존해 이 기록을 추가한다. 저장 후 변경한 세 파일을 main에서 범위 제한 없이 재조회해 작성본 전체와 대조한다. 과거 보고서·다른 경로·자동화 설정은 변경하지 않았다.
+
 ## 2026-11-11
 
 - [오늘의 보고서](2026/11/2026-11-11.md)에 신규 Skill **6개**를 기록: langchain-fundamentals, langchain-rag, langgraph-fundamentals, langgraph-persistence, langgraph-human-in-the-loop, deep-agents-memory. Top Pick은 langgraph-human-in-the-loop, Codex 실습 후보는 합성 문서 세 건의 병렬 검토 그래프다.
