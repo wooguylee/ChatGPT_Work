@@ -337,3 +337,7 @@ thinkingmachines/Inkling; zai-org/GLM-5.2; baidu/Unlimited-OCR; google/gemma-4-3
 
 ### 2026-11-11
 - Zyphra/ZONOS3-Mini 및 동일 latent-MoE 음성 백본의 단순 크기·GGUF/WebGPU/MLX/C++ 포팅·양자화·포맷·decoder 가지치기·경미한 fine-tune 파생본. 미등록 Zonos 계열의 첫 소개이며 기존 ZONOS2의 8B·86Hz DAC와 달리 자체 ZAC-1 codec 학습, 11층 9 GDN/2 global attention·64-expert top-2 latent MoE, MECT-B2 화자 조건, DPO→GRPO를 확인한 주요 세대 변경. Wav2Vec2-BERT 등 외부 기술 재사용을 인정하며 정확한 초기화·전체 학습 데이터 구성 미확인으로 전 구성요소 from-scratch를 주장하지 않음. 공식 언어 백본 800M total/약 100M active, HF 11,332,480 mect_spk 집계는 화자 encoder 범위이며 전체 pipeline 합계 미확인. 43언어·한국어 포함, 15Hz semantic 1+acoustic 9 codebook·44.1kHz causal iSTFT. 가중치 Apache-2.0 공식 표기·HF 별도 LICENSE 전문 미확인, 런타임 MIT 전문·외부 고지 확인. speech-edit LoRA·phoneme tokens·pronunciation lexicon·lm/mect_60k는 공개 범위 문서상 private 유지. 공식 발표 11/09·관찰 11/11, 최초 public 전환 시각·한국어 품질·장치별 속도 미검증. 근거: [2026-11-11 보고서](2026/11/2026-11-11.md)
+
+
+### 2026-11-12
+- IFM/PAN2 및 같은 PAN 2 생성 백본의 native/Diffusers·단순 크기·양자화·포맷·경미한 fine-tune 파생본. 미등록 PAN 계열의 첫 소개이며 PAN 1 대비 모든 변경을 검증한 차세대 비교라는 뜻은 아님. 44개 dual-stream joint-attention MMDiT·97채널 입력/48채널 출력·구조화된 시간별 세계 상태 조건, 수억 영상의 from-scratch 생성 백본 학습과 480p→720p→SFT를 확인. 동결 Qwen3.5-9B encoder·Wan2.2 VAE와 별도 개념 추론 LLM을 재사용하며 전 구성요소 from-scratch를 주장하지 않음. 공식 생성부 29.2B·HF safetensors 29,201,996,992, 전체 pipeline 합계 미확인. 자체 코드·가중치 Apache-2.0 전문·NOTICE 확인, 외부 조건 유지. 704×1248·24fps·최대 20초는 출력 조건이며 실시간 생성 보증 아님. 긴 계획 실패·물리 shortcut·미검증 실패 계획 한계, 최소 VRAM·한국어 품질 미검증. HF 생성 10/08 KST·관찰 11/12, 최초 출시/public 전환일 미확인. 근거: [2026-11-12 보고서](2026/11/2026-11-12.md)
