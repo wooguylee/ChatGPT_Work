@@ -2,6 +2,17 @@
 
 Daily Skill Trends 보고서와 소개 인덱스의 변경 기록입니다. 보고서의 날짜는 Asia/Seoul 기준입니다.
 
+## 2026-11-13
+
+- [오늘의 보고서](2026/11/2026-11-13.md)에 신규 Skill **4개**를 기록: azure-ai-projects-py, azure-ai-contentunderstanding-py, azure-ai-voicelive-py, m365-agents-py. Top Pick은 Content Understanding, Codex 실습 후보는 외부 전송 없는 M365 메시지 라우팅 테스트다.
+- 보고서를 main에 저장한 뒤 **9,993자 전체(JavaScript 문자열 기준)**를 범위 제한 없이 다시 읽어 작성본과 정확히 일치함을 확인했다. [보고서 커밋](https://github.com/wooguylee/ChatGPT_Work/commit/f79d2c0fcdf595c76048218c7d4909d2cfcd9c6f), blob SHA `600493554f7057d2ba00599c5890e9047444bd15`.
+- 보고서 확인 뒤 최신 인덱스에 4개를 추가하고 전체 재조회로 정확한 일치를 확인했다. 누적 **393 → 397개**, blob SHA `6b73174908ea958444b47642324a7acb936cfd22`. 추가 행을 제거하면 기존 원문과 정확히 같아 기존 항목·최초 소개일·재등장 규칙을 보존했다.
+- 기존 **70개 보고서 전체·소개 제목 393개**와 전체 인덱스를 대조해 누락·최초 소개일 불일치가 없음을 확인했다. 저장 직전 truncated=false tree에서 skill-trends 변경이 없고 당일 보고서도 없음을 재확인했다.
+- Microsoft 공식 snapshot `2d08976b5f1c50457272ad3d20aa479d5d3ba937`의 실제 SKILL.md·MIT 라이선스와 현재 SDK 원문을 대조했다. 커밋 시각·관찰일·개별 Skill 출시일을 구별했다.
+- Projects의 구형·신형 API 혼합, Content Understanding의 GA/preview·생성 메서드·타입·필드 경로, Voice Live의 비동기 전용·음성 중단 처리, M365의 출시·미출시 변경과 client별 수명 관리를 명시했다.
+- azure-ai-transcription-py는 현재 SDK와 핵심 예제가 달라 제외했고 인덱스에 추가하지 않았다. 수량을 채우기 위한 언어별 변형은 추가하지 않았다. 설치·인증·파일 업로드·모델 호출·마이크 접근·메시지 전송은 수행하지 않았다.
+- 기존 CHANGELOG 전체를 보존해 기록을 추가한다. 저장 후 변경한 세 파일을 main에서 범위 제한 없이 재조회해 전체 작성본과 대조한다. 과거 보고서·다른 경로·자동화 설정은 변경하지 않았다.
+
 ## 2026-11-12
 
 - [오늘의 보고서](2026/11/2026-11-12.md)에 신규 Skill **5개**를 기록: langchain-dependencies, langchain-middleware, langgraph-cli, deep-agents-core, deep-agents-orchestration. Top Pick은 langchain-middleware, Codex 실습 후보는 변경 없는 의존성 진단표다.
