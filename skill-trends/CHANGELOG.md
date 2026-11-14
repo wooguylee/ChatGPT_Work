@@ -2,6 +2,16 @@
 
 Daily Skill Trends 보고서와 소개 인덱스의 변경 기록입니다. 보고서의 날짜는 Asia/Seoul 기준입니다.
 
+## 2026-11-14
+
+- [오늘의 보고서](2026/11/2026-11-14.md)에 신규 Skill **4개**를 기록: ef-core, nuget-manager, dotnet-timezone, roslyn-analyzers. 일반 async 리뷰는 기존 dotnet-patterns와 겹쳐 제외했다.
+- 보고서를 main에 저장한 뒤 범위 제한 없이 **8,162자 전체(JavaScript 문자열 기준)**를 다시 읽어 작성본과 정확히 일치함을 확인했다. [보고서 커밋](https://github.com/wooguylee/ChatGPT_Work/commit/ab9296c6fa77939866c18769808d5f0e23d84e37), blob SHA `ec037a02f17e0b4854fac323ceed2bdebc30fd7c`.
+- 보고서 확인 후 최신 인덱스에 4개를 추가했고 전체 14,514자 재조회로 정확한 일치를 확인했다. 누적 **397 → 401개**, blob SHA `9d6e0097e8f784fcb1834c0d41f44fb6583714d6`. 추가 행 제거 시 이전 원문과 정확히 같아 기존 내용·최초 소개일·재등장 규칙을 보존했다.
+- 기존 71개 보고서 전체·번호형 소개 제목 397개와 인덱스를 대조해 누락·최초 소개일 불일치가 없음을 확인했다. 저장 직전 전체 tree에서 당일 파일 부재와 skill-trends 내용 미변경을 재확인했다.
+- GitHub 조직 소유의 커뮤니티 모음이라는 출처 성격을 명시했다. 원문 snapshot `8ecd5b17f02fe5fbebf35eccd1867265eded811f` 및 MIT 라이선스를 확인하고 출시일·관찰일·커밋 시각을 구분했다.
+- EF Core 테스트 지침의 제품 문서와의 차이, NuGet 중앙 관리 파일의 실제 평가 범위, 시간대 참고 코드·고정 매핑표의 한계, Roslyn host 호환 검증을 기록했다. 설치·restore·DB 호출·프로젝트 변경·NuGet 게시를 실행하지 않았다.
+- 기존 CHANGELOG를 보존해 이 기록을 추가한다. 변경한 세 파일은 main에서 전체 재조회해 작성본과 비교한다. 과거 날짜 보고서·다른 경로·자동화 설정은 변경하지 않았다.
+
 ## 2026-11-13
 
 - [오늘의 보고서](2026/11/2026-11-13.md)에 신규 Skill **4개**를 기록: azure-ai-projects-py, azure-ai-contentunderstanding-py, azure-ai-voicelive-py, m365-agents-py. Top Pick은 Content Understanding, Codex 실습 후보는 외부 전송 없는 M365 메시지 라우팅 테스트다.
