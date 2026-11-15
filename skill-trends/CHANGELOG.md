@@ -2,6 +2,16 @@
 
 Daily Skill Trends 보고서와 소개 인덱스의 변경 기록입니다. 보고서의 날짜는 Asia/Seoul 기준입니다.
 
+## 2026-11-15
+
+- [오늘의 보고서](2026/11/2026-11-15.md)에 신규 Skill **5개**를 기록: creating-oracle-to-postgres-master-migration-plan, migrating-oracle-to-postgres-data-access-code, migrating-oracle-to-postgres-stored-procedures, creating-oracle-to-postgres-migration-integration-tests, reviewing-oracle-to-postgres-migration.
+- [보고서 커밋](https://github.com/wooguylee/ChatGPT_Work/commit/07f34b95a9d442e78a06f131ab38ae8ff8c44775) 저장 후 main에서 **9,708자 전체(JavaScript 문자열 기준)**를 재조회해 작성본과 정확히 일치함을 확인했다. blob SHA `53fc19f920bdb4d1b5f147e3e07814c8ddc376b8`.
+- 이후 최신 인덱스에 5개를 추가하고 전체 **14,838자**를 다시 조회해 정확히 일치함을 확인했다. 누적 **401 → 406개**, blob SHA `6485abcac29b9bb663fff45eaa5c602dce4ab237`. 추가 행을 제거하면 이전 원문과 정확히 같아 기존 내용·최초 소개일·재등장 규칙을 보존했다.
+- 기존 72개 보고서 전체와 401개 번호형 소개 제목을 대조했으며 누락을 발견하지 않았다. 저장 직전 skill-trends tree 미변경과 당일 파일 부재를 다시 확인했다.
+- GitHub 소유 커뮤니티 모음의 고정 snapshot `8ecd5b17f02fe5fbebf35eccd1867265eded811f`와 MIT 라이선스를 확인했다. 신규 소개와 출시·인기도를 구분했다.
+- Npgsql 7의 함수/프로시저 호출, legacy 시간대 매핑, INTO STRICT, 트랜잭션 종료 제약, 느슨한 NULL assertion, refcursor 예제의 자원 수명·식별자 처리 주의를 기록했다. 실제 DB 이전·설치·테스트는 실행하지 않았다.
+- 기존 CHANGELOG를 보존해 이 기록을 추가한다. 변경 세 파일은 main에서 전체 재조회해 비교한다. 과거 날짜 보고서·다른 경로·자동화 설정은 변경하지 않았다.
+
 ## 2026-11-14
 
 - [오늘의 보고서](2026/11/2026-11-14.md)에 신규 Skill **4개**를 기록: ef-core, nuget-manager, dotnet-timezone, roslyn-analyzers. 일반 async 리뷰는 기존 dotnet-patterns와 겹쳐 제외했다.
