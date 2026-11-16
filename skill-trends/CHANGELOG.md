@@ -2,6 +2,16 @@
 
 Daily Skill Trends 보고서와 소개 인덱스의 변경 기록입니다. 보고서의 날짜는 Asia/Seoul 기준입니다.
 
+## 2026-11-16
+
+- [오늘의 보고서](2026/11/2026-11-16.md)에 신규 Skill **5개**를 기록: qdrant-deployment-options, qdrant-search-quality, qdrant-monitoring, qdrant-version-upgrade, qdrant-multitenancy.
+- [보고서 커밋](https://github.com/wooguylee/ChatGPT_Work/commit/71e1bfe2494fa905fee8405e66d007c5ab81391b) 저장 후 main에서 **8,797자 전체(JavaScript 문자열 기준)**를 재조회해 작성본과 정확히 일치함을 확인했다. blob SHA `6acbdaac9f7c3407af675dc1e3a673d429af4c2d`.
+- 보고서 확인 후 최신 인덱스에 다섯 행을 추가하고 전체 **15,033자**를 다시 읽어 정확한 일치를 확인했다. 누적 **406 → 411개**, blob SHA `08d081a3115081b99744db388449c0001ff04560`. 추가분 제거 시 이전 원문과 정확히 같아 기존 소개일·재등장 규칙을 보존했다.
+- 기존 73개 보고서 전체의 406개 번호형 소개와 전체 인덱스를 대조했고 누락을 발견하지 않았다. 당일 파일 부재를 저장 직전 다시 확인했으며 인덱스·CHANGELOG는 쓰기 전에 최신 원문을 다시 읽었다.
+- 공식 qdrant/skills snapshot `f92bbe024e17a588c86ca98b9b3a7634ad81531c`와 Apache-2.0 라이선스, 필요한 하위 지침 및 공식 제품 문서를 확인했다. 출시일·인기도·설치 수는 확인하지 않은 것으로 표시했다.
+- ANN 일치율과 업무 관련성의 차이, 노드별 지표 수집, 서버 먼저·SDK 나중 업그레이드, 컬렉션별 RF 조건, payload 필터와 전체 보안 체계의 차이를 기록했다. 원문의 고정 수치·Zero-Ops 표현을 보장으로 사용하지 않았다. 실제 설치·접속·벤치마크·설정 변경은 실행하지 않았다.
+- 기존 CHANGELOG 전체를 보존해 이 기록을 추가한다. 변경한 세 파일은 main에서 전체 재조회해 작성본과 비교한다. 과거 날짜·다른 디렉터리·자동화 설정은 변경하지 않았다.
+
 ## 2026-11-15
 
 - [오늘의 보고서](2026/11/2026-11-15.md)에 신규 Skill **5개**를 기록: creating-oracle-to-postgres-master-migration-plan, migrating-oracle-to-postgres-data-access-code, migrating-oracle-to-postgres-stored-procedures, creating-oracle-to-postgres-migration-integration-tests, reviewing-oracle-to-postgres-migration.
