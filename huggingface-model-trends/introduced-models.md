@@ -350,3 +350,7 @@ thinkingmachines/Inkling; zai-org/GLM-5.2; baidu/Unlimited-OCR; google/gemma-4-3
 
 ### 2026-11-14
 - higurashi-ai/Haru-4B 및 동일 Haru 전이중 음성 구조의 단순 크기·양자화·MLX/PyTorch/vLLM-Omni 포팅·포맷·경미한 fine-tune 파생본. Qwen3.5-4B·VibeVoice codec 재사용을 인정하며 독립 from-scratch 언어 백본이 아님. 사용자/모델 음성의 별도 projector와 텍스트를 같은 위치에서 합산하는 3-stream·7.5Hz/64D 연속 latent·4층 MeanFlow head 및 실제 음성 40M+시간/분리 duplex 13M+시간의 단계별 학습을 확인한 주요 음성 구조·학습 확장 예외. 두 학습 시간을 고유 데이터 합계로 더하지 않음. HF BF16 저장 원소 5,270,000,897개, 고유 학습 파라미터 정수 합계 미검증. 한국어 포함 9개 주력 언어·연구용 base, 신뢰할 사실/지시 수행 보증 없음. 코드·가중치 Apache-2.0 공식 표기와 코드 전문·외부 고지 확인, HF 별도 LICENSE 404. 약12GB NVIDIA 안내·M1 Max int8 약65ms는 framing 최대133ms 제외의 제작자 측정, 사용자 장비·한국어 품질 미검증. 발표11/13·관찰11/14, 최초 public 전환 시각 미확인. 근거: [2026-11-14 보고서](2026/11/2026-11-14.md)
+
+
+### 2026-11-17
+- adventists-ai/Sophon-Realtime-v1: Tag·Flash·E2E 및 동일 계열의 32B·4B·4비트·MLX·기타 단순 변형/포팅·경미한 미세조정을 하나로 분류. DuplexJev 기반 발화권 판단·선행 텍스트 응답과 교체 가능한 음성 출력부를 통합한 미소개 전이중 계열. E2E의 약 350M talker는 텍스트 답을 읽어 연속 음성 벡터를 생성하며 공유 판단부와 별도. 전체 파라미터 수 독립 미확인. Apache-2.0 공식 표기·외부 구성요소 조건 유지. 제작자 발표상 첫 공개 11/08, 4B 공개 11/16, 관찰 11/17. 공식 저장소에서 한국어는 향후 지원이며 장치별 속도는 미검증. 근거: [2026-11-17 보고서](2026/11/2026-11-17.md)
