@@ -2,6 +2,13 @@
 
 Daily Skill Trends 보고서와 소개 인덱스의 변경 기록입니다. 보고서의 날짜는 Asia/Seoul 기준입니다.
 
+## 2026-11-17
+
+- [오늘의 보고서](2026/11/2026-11-17.md)에 신규 Skill **5개**를 기록: frameworks-on-cloudflare, cloudflare-app-bootstrap, workers-development, workers-profiling, cf-cli.
+- [보고서 커밋](https://github.com/wooguylee/ChatGPT_Work/commit/c757fc9fada80e527477053f18ba764bf87c92d6) 후 main에서 **5,438자 전체**를 다시 읽어 작성본과 정확히 일치함을 확인했다. Blob SHA `ac0272ef5569742fd1d86c3eba6bf56d126ecd1b`.
+- 보고서 확인 후 최신 인덱스에 다섯 행을 추가했다. 누적 **411 → 416개**, blob SHA `b7caed569b5c0133f8f5dde4d8a93ea4aac5ab72`. 이전 원문을 보존했고 전체 **15,213자** 재조회에서 기대한 내용과 일치했다.
+- 인덱스 전체와 11월 14~16일 보고서의 번호형 소개를 확인했으며 해당 범위에 누락된 인덱스 행은 없었다. 설치·배포·운영 테스트는 하지 않았다.
+
 ## 2026-11-16
 
 - [오늘의 보고서](2026/11/2026-11-16.md)에 신규 Skill **5개**를 기록: qdrant-deployment-options, qdrant-search-quality, qdrant-monitoring, qdrant-version-upgrade, qdrant-multitenancy.
