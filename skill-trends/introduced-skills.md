@@ -467,3 +467,8 @@
 | workers-development | 2026-11-17 |
 | workers-profiling | 2026-11-17 |
 | cf-cli | 2026-11-17 |
+| aws-containers | 2026-11-18 |
+| aws-networking | 2026-11-18 |
+| aws-storage | 2026-11-18 |
+| aws-observability | 2026-11-18 |
+| aws-well-architected-review | 2026-11-18 |
