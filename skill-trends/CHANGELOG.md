@@ -2,6 +2,13 @@
 
 Daily Skill Trends 보고서와 소개 인덱스의 변경 기록입니다. 보고서의 날짜는 Asia/Seoul 기준입니다.
 
+## 2026-11-18
+
+- [오늘의 보고서](2026/11/2026-11-18.md)에 AWS 공식 Agent Toolkit 신규 소개 **5개**를 기록: aws-containers, aws-networking, aws-storage, aws-observability, aws-well-architected-review.
+- [보고서 커밋](https://github.com/wooguylee/ChatGPT_Work/commit/c9a4d43efc1b60793feb54bb0d14536f006c4091) 후 main에서 **4,559자 전체**를 재조회해 작성본과 일치함을 확인했다. blob SHA `1314510f39ba3592ca3c25cb22b7e6806dcd779a`.
+- 보고서 검증 후 전체 인덱스에 새 항목을 추가했다. 누적 **416 → 421개**, blob SHA `591e3493e3acb0d830e439bc0661ff8aa81aab30`. 전체 **15,386자** 재조회에서 이전 원문에 추가한 결과와 정확히 일치했다. 11월 15~17일 보고서의 소개 항목도 대조했고 누락은 없었다.
+- AWS 공식 스킬 및 참조 문서, 설치 안내, 라이선스를 확인했다. 실제 설치·AWS 계정 접근·배포는 하지 않았다.
+
 ## 2026-11-17
 
 - [오늘의 보고서](2026/11/2026-11-17.md)에 신규 Skill **5개**를 기록: frameworks-on-cloudflare, cloudflare-app-bootstrap, workers-development, workers-profiling, cf-cli.
