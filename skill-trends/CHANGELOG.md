@@ -2,6 +2,13 @@
 
 Daily Skill Trends 보고서와 소개 인덱스의 변경 기록입니다. 보고서의 날짜는 Asia/Seoul 기준입니다.
 
+## 2026-11-19
+
+- [오늘의 보고서](2026/11/2026-11-19.md): Grafana 공식 스킬 5개 첫 소개 (opentelemetry, alloy, beyla, dashboarding, alerting-irm).
+- [보고서 커밋](https://github.com/wooguylee/ChatGPT_Work/commit/b8e8ffbb17c9e860326b935386fbe7596b3262fc) 후 main에서 전체 **3,218자** 재조회 일치 확인. blob SHA `8fbe2d4b3d8fa81a943c00b7e9dfa906d9edbe46`.
+- 최신 인덱스에 반영 후 전체 **15,523자** 재조회 일치 확인. blob SHA `472545dae3b69eacc67628bb76b1caf0d157bb62`. 11월 16~18일 원문 15개 소개 항목도 대조했다(누락 없음).
+- 공식 원문과 설치 안내를 검토했다. 실제 설치, 스테이징·운영 설정 변경이나 알림 전송은 하지 않았다.
+
 ## 2026-11-18
 
 - [오늘의 보고서](2026/11/2026-11-18.md)에 AWS 공식 Agent Toolkit 신규 소개 **5개**를 기록: aws-containers, aws-networking, aws-storage, aws-observability, aws-well-architected-review.
