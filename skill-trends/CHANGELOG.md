@@ -2,6 +2,13 @@
 
 Daily Skill Trends 보고서와 소개 인덱스의 변경 기록입니다. 보고서의 날짜는 Asia/Seoul 기준입니다.
 
+## 2026-11-20
+
+- [오늘의 보고서](2026/11/2026-11-20.md): ClickHouse 공식 스킬 첫 소개 5개 (chdb-sql, chdb-datastore, infra-clickhouse, infra-postgres, clickhouse-architecture-advisor).
+- [보고서 커밋](https://github.com/wooguylee/ChatGPT_Work/commit/899e81884b7926550b67385d8e898bf386a9e2be) 후 main에서 전체 **3,533자**가 작성본과 일치함을 확인했다. blob SHA `c086af4503c797dd55b1ae49bdc129aa9a9cc318`.
+- 인덱스에 새 항목을 추가한 뒤 전체 **15,696자**를 재조회해 일치를 확인했다. blob SHA `7e4763fcea290e3dfc05f270ae88ca59b4c2d15d`. 11월 17~19일 번호형 소개 항목에도 누락이 없었다.
+- 공식 스킬 원문과 설치 안내를 확인했다. 실제 설치·연결·배포는 하지 않았다.
+
 ## 2026-11-19
 
 - [오늘의 보고서](2026/11/2026-11-19.md): Grafana 공식 스킬 5개 첫 소개 (opentelemetry, alloy, beyla, dashboarding, alerting-irm).
