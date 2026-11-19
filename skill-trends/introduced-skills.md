@@ -472,3 +472,8 @@
 | aws-storage | 2026-11-18 |
 | aws-observability | 2026-11-18 |
 | aws-well-architected-review | 2026-11-18 |
+| opentelemetry | 2026-11-19 |
+| alloy | 2026-11-19 |
+| beyla | 2026-11-19 |
+| dashboarding | 2026-11-19 |
+| alerting-irm | 2026-11-19 |
