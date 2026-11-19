@@ -477,3 +477,8 @@
 | beyla | 2026-11-19 |
 | dashboarding | 2026-11-19 |
 | alerting-irm | 2026-11-19 |
+| chdb-sql | 2026-11-20 |
+| chdb-datastore | 2026-11-20 |
+| infra-clickhouse | 2026-11-20 |
+| infra-postgres | 2026-11-20 |
+| clickhouse-architecture-advisor | 2026-11-20 |
