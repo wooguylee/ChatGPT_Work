@@ -358,3 +358,7 @@ thinkingmachines/Inkling; zai-org/GLM-5.2; baidu/Unlimited-OCR; google/gemma-4-3
 
 ### 2026-11-18
 - n4ze3m/tiny-voca 및 같은 영어 TTS 백본의 ONNX/WebAssembly·양자화·포맷·플랫폼 포팅·음색/경미한 언어 fine-tune 파생본. 사전학습 가중치 없이 훈련한 음소·길이·프로소디 Transformer와 source-filter 파형 합성기의 미등록 계열. Qwen3-TTS 합성 학습 데이터 의존을 인정하며 Qwen3-TTS 가중치 변환은 아님. 제작자 기준 총 4,537,291개·24kHz 모노·영어 두 음색·CPU 런타임. 코드 및 가중치 Apache-2.0 공식 표기, 데이터셋 CC BY 4.0 별도 표기와 원천 조건 확인 필요. 제작자 발표 표기 11/14·관찰 11/18 KST, HF 최초 공개 시각·기기별 성능 미검증. 근거: [2026-11-18 보고서](2026/11/2026-11-18.md)
+
+
+### 2026-11-19
+- KORMo-VL/KORMo-VL 및 KORMo-VL/KORMo-Web-11B를 같은 KORMo 시각 계열로 첫 소개. 별도 사전학습한 한·영 KORMo-10B와 SigLIP의 시각 확장을 기반으로 하며, 웹판의 UI 학습·행동 튜닝이나 다른 크기·양자화·포맷·경미한 미세조정을 별도 계열로 세지 않는다. 웹판 약 11B BF16, 카드 Apache-2.0 표기, 한국어 웹 과제 평가는 제작자 자체 평가. 관찰 11/19 KST, 웹판 최초 공개 전환 시각과 장치별 성능 미검증. 근거: [2026-11-19 보고서](2026/11/2026-11-19.md)
