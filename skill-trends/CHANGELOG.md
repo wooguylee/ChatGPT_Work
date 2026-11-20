@@ -2,6 +2,12 @@
 
 Daily Skill Trends 보고서와 소개 인덱스의 변경 기록입니다. 보고서의 날짜는 Asia/Seoul 기준입니다.
 
+## 2026-11-21
+
+- [오늘의 보고서](2026/11/2026-11-21.md): Elastic 공식 스킬 신규 소개 5개 (elasticsearch-index-design, elasticsearch-search-relevance, elasticsearch-query-optimization, elasticsearch-cluster-health, elasticsearch-anomaly-detection-explainer).
+- [보고서 커밋](https://github.com/wooguylee/ChatGPT_Work/commit/2870aa1c1358babe7b9e7363f4f9c6da0074883c)의 전체 3,249자와 인덱스 전체 15,943자를 main에서 재조회해 작성본과 일치를 확인했다. 보고서 blob `71207afabc92d2d39bda368d1668c42c89a70ff8`, 인덱스 blob `83c67883b7150e790abd273f0d38a13321380392`.
+- 앞선 3일의 소개 15개도 인덱스와 대조했다. `elasticsearch-esql`은 기존 소개여서 제외했다. 실제 설치·접속·운영 변경은 하지 않았다.
+
 ## 2026-11-20
 
 - [오늘의 보고서](2026/11/2026-11-20.md): ClickHouse 공식 스킬 첫 소개 5개 (chdb-sql, chdb-datastore, infra-clickhouse, infra-postgres, clickhouse-architecture-advisor).
