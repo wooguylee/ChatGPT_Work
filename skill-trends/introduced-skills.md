@@ -482,3 +482,8 @@
 | infra-clickhouse | 2026-11-20 |
 | infra-postgres | 2026-11-20 |
 | clickhouse-architecture-advisor | 2026-11-20 |
+| elasticsearch-index-design | 2026-11-21 |
+| elasticsearch-search-relevance | 2026-11-21 |
+| elasticsearch-query-optimization | 2026-11-21 |
+| elasticsearch-cluster-health | 2026-11-21 |
+| elasticsearch-anomaly-detection-explainer | 2026-11-21 |
