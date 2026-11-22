@@ -487,3 +487,8 @@
 | elasticsearch-query-optimization | 2026-11-21 |
 | elasticsearch-cluster-health | 2026-11-21 |
 | elasticsearch-anomaly-detection-explainer | 2026-11-21 |
+| sentry-get-started | 2026-11-22 |
+| sentry-instrument | 2026-11-22 |
+| sentry-debug-issue | 2026-11-22 |
+| sentry-otel-exporter-setup | 2026-11-22 |
+| sentry-create-alert | 2026-11-22 |
