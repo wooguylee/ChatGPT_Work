@@ -372,3 +372,7 @@ thinkingmachines/Inkling; zai-org/GLM-5.2; baidu/Unlimited-OCR; google/gemma-4-3
 
 ### 2026-11-21
 - apple/DepthPro2 및 S/B/L/H+·공통 초점거리 추정기와 동일 백본의 단순 크기·양자화·포맷·포팅·경미한 미세조정 파생본. Depth Pro의 사진 단일 처리에서 프레임 내부 및 프레임 사이 어텐션을 교차하는 영상 공동 추론으로 확장한 주요 세대 변경. S 24M·B 97M·L 334M·H+ 872M, 공통 초점 거리 추정기 23.5M 별도. RGB 사진·영상 → 픽셀별 거리(m). 가중치 Apple Machine Learning Research Model License(비상업 연구·학술 개발). 논문 제출 11/19 UTC·HF 논문 등록 표기 11/20·관찰 11/21 KST. 최초 가중치 공개 전환 시각과 사용자 장치 성능 미확인. 근거: [2026-11-21 보고서](2026/11/2026-11-21.md)
+
+
+### 2026-11-22
+- tencent/WeMM-Video-2B·4B·9B·35BA3B 및 동일 WeMM-Video의 FP8·AWQ·GGUF·NVFP4·기타 크기·포맷·경미한 파생본. Qwen3.5/3.6 시각·언어 백본과 Qwen2.5-Omni에서 초기화한 음성 인코더, Q-Former·시간순 시청각 토큰·약 1.2T 단계별 학습을 결합한 주요 모달리티 확장. 기존 WeMM-Embedding의 검색 벡터 출력과 달리 텍스트 생성. 2B 카드 Apache-2.0, 별도 구성 조건 적용. 2B 제품명과 카드 저장 원소 약 3B는 구분. 논문 제출 11/19 UTC·관찰 11/22 KST, 최초 공개 시각·사용자 환경 미확인. 근거: [2026-11-22 보고서](2026/11/2026-11-22.md)
