@@ -2,6 +2,12 @@
 
 Daily Skill Trends 보고서와 소개 인덱스의 변경 기록입니다. 보고서의 날짜는 Asia/Seoul 기준입니다.
 
+## 2026-11-22
+
+- [오늘의 보고서](2026/11/2026-11-22.md): Sentry 공식 스킬 신규 소개 5개 (sentry-get-started, sentry-instrument, sentry-debug-issue, sentry-otel-exporter-setup, sentry-create-alert).
+- [보고서 커밋](https://github.com/wooguylee/ChatGPT_Work/commit/57d6fec0332853c22c17bbdf45a3ec8d3c04301c) 이후 전체 2,924자, 인덱스 전체 16,131자를 그 뒤 main에서 재조회해 작성본과 비교했다. 보고서 blob `3f562a5427f6e480ef5024f8eb4939e5c5ad17db`, 인덱스 blob `2a72e91c7295431fe87637afa14bd01d14b6b8f9`.
+- 직전 3일의 신규 소개 15개도 인덱스와 대조했다. 공식 원문을 확인했고 실제 설치·인증·알림 생성·이벤트 전송은 하지 않았다.
+
 ## 2026-11-21
 
 - [오늘의 보고서](2026/11/2026-11-21.md): Elastic 공식 스킬 신규 소개 5개 (elasticsearch-index-design, elasticsearch-search-relevance, elasticsearch-query-optimization, elasticsearch-cluster-health, elasticsearch-anomaly-detection-explainer).
