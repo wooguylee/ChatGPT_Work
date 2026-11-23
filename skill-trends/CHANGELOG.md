@@ -2,6 +2,12 @@
 
 Daily Skill Trends 보고서와 소개 인덱스의 변경 기록입니다. 보고서의 날짜는 Asia/Seoul 기준입니다.
 
+## 2026-11-23
+
+- [오늘의 보고서](2026/11/2026-11-23.md): Cloudflare 공식 스킬 신규 소개 5개 (turnstile-spin, cloudflare-email-service, basin, k2, sandbox-stable).
+- [보고서 커밋](https://github.com/wooguylee/ChatGPT_Work/commit/d54e4e59dfeadb4c883619786e0059770ffb6139)의 전체 2,776자와 인덱스 전체 16,280자를 main에서 다시 읽어 작성본과 대조했다. 보고서 blob `e6b0fed3bc27c031886d6c8e5847aba4c53baa55`, 인덱스 blob `a75b8793eb40ea708f6fddc5f03031bc8114d59c`.
+- 직전 3일의 15개 소개 항목도 인덱스와 대조했다. 실제 설치, 서비스 생성, 메일 전송, 위젯 생성, 배포는 하지 않았다.
+
 ## 2026-11-22
 
 - [오늘의 보고서](2026/11/2026-11-22.md): Sentry 공식 스킬 신규 소개 5개 (sentry-get-started, sentry-instrument, sentry-debug-issue, sentry-otel-exporter-setup, sentry-create-alert).
