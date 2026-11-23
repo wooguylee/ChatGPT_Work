@@ -492,3 +492,8 @@
 | sentry-debug-issue | 2026-11-22 |
 | sentry-otel-exporter-setup | 2026-11-22 |
 | sentry-create-alert | 2026-11-22 |
+| turnstile-spin | 2026-11-23 |
+| cloudflare-email-service | 2026-11-23 |
+| basin | 2026-11-23 |
+| k2 | 2026-11-23 |
+| sandbox-stable | 2026-11-23 |
