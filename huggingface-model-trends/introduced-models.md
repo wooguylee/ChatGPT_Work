@@ -376,3 +376,7 @@ thinkingmachines/Inkling; zai-org/GLM-5.2; baidu/Unlimited-OCR; google/gemma-4-3
 
 ### 2026-11-22
 - tencent/WeMM-Video-2B·4B·9B·35BA3B 및 동일 WeMM-Video의 FP8·AWQ·GGUF·NVFP4·기타 크기·포맷·경미한 파생본. Qwen3.5/3.6 시각·언어 백본과 Qwen2.5-Omni에서 초기화한 음성 인코더, Q-Former·시간순 시청각 토큰·약 1.2T 단계별 학습을 결합한 주요 모달리티 확장. 기존 WeMM-Embedding의 검색 벡터 출력과 달리 텍스트 생성. 2B 카드 Apache-2.0, 별도 구성 조건 적용. 2B 제품명과 카드 저장 원소 약 3B는 구분. 논문 제출 11/19 UTC·관찰 11/22 KST, 최초 공개 시각·사용자 환경 미확인. 근거: [2026-11-22 보고서](2026/11/2026-11-22.md)
+
+
+### 2026-11-23
+- maxwell-model/Maxwell-V1-Flash 및 동일 Maxwell-V1.0-Flash의 FP8·GGUF·양자화·포맷·경미한 파생본. 45층 MoE·4개 잔차 스트림·학습된 선택기를 사용하는 블록 희소 어텐션, 약 26T 단계별 사전학습·256K 문맥. 제작자 임베딩 제외 35B/3B 활성, HF 저장 집계 약 37B. 텍스트 → 텍스트, Apache-2.0. 관찰 11/23 KST, 최초 가중치 공개 전환 시각·정확한 초기화·한국어와 장치 성능 미확인. 근거: [2026-11-23 보고서](2026/11/2026-11-23.md)
