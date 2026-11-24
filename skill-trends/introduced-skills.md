@@ -497,3 +497,8 @@
 | basin | 2026-11-23 |
 | k2 | 2026-11-23 |
 | sandbox-stable | 2026-11-23 |
+| expo-web-to-native | 2026-11-24 |
+| expo-dom | 2026-11-24 |
+| expo-design-system | 2026-11-24 |
+| expo-module | 2026-11-24 |
+| expo-brownfield | 2026-11-24 |
