@@ -2,6 +2,12 @@
 
 Daily Skill Trends 보고서와 소개 인덱스의 변경 기록입니다. 보고서의 날짜는 Asia/Seoul 기준입니다.
 
+## 2026-11-24
+
+- [오늘의 보고서](2026/11/2026-11-24.md): Expo 공식 스킬 신규 소개 5개 (expo-web-to-native, expo-dom, expo-design-system, expo-module, expo-brownfield).
+- [보고서 커밋](https://github.com/wooguylee/ChatGPT_Work/commit/f902f70f7116b79cac754971b9e7c8e9d6b003b4)의 전체 2,813자와 인덱스 전체 16,440자를 main에서 읽어 작성본과 대조했다. 보고서 blob `fbb615337955c04c068cd97214d44d1f61063421`, 인덱스 blob `1769691e8f71f0174c68622edcaa194dd23a70ab`.
+- 직전 3일의 신규 소개 15개를 함께 확인했다. 공식 원문과 설치 안내만 확인했으며 설치·빌드·배포는 하지 않았다.
+
 ## 2026-11-23
 
 - [오늘의 보고서](2026/11/2026-11-23.md): Cloudflare 공식 스킬 신규 소개 5개 (turnstile-spin, cloudflare-email-service, basin, k2, sandbox-stable).
