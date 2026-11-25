@@ -2,6 +2,12 @@
 
 Daily Skill Trends 보고서와 소개 인덱스의 변경 기록입니다. 보고서의 날짜는 Asia/Seoul 기준입니다.
 
+## 2026-11-25
+
+- [오늘의 보고서](2026/11/2026-11-25.md): MongoDB 공식 스킬 신규 소개 5개 (mongodb-schema-design, mongodb-natural-language-querying, mongodb-query-optimizer, mongodb-search-and-ai, mongodb-atlas-stream-processing).
+- [보고서 커밋](https://github.com/wooguylee/ChatGPT_Work/commit/373c233f8fe65b4fe65af02206c52a495c3805d9)의 전체 2,957자와 인덱스 전체 16,659자를 main에서 읽어 작성본과 대조했다. 보고서 blob `3b2787c2272e228eb5d45e123db50013534d97eb`, 인덱스 blob `e5a3199d3ff65004713b2caba97b6bf39b61336a`.
+- 직전 3일의 신규 소개 15개를 함께 확인했다. 공식 원문과 설치 안내를 검토했으며 설치·DB 연결·인덱스 변경·스트림 생성은 하지 않았다.
+
 ## 2026-11-24
 
 - [오늘의 보고서](2026/11/2026-11-24.md): Expo 공식 스킬 신규 소개 5개 (expo-web-to-native, expo-dom, expo-design-system, expo-module, expo-brownfield).
