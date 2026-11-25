@@ -502,3 +502,8 @@
 | expo-design-system | 2026-11-24 |
 | expo-module | 2026-11-24 |
 | expo-brownfield | 2026-11-24 |
+| mongodb-schema-design | 2026-11-25 |
+| mongodb-natural-language-querying | 2026-11-25 |
+| mongodb-query-optimizer | 2026-11-25 |
+| mongodb-search-and-ai | 2026-11-25 |
+| mongodb-atlas-stream-processing | 2026-11-25 |
