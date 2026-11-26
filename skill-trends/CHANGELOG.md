@@ -2,6 +2,12 @@
 
 Daily Skill Trends 보고서와 소개 인덱스의 변경 기록입니다. 보고서의 날짜는 Asia/Seoul 기준입니다.
 
+## 2026-11-26
+
+- [오늘의 보고서](2026/11/2026-11-26.md): Grafana 공식 스킬 신규 소개 5개 (frontend-session-rca, tempo, loki-label-analyzer, prometheus-cardinality-troubleshooter, database-observability).
+- [보고서 커밋](https://github.com/wooguylee/ChatGPT_Work/commit/3a9aadfabaa8a238ecfd148f223c6292b4ed27ab)의 전체 2,930자와 인덱스 전체 16,852자를 main에서 가져와 작성본과 대조했다. 보고서 blob `683195590892f6046db101ddf0f419967ff7fc4a`, 인덱스 blob `6537e08226d7c1e83ee5ed8d3fe54a190b447641`.
+- 직전 3일의 소개 15개를 인덱스와 함께 확인했다. 실제 설치, 연결, 로그 조회 또는 DB 변경은 하지 않았다.
+
 ## 2026-11-25
 
 - [오늘의 보고서](2026/11/2026-11-25.md): MongoDB 공식 스킬 신규 소개 5개 (mongodb-schema-design, mongodb-natural-language-querying, mongodb-query-optimizer, mongodb-search-and-ai, mongodb-atlas-stream-processing).
