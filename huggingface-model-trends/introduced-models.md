@@ -388,3 +388,7 @@ thinkingmachines/Inkling; zai-org/GLM-5.2; baidu/Unlimited-OCR; google/gemma-4-3
 
 ### 2026-11-25
 - llamaindex/OCRia-nano-1 및 같은 CPU OCR·레이아웃 파이프라인의 포팅·포맷·경미한 파생본. OCRia-1을 전사·표·레이아웃 학습 라벨 생성 교사로 쓰고 별도 소형 검출·인식·LayoutNet을 결합한 첫 소개. 총 8.1M(7개 모델), PDF → 텍스트·읽기 순서·표, CJK 지원 표기와 실제 한국어 품질은 구분. 수정 Open RAIL-M 가중치(전문 미확인), LiteParse 코드는 별도 Apache-2.0. 공개 발표 11/23·관찰 11/25 KST, 최초 가중치 공개 시각 미확인. 근거: [2026-11-25 보고서](2026/11/2026-11-25.md)
+
+
+### 2026-11-26
+- nvidia/Nemotron-Labs-Image-30B-A3B 및 같은 이미지 생성 체크포인트의 포맷·양자화·경미한 파생본. Nemotron 3 Nano에서 초기화했으나 새 시각 어휘·토크나이저와 점진적 중간 학습·GRPO를 적용한 주요 출력 모달리티 확장. 공식 생성부 30B/3B 활성·별도 시각 토크나이저 약 642M. 비상업 연구·평가 NVIDIA License, VisionCode와 전체 하네스는 초기 공개 범위에서 제외. 관찰 11/26 KST, 최초 공개 전환 시각·장치 성능 미확인. 근거: [2026-11-26 보고서](2026/11/2026-11-26.md)
