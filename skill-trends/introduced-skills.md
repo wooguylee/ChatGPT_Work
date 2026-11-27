@@ -517,3 +517,8 @@
 | windows-builder | 2026-11-27 |
 | azure-verified-modules | 2026-11-27 |
 | terraform-policy | 2026-11-27 |
+| docker-project-foundations | 2026-11-28 |
+| docker-build-strategies | 2026-11-28 |
+| docker-compose-patterns | 2026-11-28 |
+| docker-destructive-guardrails | 2026-11-28 |
+| docker-agent-config | 2026-11-28 |
