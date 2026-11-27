@@ -2,6 +2,12 @@
 
 Daily Skill Trends 보고서와 소개 인덱스의 변경 기록입니다. 보고서의 날짜는 Asia/Seoul 기준입니다.
 
+## 2026-11-28
+
+- [오늘의 보고서](2026/11/2026-11-28.md): Docker 공식 스킬 신규 소개 5개 (docker-project-foundations, docker-build-strategies, docker-compose-patterns, docker-destructive-guardrails, docker-agent-config).
+- [보고서 커밋](https://github.com/wooguylee/ChatGPT_Work/commit/7d042ad43a94414dbbef68fc4af4ec68ff887e52)의 전체 3,007자와 인덱스 전체 17,239자를 main에서 가져와 작성본과 대조했다. 보고서 blob `7aff17e3db1532c8e34a4fac49eef96f936a4951`, 인덱스 blob `23c15698b12bb282514a797f447904ed0d79afd9`.
+- 직전 8일의 신규 40개도 인덱스와 대조했다. 스킬 설치, 빌드, 컨테이너 실행 또는 자원 삭제는 하지 않았다.
+
 ## 2026-11-27
 
 - [오늘의 보고서](2026/11/2026-11-27.md): HashiCorp 공식 스킬 신규 소개 5개 (aws-ami-builder, azure-image-builder, windows-builder, azure-verified-modules, terraform-policy).
