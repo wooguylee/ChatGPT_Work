@@ -512,3 +512,8 @@
 | loki-label-analyzer | 2026-11-26 |
 | prometheus-cardinality-troubleshooter | 2026-11-26 |
 | database-observability | 2026-11-26 |
+| aws-ami-builder | 2026-11-27 |
+| azure-image-builder | 2026-11-27 |
+| windows-builder | 2026-11-27 |
+| azure-verified-modules | 2026-11-27 |
+| terraform-policy | 2026-11-27 |
