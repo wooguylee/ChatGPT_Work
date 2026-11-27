@@ -2,6 +2,12 @@
 
 Daily Skill Trends 보고서와 소개 인덱스의 변경 기록입니다. 보고서의 날짜는 Asia/Seoul 기준입니다.
 
+## 2026-11-27
+
+- [오늘의 보고서](2026/11/2026-11-27.md): HashiCorp 공식 스킬 신규 소개 5개 (aws-ami-builder, azure-image-builder, windows-builder, azure-verified-modules, terraform-policy).
+- [보고서 커밋](https://github.com/wooguylee/ChatGPT_Work/commit/3edae38ec972b6948f4b490c9fcf3722fefd8591)의 전체 2,965자와 인덱스 전체 17,029자를 main에서 가져와 작성본과 대조했다. 보고서 blob `2ab0db130e0d14e595d3ccb146abc5d5c3106611`, 인덱스 blob `ebce6f0d491e418f21b0c051414f213108fd5e32`.
+- 직전 3일의 신규 15개도 확인했다. 설치, 클라우드 접속, 빌드 또는 정책 적용은 하지 않았다.
+
 ## 2026-11-26
 
 - [오늘의 보고서](2026/11/2026-11-26.md): Grafana 공식 스킬 신규 소개 5개 (frontend-session-rca, tempo, loki-label-analyzer, prometheus-cardinality-troubleshooter, database-observability).
