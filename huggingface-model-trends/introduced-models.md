@@ -396,3 +396,7 @@ thinkingmachines/Inkling; zai-org/GLM-5.2; baidu/Unlimited-OCR; google/gemma-4-3
 
 ### 2026-11-27
 - ai-sage/GigaChat4-708B-A41B, 37B-A4B 및 같은 세대의 Base·Instruct·BF16/FP8·GGUF·단순 크기·양자화·포맷·경미한 파생본. GigaChat 3.5 대비 40→64층, MLA 장문 경로에 DSA 도입, 최대 1,048,576토큰과 별도 장문 학습을 확인한 주요 세대 변경. 대표 708B/약 41B 활성, 영어·러시아어 중심 텍스트, 공식 카드 MIT. 공개 발표 11/26·관찰 11/27 KST, 최초 가중치 공개 시각과 한국어·개인 장치 성능 미검증. 근거: [2026-11-27 보고서](2026/11/2026-11-27.md)
+
+
+### 2026-11-28
+- apple/FastFrames-S·FastFrames-L 및 동일 시스템의 중간 체크포인트·추가 정밀도·양자화·포맷·경미한 파생본. S 1.3B는 Causal Forcing++ 생성기를 동결, L 14B는 Wan2.1-14B를 2단계 인과 모델로 증류. 학습된 픽셀 디코더와 KV 갱신 네트워크의 구조 변경을 확인해 단순 증류본과 구분. 텍스트 → 영상, 카메라·물리 조건 데모, 가중치 Apple Machine Learning Research Model License(비상업 연구·학술 개발). 논문 제출 11/17 UTC·관찰 11/28 KST, B200 정상 상태 저자 측정이며 최초 가중치 공개 전환 시각과 개인 장치 성능 미확인. 근거: [2026-11-28 보고서](2026/11/2026-11-28.md)
